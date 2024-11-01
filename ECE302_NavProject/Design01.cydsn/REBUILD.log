@@ -1,0 +1,11 @@
+--------------- Rebuild Started: 10/31/2024 15:22:24 Project: Design01, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+cydsfit.exe -.appdatapath "C:\Users\yz9572\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p H:\ECE302_Nav\ECE302_NavProject\Design01.cydsn\Design01.cyprj -d CY8C5868AXI-LP035 -s H:\ECE302_Nav\ECE302_NavProject\Design01.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+Elaborating Design...
+ADD: sdb.M0025: error: No input on Instance "SERVO", terminal "y_0".
+ * H:\ECE302_Nav\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch (Signal: Net_79)
+ * H:\ECE302_Nav\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch (Shape_5.2)
+ADD: sdb.M0050: error: Terminal "y_0" requires connection when it is visible.
+ * H:\ECE302_Nav\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch (Signal: Net_79)
+ * H:\ECE302_Nav\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch (Shape_5.2)
+Error: fit.M0050: The fitter aborted due to errors, please address all errors and rebuild. (App=cydsfit)
+--------------- Rebuild Failed: 10/31/2024 15:22:28 ---------------
