@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
   28:Generated_Source\PSoC5/VID_TIMER_PM.c **** * Summary:
   29:Generated_Source\PSoC5/VID_TIMER_PM.c **** *     Save the current user configuration
   30:Generated_Source\PSoC5/VID_TIMER_PM.c **** *
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 2
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 2
 
 
   31:Generated_Source\PSoC5/VID_TIMER_PM.c **** * Parameters:
@@ -110,7 +110,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
   51              		.align	2
   52              	.L3:
   53 0018 00000000 		.word	.LANCHOR0
-  54 001c 84640040 		.word	1073767556
+  54 001c 83640040 		.word	1073767555
   55              		.cfi_endproc
   56              	.LFE0:
   57              		.size	VID_TIMER_SaveConfig, .-VID_TIMER_SaveConfig
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
   59              		.align	2
   60              		.global	VID_TIMER_RestoreConfig
   61              		.thumb
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 3
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 3
 
 
   62              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
   87:Generated_Source\PSoC5/VID_TIMER_PM.c ****         #if(!VID_TIMER_UDB_CONTROL_REG_REMOVED)
   88:Generated_Source\PSoC5/VID_TIMER_PM.c ****             VID_TIMER_WriteControlRegister(VID_TIMER_backup.TimerControlRegister);
   83              		.loc 1 88 0
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 4
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 4
 
 
   84 0010 6079     		ldrb	r0, [r4, #5]	@ zero_extendqisi2
@@ -189,7 +189,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
   89              		.align	2
   90              	.L7:
   91 0018 00000000 		.word	.LANCHOR0
-  92 001c 84640040 		.word	1073767556
+  92 001c 83640040 		.word	1073767555
   93              		.cfi_endproc
   94              	.LFE1:
   95              		.size	VID_TIMER_RestoreConfig, .-VID_TIMER_RestoreConfig
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  115:Generated_Source\PSoC5/VID_TIMER_PM.c ****         /* Save Counter's enable state */
  116:Generated_Source\PSoC5/VID_TIMER_PM.c ****         if(VID_TIMER_CTRL_ENABLE == (VID_TIMER_CONTROL & VID_TIMER_CTRL_ENABLE))
  112              		.loc 1 116 0
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 5
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 5
 
 
  113 0002 084B     		ldr	r3, .L13
@@ -278,7 +278,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  135              	.L14:
  136              		.align	2
  137              	.L13:
- 138 0024 77650040 		.word	1073767799
+ 138 0024 71640040 		.word	1073767537
  139 0028 00000000 		.word	.LANCHOR0
  140              		.cfi_endproc
  141              	.LFE2:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  133:Generated_Source\PSoC5/VID_TIMER_PM.c **** * Function Name: VID_TIMER_Wakeup
  134:Generated_Source\PSoC5/VID_TIMER_PM.c **** ********************************************************************************
  135:Generated_Source\PSoC5/VID_TIMER_PM.c **** *
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 6
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 6
 
 
  136:Generated_Source\PSoC5/VID_TIMER_PM.c **** * Summary:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  184              	VID_TIMER_backup:
  185 0000 00000000 		.space	6
  185      0000
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 7
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 7
 
 
  186              		.text
@@ -372,45 +372,45 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  194 0006 00000000 		.4byte	.Ldebug_abbrev0
  195 000a 04       		.byte	0x4
  196 000b 01       		.uleb128 0x1
- 197 000c BA010000 		.4byte	.LASF32
+ 197 000c 51010000 		.4byte	.LASF32
  198 0010 0C       		.byte	0xc
- 199 0011 DB000000 		.4byte	.LASF33
- 200 0015 56000000 		.4byte	.LASF34
+ 199 0011 72000000 		.4byte	.LASF33
+ 200 0015 6B020000 		.4byte	.LASF34
  201 0019 00000000 		.4byte	.Ldebug_ranges0+0
  202 001d 00000000 		.4byte	0
  203 0021 00000000 		.4byte	.Ldebug_line0
  204 0025 02       		.uleb128 0x2
  205 0026 01       		.byte	0x1
  206 0027 06       		.byte	0x6
- 207 0028 C8020000 		.4byte	.LASF0
+ 207 0028 5F020000 		.4byte	.LASF0
  208 002c 02       		.uleb128 0x2
  209 002d 01       		.byte	0x1
  210 002e 08       		.byte	0x8
- 211 002f 1E010000 		.4byte	.LASF1
+ 211 002f B5000000 		.4byte	.LASF1
  212 0033 02       		.uleb128 0x2
  213 0034 02       		.byte	0x2
  214 0035 05       		.byte	0x5
- 215 0036 93020000 		.4byte	.LASF2
+ 215 0036 2A020000 		.4byte	.LASF2
  216 003a 02       		.uleb128 0x2
  217 003b 02       		.byte	0x2
  218 003c 07       		.byte	0x7
- 219 003d BF000000 		.4byte	.LASF3
+ 219 003d 56000000 		.4byte	.LASF3
  220 0041 02       		.uleb128 0x2
  221 0042 04       		.byte	0x4
  222 0043 05       		.byte	0x5
- 223 0044 B3020000 		.4byte	.LASF4
+ 223 0044 4A020000 		.4byte	.LASF4
  224 0048 02       		.uleb128 0x2
  225 0049 04       		.byte	0x4
  226 004a 07       		.byte	0x7
- 227 004b 42010000 		.4byte	.LASF5
+ 227 004b D9000000 		.4byte	.LASF5
  228 004f 02       		.uleb128 0x2
  229 0050 08       		.byte	0x8
  230 0051 05       		.byte	0x5
- 231 0052 68020000 		.4byte	.LASF6
+ 231 0052 FF010000 		.4byte	.LASF6
  232 0056 02       		.uleb128 0x2
  233 0057 08       		.byte	0x8
  234 0058 07       		.byte	0x7
- 235 0059 A3010000 		.4byte	.LASF7
+ 235 0059 3A010000 		.4byte	.LASF7
  236 005d 03       		.uleb128 0x3
  237 005e 04       		.byte	0x4
  238 005f 05       		.byte	0x5
@@ -418,34 +418,34 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  240 0064 02       		.uleb128 0x2
  241 0065 04       		.byte	0x4
  242 0066 07       		.byte	0x7
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 8
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 8
 
 
- 243 0067 96010000 		.4byte	.LASF8
+ 243 0067 2D010000 		.4byte	.LASF8
  244 006b 04       		.uleb128 0x4
- 245 006c 72010000 		.4byte	.LASF9
+ 245 006c 09010000 		.4byte	.LASF9
  246 0070 02       		.byte	0x2
  247 0071 E801     		.2byte	0x1e8
  248 0073 2C000000 		.4byte	0x2c
  249 0077 04       		.uleb128 0x4
- 250 0078 8F010000 		.4byte	.LASF10
+ 250 0078 26010000 		.4byte	.LASF10
  251 007c 02       		.byte	0x2
  252 007d E901     		.2byte	0x1e9
  253 007f 3A000000 		.4byte	0x3a
  254 0083 02       		.uleb128 0x2
  255 0084 04       		.byte	0x4
  256 0085 04       		.byte	0x4
- 257 0086 01010000 		.4byte	.LASF11
+ 257 0086 98000000 		.4byte	.LASF11
  258 008a 02       		.uleb128 0x2
  259 008b 08       		.byte	0x8
  260 008c 04       		.byte	0x4
- 261 008d 78010000 		.4byte	.LASF12
+ 261 008d 0F010000 		.4byte	.LASF12
  262 0091 02       		.uleb128 0x2
  263 0092 01       		.byte	0x1
  264 0093 08       		.byte	0x8
- 265 0094 76020000 		.4byte	.LASF13
+ 265 0094 0D020000 		.4byte	.LASF13
  266 0098 04       		.uleb128 0x4
- 267 0099 3D010000 		.4byte	.LASF14
+ 267 0099 D4000000 		.4byte	.LASF14
  268 009d 02       		.byte	0x2
  269 009e 9202     		.2byte	0x292
  270 00a0 A4000000 		.4byte	0xa4
@@ -454,11 +454,11 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  273 00a9 02       		.uleb128 0x2
  274 00aa 08       		.byte	0x8
  275 00ab 04       		.byte	0x4
- 276 00ac BC020000 		.4byte	.LASF15
+ 276 00ac 53020000 		.4byte	.LASF15
  277 00b0 02       		.uleb128 0x2
  278 00b1 04       		.byte	0x4
  279 00b2 07       		.byte	0x7
- 280 00b3 48020000 		.4byte	.LASF16
+ 280 00b3 DF010000 		.4byte	.LASF16
  281 00b7 06       		.uleb128 0x6
  282 00b8 06       		.byte	0x6
  283 00b9 03       		.byte	0x3
@@ -471,14 +471,14 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  290 00c6 6B000000 		.4byte	0x6b
  291 00ca 00       		.byte	0
  292 00cb 07       		.uleb128 0x7
- 293 00cc D2000000 		.4byte	.LASF18
+ 293 00cc 69000000 		.4byte	.LASF18
  294 00d0 03       		.byte	0x3
  295 00d1 48       		.byte	0x48
  296 00d2 77000000 		.4byte	0x77
  297 00d6 02       		.byte	0x2
  298 00d7 07       		.uleb128 0x7
  299 00d8 F4020000 		.4byte	.LASF19
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 9
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 9
 
 
  300 00dc 03       		.byte	0x3
@@ -493,7 +493,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  309 00ee 05       		.byte	0x5
  310 00ef 00       		.byte	0
  311 00f0 08       		.uleb128 0x8
- 312 00f1 51020000 		.4byte	.LASF21
+ 312 00f1 E8010000 		.4byte	.LASF21
  313 00f5 03       		.byte	0x3
  314 00f6 53       		.byte	0x53
  315 00f7 B7000000 		.4byte	0xb7
@@ -514,7 +514,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  330 011e B7010000 		.4byte	0x1b7
  331 0122 00       		.byte	0
  332 0123 09       		.uleb128 0x9
- 333 0124 7B020000 		.4byte	.LASF23
+ 333 0124 12020000 		.4byte	.LASF23
  334 0128 01       		.byte	0x1
  335 0129 4D       		.byte	0x4d
  336 012a 00000000 		.4byte	.LFB1
@@ -530,7 +530,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  346 0146 CD010000 		.4byte	0x1cd
  347 014a 00       		.byte	0
  348 014b 09       		.uleb128 0x9
- 349 014c 7F010000 		.4byte	.LASF24
+ 349 014c 16010000 		.4byte	.LASF24
  350 0150 01       		.byte	0x1
  351 0151 70       		.byte	0x70
  352 0152 00000000 		.4byte	.LFB2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  354 015a 01       		.uleb128 0x1
  355 015b 9C       		.byte	0x9c
  356 015c 73010000 		.4byte	0x173
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 10
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 10
 
 
  357 0160 0A       		.uleb128 0xa
@@ -565,7 +565,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  378 0196 E3010000 		.4byte	0x1e3
  379 019a 00       		.byte	0
  380 019b 0B       		.uleb128 0xb
- 381 019c 2C010000 		.4byte	.LASF35
+ 381 019c C3000000 		.4byte	.LASF35
  382 01a0 01       		.byte	0x1
  383 01a1 15       		.byte	0x15
  384 01a2 F0000000 		.4byte	0xf0
@@ -573,18 +573,18 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  386 01a7 03       		.byte	0x3
  387 01a8 00000000 		.4byte	VID_TIMER_backup
  388 01ac 0C       		.uleb128 0xc
- 389 01ad 9D020000 		.4byte	.LASF26
- 390 01b1 9D020000 		.4byte	.LASF26
+ 389 01ad 34020000 		.4byte	.LASF26
+ 390 01b1 34020000 		.4byte	.LASF26
  391 01b5 03       		.byte	0x3
  392 01b6 69       		.byte	0x69
  393 01b7 0C       		.uleb128 0xc
- 394 01b8 54010000 		.4byte	.LASF27
- 395 01bc 54010000 		.4byte	.LASF27
+ 394 01b8 EB000000 		.4byte	.LASF27
+ 395 01bc EB000000 		.4byte	.LASF27
  396 01c0 03       		.byte	0x3
  397 01c1 63       		.byte	0x63
  398 01c2 0C       		.uleb128 0xc
- 399 01c3 07010000 		.4byte	.LASF28
- 400 01c7 07010000 		.4byte	.LASF28
+ 399 01c3 9E000000 		.4byte	.LASF28
+ 400 01c7 9E000000 		.4byte	.LASF28
  401 01cb 03       		.byte	0x3
  402 01cc 6A       		.byte	0x6a
  403 01cd 0C       		.uleb128 0xc
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  411 01e1 03       		.byte	0x3
  412 01e2 5B       		.byte	0x5b
  413 01e3 0C       		.uleb128 0xc
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 11
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 11
 
 
  414 01e4 11000000 		.4byte	.LASF31
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  468 002f 0B       		.uleb128 0xb
  469 0030 3B       		.uleb128 0x3b
  470 0031 05       		.uleb128 0x5
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 12
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 12
 
 
  471 0032 49       		.uleb128 0x49
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  525 0068 01       		.byte	0x1
  526 0069 3F       		.uleb128 0x3f
  527 006a 19       		.uleb128 0x19
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 13
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 13
 
 
  528 006b 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  582 00a4 0E       		.uleb128 0xe
  583 00a5 3A       		.uleb128 0x3a
  584 00a6 0B       		.uleb128 0xb
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 14
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 14
 
 
  585 00a7 3B       		.uleb128 0x3b
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  627              	.LASF29:
  628 0022 5649445F 		.ascii	"VID_TIMER_WriteControlRegister\000"
  628      54494D45 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 15
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 15
 
 
  628      525F5772 
@@ -850,164 +850,164 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  630      525F5361 
  630      7665436F 
  630      6E666967 
- 631              	.LASF34:
- 632 0056 5C5C4669 		.ascii	"\\\\Files\\wj8091\\ClusterDownloads\\ECE302_NavCode"
- 632      6C65735C 
- 632      776A3830 
- 632      39315C43 
- 632      6C757374 
- 633 0084 2D6D6169 		.ascii	"-main\\ECE302_NavCode-main\\ECE302_NavProject\\Desi"
- 633      6E5C4543 
- 633      45333032 
- 633      5F4E6176 
- 633      436F6465 
- 634 00b4 676E3031 		.ascii	"gn01.cydsn\000"
- 634      2E637964 
- 634      736E00
- 635              	.LASF3:
- 636 00bf 73686F72 		.ascii	"short unsigned int\000"
- 636      7420756E 
- 636      7369676E 
- 636      65642069 
- 636      6E7400
- 637              	.LASF18:
- 638 00d2 54696D65 		.ascii	"TimerUdb\000"
- 638      72556462 
- 638      00
- 639              	.LASF33:
- 640 00db 47656E65 		.ascii	"Generated_Source\\PSoC5\\VID_TIMER_PM.c\000"
- 640      72617465 
- 640      645F536F 
- 640      75726365 
- 640      5C50536F 
- 641              	.LASF11:
- 642 0101 666C6F61 		.ascii	"float\000"
- 642      7400
- 643              	.LASF28:
- 644 0107 5649445F 		.ascii	"VID_TIMER_WriteCounter\000"
+ 631              	.LASF3:
+ 632 0056 73686F72 		.ascii	"short unsigned int\000"
+ 632      7420756E 
+ 632      7369676E 
+ 632      65642069 
+ 632      6E7400
+ 633              	.LASF18:
+ 634 0069 54696D65 		.ascii	"TimerUdb\000"
+ 634      72556462 
+ 634      00
+ 635              	.LASF33:
+ 636 0072 47656E65 		.ascii	"Generated_Source\\PSoC5\\VID_TIMER_PM.c\000"
+ 636      72617465 
+ 636      645F536F 
+ 636      75726365 
+ 636      5C50536F 
+ 637              	.LASF11:
+ 638 0098 666C6F61 		.ascii	"float\000"
+ 638      7400
+ 639              	.LASF28:
+ 640 009e 5649445F 		.ascii	"VID_TIMER_WriteCounter\000"
+ 640      54494D45 
+ 640      525F5772 
+ 640      69746543 
+ 640      6F756E74 
+ 641              	.LASF1:
+ 642 00b5 756E7369 		.ascii	"unsigned char\000"
+ 642      676E6564 
+ 642      20636861 
+ 642      7200
+ 643              	.LASF35:
+ 644 00c3 5649445F 		.ascii	"VID_TIMER_backup\000"
  644      54494D45 
- 644      525F5772 
- 644      69746543 
- 644      6F756E74 
- 645              	.LASF1:
- 646 011e 756E7369 		.ascii	"unsigned char\000"
- 646      676E6564 
- 646      20636861 
- 646      7200
- 647              	.LASF35:
- 648 012c 5649445F 		.ascii	"VID_TIMER_backup\000"
- 648      54494D45 
- 648      525F6261 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 16
+ 644      525F6261 
+ 644      636B7570 
+ 644      00
+ 645              	.LASF14:
+ 646 00d4 72656738 		.ascii	"reg8\000"
+ 646      00
+ 647              	.LASF5:
+ 648 00d9 6C6F6E67 		.ascii	"long unsigned int\000"
+ 648      20756E73 
+ 648      69676E65 
+ 648      6420696E 
+ 648      7400
+ 649              	.LASF27:
+ 650 00eb 5649445F 		.ascii	"VID_TIMER_ReadControlRegister\000"
+ 650      54494D45 
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 16
 
 
- 648      636B7570 
- 648      00
- 649              	.LASF14:
- 650 013d 72656738 		.ascii	"reg8\000"
- 650      00
- 651              	.LASF5:
- 652 0142 6C6F6E67 		.ascii	"long unsigned int\000"
- 652      20756E73 
- 652      69676E65 
- 652      6420696E 
- 652      7400
- 653              	.LASF27:
- 654 0154 5649445F 		.ascii	"VID_TIMER_ReadControlRegister\000"
- 654      54494D45 
- 654      525F5265 
- 654      6164436F 
- 654      6E74726F 
- 655              	.LASF9:
- 656 0172 75696E74 		.ascii	"uint8\000"
- 656      3800
- 657              	.LASF12:
- 658 0178 646F7562 		.ascii	"double\000"
- 658      6C6500
- 659              	.LASF24:
- 660 017f 5649445F 		.ascii	"VID_TIMER_Sleep\000"
- 660      54494D45 
- 660      525F536C 
- 660      65657000 
- 661              	.LASF10:
- 662 018f 75696E74 		.ascii	"uint16\000"
- 662      313600
- 663              	.LASF8:
- 664 0196 756E7369 		.ascii	"unsigned int\000"
- 664      676E6564 
- 664      20696E74 
- 664      00
- 665              	.LASF7:
- 666 01a3 6C6F6E67 		.ascii	"long long unsigned int\000"
- 666      206C6F6E 
- 666      6720756E 
- 666      7369676E 
- 666      65642069 
- 667              	.LASF32:
- 668 01ba 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 668      43313120 
- 668      352E342E 
- 668      31203230 
- 668      31363036 
- 669 01ed 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 669      20726576 
- 669      6973696F 
- 669      6E203233 
- 669      37373135 
- 670 0220 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 670      66756E63 
- 670      74696F6E 
- 670      2D736563 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 17
+ 650      525F5265 
+ 650      6164436F 
+ 650      6E74726F 
+ 651              	.LASF9:
+ 652 0109 75696E74 		.ascii	"uint8\000"
+ 652      3800
+ 653              	.LASF12:
+ 654 010f 646F7562 		.ascii	"double\000"
+ 654      6C6500
+ 655              	.LASF24:
+ 656 0116 5649445F 		.ascii	"VID_TIMER_Sleep\000"
+ 656      54494D45 
+ 656      525F536C 
+ 656      65657000 
+ 657              	.LASF10:
+ 658 0126 75696E74 		.ascii	"uint16\000"
+ 658      313600
+ 659              	.LASF8:
+ 660 012d 756E7369 		.ascii	"unsigned int\000"
+ 660      676E6564 
+ 660      20696E74 
+ 660      00
+ 661              	.LASF7:
+ 662 013a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 662      206C6F6E 
+ 662      6720756E 
+ 662      7369676E 
+ 662      65642069 
+ 663              	.LASF32:
+ 664 0151 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 664      43313120 
+ 664      352E342E 
+ 664      31203230 
+ 664      31363036 
+ 665 0184 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 665      20726576 
+ 665      6973696F 
+ 665      6E203233 
+ 665      37373135 
+ 666 01b7 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 666      66756E63 
+ 666      74696F6E 
+ 666      2D736563 
+ 666      74696F6E 
+ 667              	.LASF16:
+ 668 01df 73697A65 		.ascii	"sizetype\000"
+ 668      74797065 
+ 668      00
+ 669              	.LASF21:
+ 670 01e8 5649445F 		.ascii	"VID_TIMER_backupStruct\000"
+ 670      54494D45 
+ 670      525F6261 
+ 670      636B7570 
+ 670      53747275 
+ 671              	.LASF6:
+ 672 01ff 6C6F6E67 		.ascii	"long long int\000"
+ 672      206C6F6E 
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 17
 
 
- 670      74696F6E 
- 671              	.LASF16:
- 672 0248 73697A65 		.ascii	"sizetype\000"
- 672      74797065 
- 672      00
- 673              	.LASF21:
- 674 0251 5649445F 		.ascii	"VID_TIMER_backupStruct\000"
- 674      54494D45 
- 674      525F6261 
- 674      636B7570 
- 674      53747275 
- 675              	.LASF6:
- 676 0268 6C6F6E67 		.ascii	"long long int\000"
- 676      206C6F6E 
- 676      6720696E 
- 676      7400
- 677              	.LASF13:
- 678 0276 63686172 		.ascii	"char\000"
- 678      00
- 679              	.LASF23:
- 680 027b 5649445F 		.ascii	"VID_TIMER_RestoreConfig\000"
+ 672      6720696E 
+ 672      7400
+ 673              	.LASF13:
+ 674 020d 63686172 		.ascii	"char\000"
+ 674      00
+ 675              	.LASF23:
+ 676 0212 5649445F 		.ascii	"VID_TIMER_RestoreConfig\000"
+ 676      54494D45 
+ 676      525F5265 
+ 676      73746F72 
+ 676      65436F6E 
+ 677              	.LASF2:
+ 678 022a 73686F72 		.ascii	"short int\000"
+ 678      7420696E 
+ 678      7400
+ 679              	.LASF26:
+ 680 0234 5649445F 		.ascii	"VID_TIMER_ReadCounter\000"
  680      54494D45 
  680      525F5265 
- 680      73746F72 
- 680      65436F6E 
- 681              	.LASF2:
- 682 0293 73686F72 		.ascii	"short int\000"
- 682      7420696E 
- 682      7400
- 683              	.LASF26:
- 684 029d 5649445F 		.ascii	"VID_TIMER_ReadCounter\000"
- 684      54494D45 
- 684      525F5265 
- 684      6164436F 
- 684      756E7465 
- 685              	.LASF4:
- 686 02b3 6C6F6E67 		.ascii	"long int\000"
- 686      20696E74 
- 686      00
- 687              	.LASF15:
- 688 02bc 6C6F6E67 		.ascii	"long double\000"
- 688      20646F75 
- 688      626C6500 
- 689              	.LASF0:
- 690 02c8 7369676E 		.ascii	"signed char\000"
- 690      65642063 
- 690      68617200 
+ 680      6164436F 
+ 680      756E7465 
+ 681              	.LASF4:
+ 682 024a 6C6F6E67 		.ascii	"long int\000"
+ 682      20696E74 
+ 682      00
+ 683              	.LASF15:
+ 684 0253 6C6F6E67 		.ascii	"long double\000"
+ 684      20646F75 
+ 684      626C6500 
+ 685              	.LASF0:
+ 686 025f 7369676E 		.ascii	"signed char\000"
+ 686      65642063 
+ 686      68617200 
+ 687              	.LASF34:
+ 688 026b 5C5C6669 		.ascii	"\\\\files\\wj8091\\ClusterDownloads\\ECE302_NavCode"
+ 688      6C65735C 
+ 688      776A3830 
+ 688      39315C43 
+ 688      6C757374 
+ 689 0299 2D6D6169 		.ascii	"-main\\ECE302_NavCode-main\\ECE302_NavProject\\Desi"
+ 689      6E5C4543 
+ 689      45333032 
+ 689      5F4E6176 
+ 689      436F6465 
+ 690 02c9 676E3031 		.ascii	"gn01.cydsn\000"
+ 690      2E637964 
+ 690      736E00
  691              	.LASF25:
  692 02d4 5649445F 		.ascii	"VID_TIMER_Wakeup\000"
  692      54494D45 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 1
  694 02e5 5649445F 		.ascii	"VID_TIMER_Stop\000"
  694      54494D45 
  694      525F5374 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccGHO03d.s 			page 18
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccNYaCE4.s 			page 18
 
 
  694      6F7000

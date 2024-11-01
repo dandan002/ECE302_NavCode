@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
   28:Generated_Source\PSoC5/SERVO_PWM_PM.c **** *  Saves the current user configuration of the component.
   29:Generated_Source\PSoC5/SERVO_PWM_PM.c **** *
   30:Generated_Source\PSoC5/SERVO_PWM_PM.c **** * Parameters:
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 2
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 2
 
 
   31:Generated_Source\PSoC5/SERVO_PWM_PM.c **** *  None
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
   64:Generated_Source\PSoC5/SERVO_PWM_PM.c ****             SERVO_PWM_backup.PWMControlRegister = SERVO_PWM_ReadControlRegister();
   49              		.loc 1 64 0
   50 0016 FFF7FEFF 		bl	SERVO_PWM_ReadControlRegister
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 3
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 3
 
 
   51              	.LVL2:
@@ -128,7 +128,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
   55 001e 00BF     		.align	2
   56              	.L3:
   57 0020 00000000 		.word	.LANCHOR0
-  58 0024 82640040 		.word	1073767554
+  58 0024 80640040 		.word	1073767552
   59              		.cfi_endproc
   60              	.LFE0:
   61              		.size	SERVO_PWM_SaveConfig, .-SERVO_PWM_SaveConfig
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
   92:Generated_Source\PSoC5/SERVO_PWM_PM.c ****                 SERVO_PWM_WritePeriod(SERVO_PWM_backup.PWMPeriod);
   78              		.loc 1 92 0
   79 0002 074C     		ldr	r4, .L7
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 4
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 4
 
 
   80 0004 A088     		ldrh	r0, [r4, #4]
@@ -220,7 +220,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
   97 001e 00BF     		.align	2
   98              	.L7:
   99 0020 00000000 		.word	.LANCHOR0
- 100 0024 82640040 		.word	1073767554
+ 100 0024 80640040 		.word	1073767552
  101              		.cfi_endproc
  102              	.LFE1:
  103              		.size	SERVO_PWM_RestoreConfig, .-SERVO_PWM_RestoreConfig
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  115:Generated_Source\PSoC5/SERVO_PWM_PM.c **** 
  116:Generated_Source\PSoC5/SERVO_PWM_PM.c **** 
  117:Generated_Source\PSoC5/SERVO_PWM_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 5
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 5
 
 
  118:Generated_Source\PSoC5/SERVO_PWM_PM.c **** * Function Name: SERVO_PWM_Sleep
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  148:Generated_Source\PSoC5/SERVO_PWM_PM.c ****         }
  149:Generated_Source\PSoC5/SERVO_PWM_PM.c ****     #endif /* (SERVO_PWM_UseControl) */
  150:Generated_Source\PSoC5/SERVO_PWM_PM.c **** 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 6
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 6
 
 
  151:Generated_Source\PSoC5/SERVO_PWM_PM.c ****     /* Stop component */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  161              		@ args = 0, pretend = 0, frame = 0
  162              		@ frame_needed = 0, uses_anonymous_args = 0
  163 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 7
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 7
 
 
  164              		.cfi_def_cfa_offset 8
@@ -409,48 +409,48 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  201 0006 00000000 		.4byte	.Ldebug_abbrev0
  202 000a 04       		.byte	0x4
  203 000b 01       		.uleb128 0x1
- 204 000c 0D010000 		.4byte	.LASF35
+ 204 000c A4000000 		.4byte	.LASF35
  205 0010 0C       		.byte	0xc
- 206 0011 10020000 		.4byte	.LASF36
- 207 0015 4C000000 		.4byte	.LASF37
+ 206 0011 A7010000 		.4byte	.LASF36
+ 207 0015 CF020000 		.4byte	.LASF37
  208 0019 00000000 		.4byte	.Ldebug_ranges0+0
  209 001d 00000000 		.4byte	0
  210 0021 00000000 		.4byte	.Ldebug_line0
  211 0025 02       		.uleb128 0x2
  212 0026 01       		.byte	0x1
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 8
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 8
 
 
  213 0027 06       		.byte	0x6
- 214 0028 2C030000 		.4byte	.LASF0
+ 214 0028 C3020000 		.4byte	.LASF0
  215 002c 02       		.uleb128 0x2
  216 002d 01       		.byte	0x1
  217 002e 08       		.byte	0x8
- 218 002f FF000000 		.4byte	.LASF1
+ 218 002f 96000000 		.4byte	.LASF1
  219 0033 02       		.uleb128 0x2
  220 0034 02       		.byte	0x2
  221 0035 05       		.byte	0x5
- 222 0036 E0020000 		.4byte	.LASF2
+ 222 0036 77020000 		.4byte	.LASF2
  223 003a 02       		.uleb128 0x2
  224 003b 02       		.byte	0x2
  225 003c 07       		.byte	0x7
- 226 003d B5000000 		.4byte	.LASF3
+ 226 003d 4C000000 		.4byte	.LASF3
  227 0041 02       		.uleb128 0x2
  228 0042 04       		.byte	0x4
  229 0043 05       		.byte	0x5
- 230 0044 02030000 		.4byte	.LASF4
+ 230 0044 99020000 		.4byte	.LASF4
  231 0048 02       		.uleb128 0x2
  232 0049 04       		.byte	0x4
  233 004a 07       		.byte	0x7
- 234 004b AA010000 		.4byte	.LASF5
+ 234 004b 41010000 		.4byte	.LASF5
  235 004f 02       		.uleb128 0x2
  236 0050 08       		.byte	0x8
  237 0051 05       		.byte	0x5
- 238 0052 CD020000 		.4byte	.LASF6
+ 238 0052 64020000 		.4byte	.LASF6
  239 0056 02       		.uleb128 0x2
  240 0057 08       		.byte	0x8
  241 0058 07       		.byte	0x7
- 242 0059 5F020000 		.4byte	.LASF7
+ 242 0059 F6010000 		.4byte	.LASF7
  243 005d 03       		.uleb128 0x3
  244 005e 04       		.byte	0x4
  245 005f 05       		.byte	0x5
@@ -458,32 +458,32 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  247 0064 02       		.uleb128 0x2
  248 0065 04       		.byte	0x4
  249 0066 07       		.byte	0x7
- 250 0067 52020000 		.4byte	.LASF8
+ 250 0067 E9010000 		.4byte	.LASF8
  251 006b 04       		.uleb128 0x4
- 252 006c D2010000 		.4byte	.LASF9
+ 252 006c 69010000 		.4byte	.LASF9
  253 0070 02       		.byte	0x2
  254 0071 E801     		.2byte	0x1e8
  255 0073 2C000000 		.4byte	0x2c
  256 0077 04       		.uleb128 0x4
- 257 0078 36020000 		.4byte	.LASF10
+ 257 0078 CD010000 		.4byte	.LASF10
  258 007c 02       		.byte	0x2
  259 007d E901     		.2byte	0x1e9
  260 007f 3A000000 		.4byte	0x3a
  261 0083 02       		.uleb128 0x2
  262 0084 04       		.byte	0x4
  263 0085 04       		.byte	0x4
- 264 0086 F9000000 		.4byte	.LASF11
+ 264 0086 90000000 		.4byte	.LASF11
  265 008a 02       		.uleb128 0x2
  266 008b 08       		.byte	0x8
  267 008c 04       		.byte	0x4
- 268 008d 09020000 		.4byte	.LASF12
+ 268 008d A0010000 		.4byte	.LASF12
  269 0091 02       		.uleb128 0x2
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 9
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 9
 
 
  270 0092 01       		.byte	0x1
  271 0093 08       		.byte	0x8
- 272 0094 DB020000 		.4byte	.LASF13
+ 272 0094 72020000 		.4byte	.LASF13
  273 0098 04       		.uleb128 0x4
  274 0099 07000000 		.4byte	.LASF14
  275 009d 02       		.byte	0x2
@@ -494,18 +494,18 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  280 00a9 02       		.uleb128 0x2
  281 00aa 08       		.byte	0x8
  282 00ab 04       		.byte	0x4
- 283 00ac 0B030000 		.4byte	.LASF15
+ 283 00ac A2020000 		.4byte	.LASF15
  284 00b0 02       		.uleb128 0x2
  285 00b1 04       		.byte	0x4
  286 00b2 07       		.byte	0x7
- 287 00b3 C4020000 		.4byte	.LASF16
+ 287 00b3 5B020000 		.4byte	.LASF16
  288 00b7 06       		.uleb128 0x6
  289 00b8 08       		.byte	0x8
  290 00b9 03       		.byte	0x3
  291 00ba 6B       		.byte	0x6b
  292 00bb FC000000 		.4byte	0xfc
  293 00bf 07       		.uleb128 0x7
- 294 00c0 9B010000 		.4byte	.LASF17
+ 294 00c0 32010000 		.4byte	.LASF17
  295 00c4 03       		.byte	0x3
  296 00c5 6E       		.byte	0x6e
  297 00c6 6B000000 		.4byte	0x6b
@@ -529,7 +529,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  315 00ea 6B000000 		.4byte	0x6b
  316 00ee 06       		.byte	0x6
  317 00ef 07       		.uleb128 0x7
- 318 00f0 D8010000 		.4byte	.LASF21
+ 318 00f0 6F010000 		.4byte	.LASF21
  319 00f4 03       		.byte	0x3
  320 00f5 86       		.byte	0x86
  321 00f6 6B000000 		.4byte	0x6b
@@ -538,13 +538,13 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  324 00fc 08       		.uleb128 0x8
  325 00fd 35000000 		.4byte	.LASF22
  326 0101 03       		.byte	0x3
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 10
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 10
 
 
  327 0102 8B       		.byte	0x8b
  328 0103 B7000000 		.4byte	0xb7
  329 0107 09       		.uleb128 0x9
- 330 0108 3D020000 		.4byte	.LASF23
+ 330 0108 D4010000 		.4byte	.LASF23
  331 010c 01       		.byte	0x1
  332 010d 2A       		.byte	0x2a
  333 010e 00000000 		.4byte	.LFB0
@@ -563,7 +563,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  346 0133 E0010000 		.4byte	0x1e0
  347 0137 00       		.byte	0
  348 0138 09       		.uleb128 0x9
- 349 0139 EA020000 		.4byte	.LASF24
+ 349 0139 81020000 		.4byte	.LASF24
  350 013d 01       		.byte	0x1
  351 013e 58       		.byte	0x58
  352 013f 00000000 		.4byte	.LFB1
@@ -582,7 +582,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  365 0164 01020000 		.4byte	0x201
  366 0168 00       		.byte	0
  367 0169 09       		.uleb128 0x9
- 368 016a 76020000 		.4byte	.LASF25
+ 368 016a 0D020000 		.4byte	.LASF25
  369 016e 01       		.byte	0x1
  370 016f 88       		.byte	0x88
  371 0170 00000000 		.4byte	.LFB2
@@ -598,10 +598,10 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  381 018c 07010000 		.4byte	0x107
  382 0190 00       		.byte	0
  383 0191 09       		.uleb128 0x9
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 11
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 11
 
 
- 384 0192 B3020000 		.4byte	.LASF26
+ 384 0192 4A020000 		.4byte	.LASF26
  385 0196 01       		.byte	0x1
  386 0197 B2       		.byte	0xb2
  387 0198 00000000 		.4byte	.LFB3
@@ -617,7 +617,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  397 01b4 17020000 		.4byte	0x217
  398 01b8 00       		.byte	0
  399 01b9 0B       		.uleb128 0xb
- 400 01ba E8000000 		.4byte	.LASF38
+ 400 01ba 7F000000 		.4byte	.LASF38
  401 01be 01       		.byte	0x1
  402 01bf 14       		.byte	0x14
  403 01c0 FC000000 		.4byte	0xfc
@@ -625,28 +625,28 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  405 01c5 03       		.byte	0x3
  406 01c6 00000000 		.4byte	SERVO_PWM_backup
  407 01ca 0C       		.uleb128 0xc
- 408 01cb 17030000 		.4byte	.LASF27
- 409 01cf 17030000 		.4byte	.LASF27
+ 408 01cb AE020000 		.4byte	.LASF27
+ 409 01cf AE020000 		.4byte	.LASF27
  410 01d3 03       		.byte	0x3
  411 01d4 C0       		.byte	0xc0
  412 01d5 0C       		.uleb128 0xc
- 413 01d6 BC010000 		.4byte	.LASF28
- 414 01da BC010000 		.4byte	.LASF28
+ 413 01d6 53010000 		.4byte	.LASF28
+ 414 01da 53010000 		.4byte	.LASF28
  415 01de 03       		.byte	0x3
  416 01df B3       		.byte	0xb3
  417 01e0 0C       		.uleb128 0xc
- 418 01e1 EB010000 		.4byte	.LASF29
- 419 01e5 EB010000 		.4byte	.LASF29
+ 418 01e1 82010000 		.4byte	.LASF29
+ 419 01e5 82010000 		.4byte	.LASF29
  420 01e9 03       		.byte	0x3
  421 01ea 9D       		.byte	0x9d
  422 01eb 0C       		.uleb128 0xc
- 423 01ec 86020000 		.4byte	.LASF30
- 424 01f0 86020000 		.4byte	.LASF30
+ 423 01ec 1D020000 		.4byte	.LASF30
+ 424 01f0 1D020000 		.4byte	.LASF30
  425 01f4 03       		.byte	0x3
  426 01f5 BE       		.byte	0xbe
  427 01f6 0C       		.uleb128 0xc
- 428 01f7 9C020000 		.4byte	.LASF31
- 429 01fb 9C020000 		.4byte	.LASF31
+ 428 01f7 33020000 		.4byte	.LASF31
+ 429 01fb 33020000 		.4byte	.LASF31
  430 01ff 03       		.byte	0x3
  431 0200 BA       		.byte	0xba
  432 0201 0C       		.uleb128 0xc
@@ -655,16 +655,16 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  435 020a 03       		.byte	0x3
  436 020b 9E       		.byte	0x9e
  437 020c 0C       		.uleb128 0xc
- 438 020d C8000000 		.4byte	.LASF33
- 439 0211 C8000000 		.4byte	.LASF33
+ 438 020d 5F000000 		.4byte	.LASF33
+ 439 0211 5F000000 		.4byte	.LASF33
  440 0215 03       		.byte	0x3
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 12
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 12
 
 
  441 0216 93       		.byte	0x93
  442 0217 0C       		.uleb128 0xc
- 443 0218 D7000000 		.4byte	.LASF34
- 444 021c D7000000 		.4byte	.LASF34
+ 443 0218 6E000000 		.4byte	.LASF34
+ 444 021c 6E000000 		.4byte	.LASF34
  445 0220 03       		.byte	0x3
  446 0221 DB       		.byte	0xdb
  447 0222 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  495 002d 0E       		.uleb128 0xe
  496 002e 3A       		.uleb128 0x3a
  497 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 13
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 13
 
 
  498 0030 3B       		.uleb128 0x3b
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  552 0066 09       		.uleb128 0x9
  553 0067 2E       		.uleb128 0x2e
  554 0068 01       		.byte	0x1
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 14
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 14
 
 
  555 0069 3F       		.uleb128 0x3f
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  609 00a2 0E       		.uleb128 0xe
  610 00a3 03       		.uleb128 0x3
  611 00a4 0E       		.uleb128 0xe
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 15
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 15
 
 
  612 00a5 3A       		.uleb128 0x3a
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  658              	.LASF32:
  659 0016 53455256 		.ascii	"SERVO_PWM_WriteControlRegister\000"
  659      4F5F5057 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 16
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 16
 
 
  659      4D5F5772 
@@ -910,200 +910,200 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 1
  661      4D5F6261 
  661      636B7570 
  661      53747275 
- 662              	.LASF37:
- 663 004c 5C5C4669 		.ascii	"\\\\Files\\wj8091\\ClusterDownloads\\ECE302_NavCode"
- 663      6C65735C 
- 663      776A3830 
- 663      39315C43 
- 663      6C757374 
- 664 007a 2D6D6169 		.ascii	"-main\\ECE302_NavCode-main\\ECE302_NavProject\\Desi"
- 664      6E5C4543 
- 664      45333032 
- 664      5F4E6176 
- 664      436F6465 
- 665 00aa 676E3031 		.ascii	"gn01.cydsn\000"
- 665      2E637964 
- 665      736E00
- 666              	.LASF3:
- 667 00b5 73686F72 		.ascii	"short unsigned int\000"
- 667      7420756E 
- 667      7369676E 
- 667      65642069 
- 667      6E7400
- 668              	.LASF33:
- 669 00c8 53455256 		.ascii	"SERVO_PWM_Stop\000"
+ 662              	.LASF3:
+ 663 004c 73686F72 		.ascii	"short unsigned int\000"
+ 663      7420756E 
+ 663      7369676E 
+ 663      65642069 
+ 663      6E7400
+ 664              	.LASF33:
+ 665 005f 53455256 		.ascii	"SERVO_PWM_Stop\000"
+ 665      4F5F5057 
+ 665      4D5F5374 
+ 665      6F7000
+ 666              	.LASF34:
+ 667 006e 53455256 		.ascii	"SERVO_PWM_Enable\000"
+ 667      4F5F5057 
+ 667      4D5F456E 
+ 667      61626C65 
+ 667      00
+ 668              	.LASF38:
+ 669 007f 53455256 		.ascii	"SERVO_PWM_backup\000"
  669      4F5F5057 
- 669      4D5F5374 
- 669      6F7000
- 670              	.LASF34:
- 671 00d7 53455256 		.ascii	"SERVO_PWM_Enable\000"
- 671      4F5F5057 
- 671      4D5F456E 
- 671      61626C65 
- 671      00
- 672              	.LASF38:
- 673 00e8 53455256 		.ascii	"SERVO_PWM_backup\000"
- 673      4F5F5057 
- 673      4D5F6261 
- 673      636B7570 
- 673      00
- 674              	.LASF11:
- 675 00f9 666C6F61 		.ascii	"float\000"
- 675      7400
- 676              	.LASF1:
- 677 00ff 756E7369 		.ascii	"unsigned char\000"
- 677      676E6564 
- 677      20636861 
- 677      7200
- 678              	.LASF35:
- 679 010d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 679      43313120 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 17
+ 669      4D5F6261 
+ 669      636B7570 
+ 669      00
+ 670              	.LASF11:
+ 671 0090 666C6F61 		.ascii	"float\000"
+ 671      7400
+ 672              	.LASF1:
+ 673 0096 756E7369 		.ascii	"unsigned char\000"
+ 673      676E6564 
+ 673      20636861 
+ 673      7200
+ 674              	.LASF35:
+ 675 00a4 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 675      43313120 
+ 675      352E342E 
+ 675      31203230 
+ 675      31363036 
+ 676 00d7 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 676      20726576 
+ 676      6973696F 
+ 676      6E203233 
+ 676      37373135 
+ 677 010a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 677      66756E63 
+ 677      74696F6E 
+ 677      2D736563 
+ 677      74696F6E 
+ 678              	.LASF17:
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 17
 
 
- 679      352E342E 
- 679      31203230 
- 679      31363036 
- 680 0140 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 680      20726576 
- 680      6973696F 
- 680      6E203233 
- 680      37373135 
- 681 0173 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 681      66756E63 
- 681      74696F6E 
- 681      2D736563 
- 681      74696F6E 
- 682              	.LASF17:
- 683 019b 50574D45 		.ascii	"PWMEnableState\000"
- 683      6E61626C 
- 683      65537461 
- 683      746500
- 684              	.LASF5:
- 685 01aa 6C6F6E67 		.ascii	"long unsigned int\000"
- 685      20756E73 
- 685      69676E65 
- 685      6420696E 
- 685      7400
- 686              	.LASF28:
- 687 01bc 53455256 		.ascii	"SERVO_PWM_ReadCounter\000"
- 687      4F5F5057 
- 687      4D5F5265 
- 687      6164436F 
- 687      756E7465 
- 688              	.LASF9:
- 689 01d2 75696E74 		.ascii	"uint8\000"
- 689      3800
- 690              	.LASF21:
- 691 01d8 50574D43 		.ascii	"PWMControlRegister\000"
- 691      6F6E7472 
- 691      6F6C5265 
- 691      67697374 
- 691      657200
- 692              	.LASF29:
- 693 01eb 53455256 		.ascii	"SERVO_PWM_ReadControlRegister\000"
- 693      4F5F5057 
- 693      4D5F5265 
- 693      6164436F 
- 693      6E74726F 
- 694              	.LASF12:
- 695 0209 646F7562 		.ascii	"double\000"
- 695      6C6500
- 696              	.LASF36:
- 697 0210 47656E65 		.ascii	"Generated_Source\\PSoC5\\SERVO_PWM_PM.c\000"
- 697      72617465 
- 697      645F536F 
- 697      75726365 
- 697      5C50536F 
- 698              	.LASF10:
- 699 0236 75696E74 		.ascii	"uint16\000"
- 699      313600
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 18
+ 679 0132 50574D45 		.ascii	"PWMEnableState\000"
+ 679      6E61626C 
+ 679      65537461 
+ 679      746500
+ 680              	.LASF5:
+ 681 0141 6C6F6E67 		.ascii	"long unsigned int\000"
+ 681      20756E73 
+ 681      69676E65 
+ 681      6420696E 
+ 681      7400
+ 682              	.LASF28:
+ 683 0153 53455256 		.ascii	"SERVO_PWM_ReadCounter\000"
+ 683      4F5F5057 
+ 683      4D5F5265 
+ 683      6164436F 
+ 683      756E7465 
+ 684              	.LASF9:
+ 685 0169 75696E74 		.ascii	"uint8\000"
+ 685      3800
+ 686              	.LASF21:
+ 687 016f 50574D43 		.ascii	"PWMControlRegister\000"
+ 687      6F6E7472 
+ 687      6F6C5265 
+ 687      67697374 
+ 687      657200
+ 688              	.LASF29:
+ 689 0182 53455256 		.ascii	"SERVO_PWM_ReadControlRegister\000"
+ 689      4F5F5057 
+ 689      4D5F5265 
+ 689      6164436F 
+ 689      6E74726F 
+ 690              	.LASF12:
+ 691 01a0 646F7562 		.ascii	"double\000"
+ 691      6C6500
+ 692              	.LASF36:
+ 693 01a7 47656E65 		.ascii	"Generated_Source\\PSoC5\\SERVO_PWM_PM.c\000"
+ 693      72617465 
+ 693      645F536F 
+ 693      75726365 
+ 693      5C50536F 
+ 694              	.LASF10:
+ 695 01cd 75696E74 		.ascii	"uint16\000"
+ 695      313600
+ 696              	.LASF23:
+ 697 01d4 53455256 		.ascii	"SERVO_PWM_SaveConfig\000"
+ 697      4F5F5057 
+ 697      4D5F5361 
+ 697      7665436F 
+ 697      6E666967 
+ 698              	.LASF8:
+ 699 01e9 756E7369 		.ascii	"unsigned int\000"
+ 699      676E6564 
+ 699      20696E74 
+ 699      00
+ 700              	.LASF7:
+ 701 01f6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 701      206C6F6E 
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 18
 
 
- 700              	.LASF23:
- 701 023d 53455256 		.ascii	"SERVO_PWM_SaveConfig\000"
- 701      4F5F5057 
- 701      4D5F5361 
- 701      7665436F 
- 701      6E666967 
- 702              	.LASF8:
- 703 0252 756E7369 		.ascii	"unsigned int\000"
- 703      676E6564 
- 703      20696E74 
- 703      00
- 704              	.LASF7:
- 705 025f 6C6F6E67 		.ascii	"long long unsigned int\000"
- 705      206C6F6E 
- 705      6720756E 
- 705      7369676E 
- 705      65642069 
- 706              	.LASF25:
- 707 0276 53455256 		.ascii	"SERVO_PWM_Sleep\000"
+ 701      6720756E 
+ 701      7369676E 
+ 701      65642069 
+ 702              	.LASF25:
+ 703 020d 53455256 		.ascii	"SERVO_PWM_Sleep\000"
+ 703      4F5F5057 
+ 703      4D5F536C 
+ 703      65657000 
+ 704              	.LASF30:
+ 705 021d 53455256 		.ascii	"SERVO_PWM_WritePeriod\000"
+ 705      4F5F5057 
+ 705      4D5F5772 
+ 705      69746550 
+ 705      6572696F 
+ 706              	.LASF31:
+ 707 0233 53455256 		.ascii	"SERVO_PWM_WriteCounter\000"
  707      4F5F5057 
- 707      4D5F536C 
- 707      65657000 
- 708              	.LASF30:
- 709 0286 53455256 		.ascii	"SERVO_PWM_WritePeriod\000"
+ 707      4D5F5772 
+ 707      69746543 
+ 707      6F756E74 
+ 708              	.LASF26:
+ 709 024a 53455256 		.ascii	"SERVO_PWM_Wakeup\000"
  709      4F5F5057 
- 709      4D5F5772 
- 709      69746550 
- 709      6572696F 
- 710              	.LASF31:
- 711 029c 53455256 		.ascii	"SERVO_PWM_WriteCounter\000"
- 711      4F5F5057 
- 711      4D5F5772 
- 711      69746543 
- 711      6F756E74 
- 712              	.LASF26:
- 713 02b3 53455256 		.ascii	"SERVO_PWM_Wakeup\000"
- 713      4F5F5057 
- 713      4D5F5761 
- 713      6B657570 
- 713      00
- 714              	.LASF16:
- 715 02c4 73697A65 		.ascii	"sizetype\000"
- 715      74797065 
+ 709      4D5F5761 
+ 709      6B657570 
+ 709      00
+ 710              	.LASF16:
+ 711 025b 73697A65 		.ascii	"sizetype\000"
+ 711      74797065 
+ 711      00
+ 712              	.LASF6:
+ 713 0264 6C6F6E67 		.ascii	"long long int\000"
+ 713      206C6F6E 
+ 713      6720696E 
+ 713      7400
+ 714              	.LASF13:
+ 715 0272 63686172 		.ascii	"char\000"
  715      00
- 716              	.LASF6:
- 717 02cd 6C6F6E67 		.ascii	"long long int\000"
- 717      206C6F6E 
- 717      6720696E 
+ 716              	.LASF2:
+ 717 0277 73686F72 		.ascii	"short int\000"
+ 717      7420696E 
  717      7400
- 718              	.LASF13:
- 719 02db 63686172 		.ascii	"char\000"
- 719      00
- 720              	.LASF2:
- 721 02e0 73686F72 		.ascii	"short int\000"
- 721      7420696E 
- 721      7400
- 722              	.LASF24:
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchIkfil.s 			page 19
+ 718              	.LASF24:
+ 719 0281 53455256 		.ascii	"SERVO_PWM_RestoreConfig\000"
+ 719      4F5F5057 
+ 719      4D5F5265 
+ 719      73746F72 
+ 719      65436F6E 
+ 720              	.LASF4:
+ 721 0299 6C6F6E67 		.ascii	"long int\000"
+ 721      20696E74 
+ 721      00
+ 722              	.LASF15:
+ 723 02a2 6C6F6E67 		.ascii	"long double\000"
+ 723      20646F75 
+ 723      626C6500 
+ 724              	.LASF27:
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccyl3gdc.s 			page 19
 
 
- 723 02ea 53455256 		.ascii	"SERVO_PWM_RestoreConfig\000"
- 723      4F5F5057 
- 723      4D5F5265 
- 723      73746F72 
- 723      65436F6E 
- 724              	.LASF4:
- 725 0302 6C6F6E67 		.ascii	"long int\000"
- 725      20696E74 
- 725      00
- 726              	.LASF15:
- 727 030b 6C6F6E67 		.ascii	"long double\000"
- 727      20646F75 
- 727      626C6500 
- 728              	.LASF27:
- 729 0317 53455256 		.ascii	"SERVO_PWM_ReadPeriod\000"
- 729      4F5F5057 
- 729      4D5F5265 
- 729      61645065 
- 729      72696F64 
- 730              	.LASF0:
- 731 032c 7369676E 		.ascii	"signed char\000"
- 731      65642063 
- 731      68617200 
+ 725 02ae 53455256 		.ascii	"SERVO_PWM_ReadPeriod\000"
+ 725      4F5F5057 
+ 725      4D5F5265 
+ 725      61645065 
+ 725      72696F64 
+ 726              	.LASF0:
+ 727 02c3 7369676E 		.ascii	"signed char\000"
+ 727      65642063 
+ 727      68617200 
+ 728              	.LASF37:
+ 729 02cf 5C5C6669 		.ascii	"\\\\files\\wj8091\\ClusterDownloads\\ECE302_NavCode"
+ 729      6C65735C 
+ 729      776A3830 
+ 729      39315C43 
+ 729      6C757374 
+ 730 02fd 2D6D6169 		.ascii	"-main\\ECE302_NavCode-main\\ECE302_NavProject\\Desi"
+ 730      6E5C4543 
+ 730      45333032 
+ 730      5F4E6176 
+ 730      436F6465 
+ 731 032d 676E3031 		.ascii	"gn01.cydsn\000"
+ 731      2E637964 
+ 731      736E00
  732              	.LASF20:
  733 0338 496E7465 		.ascii	"InterruptMaskValue\000"
  733      72727570 

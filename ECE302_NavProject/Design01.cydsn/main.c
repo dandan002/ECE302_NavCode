@@ -6,7 +6,7 @@
 #define WHEEL_CIRCUMFERENCE 0.5   
 #define PULSES_PER_TURN 5         
 #define Kp_speed 10               
-#define Ki_speed 1.0              
+#define Ki_speed 1.5              
                 
 double speed = 0.0;
 uint16 old = 65535;
@@ -25,33 +25,38 @@ char strbuf[42];
 #define Ki_steering 0.5 
 #define Kd_steering 0.5 
 
-int error_steering = 0;
+double error_steering = 0;
 double steeringIntegral = 0;
 double steeringDerivative = 0;
 double previousSteeringError = 0;
 double steeringOutput;;
 int steeringPWM;
 int newSampleAvailable;
-uint16 sampledTime;
+double sampledTime;
 
 #define PWM_MIN 1000
 #define PWM_CENTER 1500
 #define PWM_MAX 2000
 
-CY_ISR_PROTO(sampleISR);
-CY_ISR_PROTO(speedControlISR);
+
+char str_buf [32];
 
 // C Sync ISR - increments line count and signals the middle line
 CY_ISR(sampleISR) {
+    
+    UART_PutString("\r\n NAV INTR");
     // Read the capture value from the sample timer
-    sampledTime = VID_TIMER_ReadCapture();
+    sampledTime =  65535 - (double) VID_TIMER_ReadCapture();
     // Calculate steering error
     error_steering = MIDDLE_LINE - sampledTime;
 
     // steering calculations
-    steeringDerivative = error_steering - previousSteeringError;
-    previousSteeringError = error_steering;
-    steeringOutput = PWM_CENTER + Kp_steering * error_steering;
+    //steeringDerivative = error_steering - previousSteeringError;
+   // previousSteeringError = error_steering;
+    steeringOutput = PWM_CENTER + (Kp_steering * error_steering);
+    
+    sprintf(str_buf, "\r\n time:  %f", sampledTime);
+    UART_PutString(strbuf);
     
     // limit steering PWM within the min and max bounds
     if (steeringPWM < PWM_MIN) steeringPWM = PWM_MIN;
@@ -111,6 +116,7 @@ int main(void) {
     
     INT_SAMPLE_SetVector(sampleISR);
     HE_ISR_SetVector(inter);
+    UART_PutString("Test");
 
    // Main loop
     for (;;) {

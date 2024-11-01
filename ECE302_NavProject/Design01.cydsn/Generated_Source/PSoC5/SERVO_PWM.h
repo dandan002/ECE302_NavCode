@@ -226,8 +226,8 @@ void SERVO_PWM_RestoreConfig(void) ;
 /***************************************
 *         Initialization Values
 **************************************/
-#define SERVO_PWM_INIT_PERIOD_VALUE          (20u)
-#define SERVO_PWM_INIT_COMPARE_VALUE1        (15u)
+#define SERVO_PWM_INIT_PERIOD_VALUE          (20000u)
+#define SERVO_PWM_INIT_COMPARE_VALUE1        (1500u)
 #define SERVO_PWM_INIT_COMPARE_VALUE2        (63u)
 #define SERVO_PWM_INIT_INTERRUPTS_MODE       (uint8)(((uint8)(0u <<   \
                                                     SERVO_PWM_STATUS_TC_INT_EN_MASK_SHIFT)) | \
@@ -238,7 +238,7 @@ void SERVO_PWM_RestoreConfig(void) ;
                                                     (uint8)((uint8)(0u <<  \
                                                     SERVO_PWM_STATUS_KILL_INT_EN_MASK_SHIFT )))
 #define SERVO_PWM_DEFAULT_COMPARE2_MODE      (uint8)((uint8)1u <<  SERVO_PWM_CTRL_CMPMODE2_SHIFT)
-#define SERVO_PWM_DEFAULT_COMPARE1_MODE      (uint8)((uint8)2u <<  SERVO_PWM_CTRL_CMPMODE1_SHIFT)
+#define SERVO_PWM_DEFAULT_COMPARE1_MODE      (uint8)((uint8)1u <<  SERVO_PWM_CTRL_CMPMODE1_SHIFT)
 #define SERVO_PWM_INIT_DEAD_TIME             (1u)
 
 

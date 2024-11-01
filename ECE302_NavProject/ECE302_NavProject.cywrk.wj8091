@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ECE302_NavProject\Design01\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>ECE302_NavProject</v>
 <v>ECE302_NavProject\Design01</v>
@@ -83,6 +83,7 @@
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydevicegnu.inc</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -156,51 +157,6 @@
 <VisibleNodeIds>
 <v>ECE302_NavProject</v>
 <v>ECE302_NavProject\Design01</v>
-<v>ECE302_NavProject\Design01\CortexM3</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP_PM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CSYNC_IN.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\HE.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\HE_ISR.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\INT_SAMPLE.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motor.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_PM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\RAW_VIDEO.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\SERVO.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\SERVO_PWM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\SERVO_PWM_PM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\TIMER.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\TIMER_PM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_IntClock.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\VDAC_PM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\VID_TIMER.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\VID_TIMER_PM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\VSYNC_IN.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Design01.elf</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Design01.hex</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
