@@ -12154,7 +12154,7 @@ ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 1
  815              	.set INT_SAMPLE__INTC_CLR_PD_REG, CYREG_NVIC_CLRPEND0
  816              	.set INT_SAMPLE__INTC_MASK, 0x02
  817              	.set INT_SAMPLE__INTC_NUMBER, 1
- 818              	.set INT_SAMPLE__INTC_PRIOR_NUM, 0
+ 818              	.set INT_SAMPLE__INTC_PRIOR_NUM, 7
  819              	.set INT_SAMPLE__INTC_PRIOR_REG, CYREG_NVIC_PRI_1
  820              	.set INT_SAMPLE__INTC_SET_EN_REG, CYREG_NVIC_SETENA0
  821              	.set INT_SAMPLE__INTC_SET_PD_REG, CYREG_NVIC_SETPEND0

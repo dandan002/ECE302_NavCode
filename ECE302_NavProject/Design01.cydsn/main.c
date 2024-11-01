@@ -8,12 +8,12 @@
 #define Kp_speed 10               
 #define Ki_speed 1.5              
                 
-double speed = 0.0;
+volatile double speed = 0.0;
 uint16 old = 65535;
 uint16 new;
 uint16 elapsed;
-double PWM_base = 30;
-double pwm;
+volatile double PWM_base = 30;
+volatile double pwm;
 double err_speed;
 double acc_err_speed = 0;
 char strbuf[42];
@@ -51,7 +51,7 @@ CY_ISR(steer_inter) {
 
     // steering calculations
     //steeringDerivative = error_steering - previousSteeringError;
-   // previousSteeringError = error_steering;
+    // previousSteeringError = error_steering;
     steeringOutput = PWM_CENTER + (Kp_steering * error_steering);
     
     sprintf(str_buf, "\r\n time:  %f", sampledTime);
