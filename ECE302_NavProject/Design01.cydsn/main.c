@@ -31,7 +31,6 @@ double steeringDerivative = 0;
 double previousSteeringError = 0;
 double steeringOutput;;
 int steeringPWM;
-int newSampleAvailable;
 double sampledTime;
 
 #define PWM_MIN 1000
@@ -62,7 +61,7 @@ CY_ISR(sampleISR) {
     if (steeringPWM < PWM_MIN) steeringPWM = PWM_MIN;
     if (steeringPWM > PWM_MAX) steeringPWM = PWM_MAX;
     
-    steeringPWM = (uint16)steeringOutput;
+    steeringPWM = steeringOutput;
     
     // update servo PWM
     SERVO_PWM_WriteCompare(steeringPWM);

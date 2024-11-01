@@ -38,7 +38,7 @@ extern uint8 VID_TIMER_initVar;
 
 #define VID_TIMER_Resolution                 16u
 #define VID_TIMER_UsingFixedFunction         0u
-#define VID_TIMER_UsingHWCaptureCounter      0u
+#define VID_TIMER_UsingHWCaptureCounter      1u
 #define VID_TIMER_SoftwareCaptureMode        0u
 #define VID_TIMER_SoftwareTriggerMode        0u
 #define VID_TIMER_UsingHWEnable              0u
@@ -168,8 +168,8 @@ void VID_TIMER_Wakeup(void)        ;
 *    Initialial Parameter Constants
 ***************************************/
 
-#define VID_TIMER_INIT_PERIOD             3u
-#define VID_TIMER_INIT_CAPTURE_MODE       ((uint8)((uint8)1u << VID_TIMER_CTRL_CAP_MODE_SHIFT))
+#define VID_TIMER_INIT_PERIOD             65535u
+#define VID_TIMER_INIT_CAPTURE_MODE       ((uint8)((uint8)2u << VID_TIMER_CTRL_CAP_MODE_SHIFT))
 #define VID_TIMER_INIT_TRIGGER_MODE       ((uint8)((uint8)0u << VID_TIMER_CTRL_TRIG_MODE_SHIFT))
 #if (VID_TIMER_UsingFixedFunction)
     #define VID_TIMER_INIT_INTERRUPT_MODE (((uint8)((uint8)0u << VID_TIMER_STATUS_TC_INT_MASK_SHIFT)) | \

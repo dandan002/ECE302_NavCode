@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
   28:Generated_Source\PSoC5/SERVO.c **** *
   29:Generated_Source\PSoC5/SERVO.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/SERVO.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 2
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 2
 
 
   31:Generated_Source\PSoC5/SERVO.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
   52              		.size	SERVO_Write, .-SERVO_Write
   53              		.section	.text.SERVO_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 3
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 3
 
 
   55              		.global	SERVO_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 27500040 		.word	1073762343
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 4
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 4
 
 
   80              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  110              		.align	2
  111              		.global	SERVO_ReadDataReg
  112              		.thumb
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 5
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 5
 
 
  113              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 6
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 6
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -306,15 +306,15 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  144 000b 01       		.uleb128 0x1
  145 000c 25000000 		.4byte	.LASF20
  146 0010 0C       		.byte	0xc
- 147 0011 5A010000 		.4byte	.LASF21
- 148 0015 A0010000 		.4byte	.LASF22
+ 147 0011 A4010000 		.4byte	.LASF21
+ 148 0015 1B010000 		.4byte	.LASF22
  149 0019 00000000 		.4byte	.Ldebug_ranges0+0
  150 001d 00000000 		.4byte	0
  151 0021 00000000 		.4byte	.Ldebug_line0
  152 0025 02       		.uleb128 0x2
  153 0026 01       		.byte	0x1
  154 0027 06       		.byte	0x6
- 155 0028 82010000 		.4byte	.LASF0
+ 155 0028 CC010000 		.4byte	.LASF0
  156 002c 02       		.uleb128 0x2
  157 002d 01       		.byte	0x1
  158 002e 08       		.byte	0x8
@@ -322,7 +322,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  160 0033 02       		.uleb128 0x2
  161 0034 02       		.byte	0x2
  162 0035 05       		.byte	0x5
- 163 0036 4A010000 		.4byte	.LASF2
+ 163 0036 94010000 		.4byte	.LASF2
  164 003a 02       		.uleb128 0x2
  165 003b 02       		.byte	0x2
  166 003c 07       		.byte	0x7
@@ -330,7 +330,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  168 0041 02       		.uleb128 0x2
  169 0042 04       		.byte	0x4
  170 0043 05       		.byte	0x5
- 171 0044 79010000 		.4byte	.LASF4
+ 171 0044 C3010000 		.4byte	.LASF4
  172 0048 02       		.uleb128 0x2
  173 0049 04       		.byte	0x4
  174 004a 07       		.byte	0x7
@@ -338,11 +338,11 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  176 004f 02       		.uleb128 0x2
  177 0050 08       		.byte	0x8
  178 0051 05       		.byte	0x5
- 179 0052 37010000 		.4byte	.LASF6
+ 179 0052 81010000 		.4byte	.LASF6
  180 0056 02       		.uleb128 0x2
  181 0057 08       		.byte	0x8
  182 0058 07       		.byte	0x7
- 183 0059 1B010000 		.4byte	.LASF7
+ 183 0059 65010000 		.4byte	.LASF7
  184 005d 03       		.uleb128 0x3
  185 005e 04       		.byte	0x4
  186 005f 05       		.byte	0x5
@@ -352,13 +352,13 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  190 0066 07       		.byte	0x7
  191 0067 0E010000 		.4byte	.LASF8
  192 006b 04       		.uleb128 0x4
- 193 006c 54010000 		.4byte	.LASF12
+ 193 006c 9E010000 		.4byte	.LASF12
  194 0070 02       		.byte	0x2
  195 0071 E801     		.2byte	0x1e8
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 7
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 7
 
 
  199 0079 04       		.byte	0x4
@@ -370,7 +370,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  205 0085 02       		.uleb128 0x2
  206 0086 01       		.byte	0x1
  207 0087 08       		.byte	0x8
- 208 0088 45010000 		.4byte	.LASF11
+ 208 0088 8F010000 		.4byte	.LASF11
  209 008c 04       		.uleb128 0x4
  210 008d B3000000 		.4byte	.LASF13
  211 0091 02       		.byte	0x2
@@ -411,14 +411,14 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  246 00df 9C       		.byte	0x9c
  247 00e0 F4000000 		.4byte	0xf4
  248 00e4 07       		.uleb128 0x7
- 249 00e5 32010000 		.4byte	.LASF17
+ 249 00e5 7C010000 		.4byte	.LASF17
  250 00e9 01       		.byte	0x1
  251 00ea 5A       		.byte	0x5a
  252 00eb 6B000000 		.4byte	0x6b
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 8
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 8
 
 
  256 00f5 CA000000 		.4byte	.LASF18
@@ -430,7 +430,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  262 0107 01       		.uleb128 0x1
  263 0108 9C       		.byte	0x9c
  264 0109 09       		.uleb128 0x9
- 265 010a 8E010000 		.4byte	.LASF19
+ 265 010a D8010000 		.4byte	.LASF19
  266 010e 01       		.byte	0x1
  267 010f 8D       		.byte	0x8d
  268 0110 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 9
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 9
 
 
  313 0025 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 10
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 10
 
 
  370 005f 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 11
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 11
 
 
  427 0013 0400     		.2byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  480      02004200 
  480      00000201 
  480      FB0E0D00 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 12
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 12
 
 
  480      01010101 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  502      74447269 
  502      76654D6F 
  502      646500
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 13
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 13
 
 
  503              	.LASF10:
@@ -733,65 +733,62 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 1
  508      676E6564 
  508      20696E74 
  508      00
- 509              	.LASF7:
- 510 011b 6C6F6E67 		.ascii	"long long unsigned int\000"
- 510      206C6F6E 
- 510      6720756E 
- 510      7369676E 
- 510      65642069 
- 511              	.LASF17:
- 512 0132 6D6F6465 		.ascii	"mode\000"
- 512      00
- 513              	.LASF6:
- 514 0137 6C6F6E67 		.ascii	"long long int\000"
- 514      206C6F6E 
- 514      6720696E 
- 514      7400
- 515              	.LASF11:
- 516 0145 63686172 		.ascii	"char\000"
- 516      00
- 517              	.LASF2:
- 518 014a 73686F72 		.ascii	"short int\000"
- 518      7420696E 
- 518      7400
- 519              	.LASF12:
- 520 0154 75696E74 		.ascii	"uint8\000"
- 520      3800
- 521              	.LASF21:
- 522 015a 47656E65 		.ascii	"Generated_Source\\PSoC5\\SERVO.c\000"
- 522      72617465 
- 522      645F536F 
- 522      75726365 
- 522      5C50536F 
- 523              	.LASF4:
- 524 0179 6C6F6E67 		.ascii	"long int\000"
- 524      20696E74 
- 524      00
- 525              	.LASF0:
- 526 0182 7369676E 		.ascii	"signed char\000"
- 526      65642063 
- 526      68617200 
- 527              	.LASF19:
- 528 018e 53455256 		.ascii	"SERVO_ReadDataReg\000"
- 528      4F5F5265 
- 528      61644461 
- 528      74615265 
- 528      6700
- 529              	.LASF22:
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZXzJBL.s 			page 14
+ 509              	.LASF22:
+ 510 011b 433A5C55 		.ascii	"C:\\Users\\wj8091\\Downloads\\ECE302_NavCode\\ECE30"
+ 510      73657273 
+ 510      5C776A38 
+ 510      3039315C 
+ 510      446F776E 
+ 511 0149 325F4E61 		.ascii	"2_NavProject\\Design01.cydsn\000"
+ 511      7650726F 
+ 511      6A656374 
+ 511      5C446573 
+ 511      69676E30 
+ 512              	.LASF7:
+ 513 0165 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 513      206C6F6E 
+ 513      6720756E 
+ 513      7369676E 
+ 513      65642069 
+ 514              	.LASF17:
+ 515 017c 6D6F6465 		.ascii	"mode\000"
+ 515      00
+ 516              	.LASF6:
+ 517 0181 6C6F6E67 		.ascii	"long long int\000"
+ 517      206C6F6E 
+ 517      6720696E 
+ 517      7400
+ 518              	.LASF11:
+ 519 018f 63686172 		.ascii	"char\000"
+ 519      00
+ 520              	.LASF2:
+ 521 0194 73686F72 		.ascii	"short int\000"
+ 521      7420696E 
+ 521      7400
+ 522              	.LASF12:
+ 523 019e 75696E74 		.ascii	"uint8\000"
+ 523      3800
+ 524              	.LASF21:
+ 525 01a4 47656E65 		.ascii	"Generated_Source\\PSoC5\\SERVO.c\000"
+ 525      72617465 
+ 525      645F536F 
+ 525      75726365 
+ 525      5C50536F 
+ 526              	.LASF4:
+ 527 01c3 6C6F6E67 		.ascii	"long int\000"
+ 527      20696E74 
+ 527      00
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccfdg1cp.s 			page 14
 
 
- 530 01a0 5C5C6669 		.ascii	"\\\\files\\wj8091\\ClusterDownloads\\ECE302_NavCode"
- 530      6C65735C 
- 530      776A3830 
- 530      39315C43 
- 530      6C757374 
- 531 01ce 2D6D6169 		.ascii	"-main\\ECE302_NavCode-main\\ECE302_NavProject\\Desi"
- 531      6E5C4543 
- 531      45333032 
- 531      5F4E6176 
- 531      436F6465 
- 532 01fe 676E3031 		.ascii	"gn01.cydsn\000"
- 532      2E637964 
- 532      736E00
- 533              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 528              	.LASF0:
+ 529 01cc 7369676E 		.ascii	"signed char\000"
+ 529      65642063 
+ 529      68617200 
+ 530              	.LASF19:
+ 531 01d8 53455256 		.ascii	"SERVO_ReadDataReg\000"
+ 531      4F5F5265 
+ 531      61644461 
+ 531      74615265 
+ 531      6700
+ 532              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

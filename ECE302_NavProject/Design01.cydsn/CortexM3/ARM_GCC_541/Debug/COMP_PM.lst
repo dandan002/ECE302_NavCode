@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
   28:Generated_Source\PSoC5/COMP_PM.c **** * Summary:
   29:Generated_Source\PSoC5/COMP_PM.c **** *  Save the current user configuration
   30:Generated_Source\PSoC5/COMP_PM.c **** *
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 2
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 2
 
 
   31:Generated_Source\PSoC5/COMP_PM.c **** * Parameters:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
   53              		.size	COMP_RestoreConfig, .-COMP_RestoreConfig
   54 0002 00BF     		.section	.text.COMP_Sleep,"ax",%progbits
   55              		.align	2
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 3
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 3
 
 
   56              		.global	COMP_Sleep
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
   81              	.L4:
   89:Generated_Source\PSoC5/COMP_PM.c ****     }
   90:Generated_Source\PSoC5/COMP_PM.c ****     else
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 4
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 4
 
 
   91:Generated_Source\PSoC5/COMP_PM.c ****     {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  120:Generated_Source\PSoC5/COMP_PM.c **** {
  107              		.loc 1 120 0
  108              		.cfi_startproc
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 5
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 5
 
 
  109              		@ args = 0, pretend = 0, frame = 0
@@ -290,34 +290,34 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  149 000b 01       		.uleb128 0x1
  150 000c 3E000000 		.4byte	.LASF23
  151 0010 0C       		.byte	0xc
- 152 0011 27020000 		.4byte	.LASF24
- 153 0015 50010000 		.4byte	.LASF25
+ 152 0011 08020000 		.4byte	.LASF24
+ 153 0015 01010000 		.4byte	.LASF25
  154 0019 00000000 		.4byte	.Ldebug_ranges0+0
  155 001d 00000000 		.4byte	0
  156 0021 00000000 		.4byte	.Ldebug_line0
  157 0025 02       		.uleb128 0x2
  158 0026 01       		.byte	0x1
  159 0027 06       		.byte	0x6
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 6
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 6
 
 
- 160 0028 CC010000 		.4byte	.LASF0
+ 160 0028 AD010000 		.4byte	.LASF0
  161 002c 02       		.uleb128 0x2
  162 002d 01       		.byte	0x1
  163 002e 08       		.byte	0x8
- 164 002f 01010000 		.4byte	.LASF1
+ 164 002f 4B010000 		.4byte	.LASF1
  165 0033 02       		.uleb128 0x2
  166 0034 02       		.byte	0x2
  167 0035 05       		.byte	0x5
- 168 0036 FC010000 		.4byte	.LASF2
+ 168 0036 DD010000 		.4byte	.LASF2
  169 003a 02       		.uleb128 0x2
  170 003b 02       		.byte	0x2
  171 003c 07       		.byte	0x7
- 172 003d B9010000 		.4byte	.LASF3
+ 172 003d 9A010000 		.4byte	.LASF3
  173 0041 02       		.uleb128 0x2
  174 0042 04       		.byte	0x4
  175 0043 05       		.byte	0x5
- 176 0044 2E010000 		.4byte	.LASF4
+ 176 0044 78010000 		.4byte	.LASF4
  177 0048 02       		.uleb128 0x2
  178 0049 04       		.byte	0x4
  179 004a 07       		.byte	0x7
@@ -350,15 +350,15 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  206 007e 02       		.uleb128 0x2
  207 007f 08       		.byte	0x8
  208 0080 04       		.byte	0x4
- 209 0081 49010000 		.4byte	.LASF10
+ 209 0081 93010000 		.4byte	.LASF10
  210 0085 02       		.uleb128 0x2
  211 0086 01       		.byte	0x1
  212 0087 08       		.byte	0x8
- 213 0088 1F010000 		.4byte	.LASF11
+ 213 0088 69010000 		.4byte	.LASF11
  214 008c 04       		.uleb128 0x4
- 215 008d 06020000 		.4byte	.LASF13
+ 215 008d E7010000 		.4byte	.LASF13
  216 0091 02       		.byte	0x2
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 7
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 7
 
 
  217 0092 9202     		.2byte	0x292
@@ -368,11 +368,11 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  221 009d 02       		.uleb128 0x2
  222 009e 08       		.byte	0x8
  223 009f 04       		.byte	0x4
- 224 00a0 D8010000 		.4byte	.LASF14
+ 224 00a0 B9010000 		.4byte	.LASF14
  225 00a4 02       		.uleb128 0x2
  226 00a5 04       		.byte	0x4
  227 00a6 07       		.byte	0x7
- 228 00a7 1E020000 		.4byte	.LASF15
+ 228 00a7 FF010000 		.4byte	.LASF15
  229 00ab 06       		.uleb128 0x6
  230 00ac 01       		.byte	0x1
  231 00ad 03       		.byte	0x3
@@ -386,12 +386,12 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  239 00be 00       		.byte	0
  240 00bf 00       		.byte	0
  241 00c0 08       		.uleb128 0x8
- 242 00c1 37010000 		.4byte	.LASF16
+ 242 00c1 81010000 		.4byte	.LASF16
  243 00c5 03       		.byte	0x3
  244 00c6 2D       		.byte	0x2d
  245 00c7 AB000000 		.4byte	0xab
  246 00cb 09       		.uleb128 0x9
- 247 00cc 0F010000 		.4byte	.LASF17
+ 247 00cc 59010000 		.4byte	.LASF17
  248 00d0 01       		.byte	0x1
  249 00d1 26       		.byte	0x26
  250 00d2 00000000 		.4byte	.LFB0
@@ -399,7 +399,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  252 00da 01       		.uleb128 0x1
  253 00db 9C       		.byte	0x9c
  254 00dc 09       		.uleb128 0x9
- 255 00dd 0B020000 		.4byte	.LASF18
+ 255 00dd EC010000 		.4byte	.LASF18
  256 00e1 01       		.byte	0x1
  257 00e2 3A       		.byte	0x3a
  258 00e3 00000000 		.4byte	.LFB1
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  271 0102 0B       		.uleb128 0xb
  272 0103 1E000000 		.4byte	.LVL0
  273 0107 3C010000 		.4byte	0x13c
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 8
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 8
 
 
  274 010b 00       		.byte	0
@@ -436,7 +436,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  286 0126 47010000 		.4byte	0x147
  287 012a 00       		.byte	0
  288 012b 0C       		.uleb128 0xc
- 289 012c E4010000 		.4byte	.LASF27
+ 289 012c C5010000 		.4byte	.LASF27
  290 0130 01       		.byte	0x1
  291 0131 15       		.byte	0x15
  292 0132 C0000000 		.4byte	0xc0
@@ -444,13 +444,13 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  294 0137 03       		.byte	0x3
  295 0138 00000000 		.4byte	COMP_backup
  296 013c 0D       		.uleb128 0xd
- 297 013d 24010000 		.4byte	.LASF21
- 298 0141 24010000 		.4byte	.LASF21
+ 297 013d 6E010000 		.4byte	.LASF21
+ 298 0141 6E010000 		.4byte	.LASF21
  299 0145 03       		.byte	0x3
  300 0146 40       		.byte	0x40
  301 0147 0D       		.uleb128 0xd
- 302 0148 F0010000 		.4byte	.LASF22
- 303 014c F0010000 		.4byte	.LASF22
+ 302 0148 D1010000 		.4byte	.LASF22
+ 303 014c D1010000 		.4byte	.LASF22
  304 0150 03       		.byte	0x3
  305 0151 46       		.byte	0x46
  306 0152 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  328 0013 02       		.uleb128 0x2
  329 0014 24       		.uleb128 0x24
  330 0015 00       		.byte	0
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 9
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 9
 
 
  331 0016 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  385 004c 00       		.byte	0
  386 004d 03       		.uleb128 0x3
  387 004e 0E       		.uleb128 0xe
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 10
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 10
 
 
  388 004f 3A       		.uleb128 0x3a
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  442 0086 0B       		.uleb128 0xb
  443 0087 3B       		.uleb128 0x3b
  444 0088 0B       		.uleb128 0xb
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 11
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 11
 
 
  445 0089 27       		.uleb128 0x27
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  499 00c2 00       		.byte	0
  500 00c3 00       		.byte	0
  501              		.section	.debug_aranges,"",%progbits
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 12
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 12
 
 
  502 0000 34000000 		.4byte	0x34
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  542              	.LASF20:
  543 0032 434F4D50 		.ascii	"COMP_Wakeup\000"
  543      5F57616B 
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 13
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 13
 
 
  543      65757000 
@@ -756,99 +756,96 @@ ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 1
  554              	.LASF9:
  555 00fb 666C6F61 		.ascii	"float\000"
  555      7400
- 556              	.LASF1:
- 557 0101 756E7369 		.ascii	"unsigned char\000"
- 557      676E6564 
- 557      20636861 
- 557      7200
- 558              	.LASF17:
- 559 010f 434F4D50 		.ascii	"COMP_SaveConfig\000"
- 559      5F536176 
- 559      65436F6E 
- 559      66696700 
- 560              	.LASF11:
- 561 011f 63686172 		.ascii	"char\000"
- 561      00
- 562              	.LASF21:
- 563 0124 434F4D50 		.ascii	"COMP_Stop\000"
- 563      5F53746F 
- 563      7000
- 564              	.LASF4:
- 565 012e 6C6F6E67 		.ascii	"long int\000"
- 565      20696E74 
- 565      00
- 566              	.LASF16:
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 14
+ 556              	.LASF25:
+ 557 0101 433A5C55 		.ascii	"C:\\Users\\wj8091\\Downloads\\ECE302_NavCode\\ECE30"
+ 557      73657273 
+ 557      5C776A38 
+ 557      3039315C 
+ 557      446F776E 
+ 558 012f 325F4E61 		.ascii	"2_NavProject\\Design01.cydsn\000"
+ 558      7650726F 
+ 558      6A656374 
+ 558      5C446573 
+ 558      69676E30 
+ 559              	.LASF1:
+ 560 014b 756E7369 		.ascii	"unsigned char\000"
+ 560      676E6564 
+ 560      20636861 
+ 560      7200
+ 561              	.LASF17:
+ 562 0159 434F4D50 		.ascii	"COMP_SaveConfig\000"
+ 562      5F536176 
+ 562      65436F6E 
+ 562      66696700 
+ 563              	.LASF11:
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 14
 
 
- 567 0137 434F4D50 		.ascii	"COMP_backupStruct\000"
- 567      5F626163 
- 567      6B757053 
- 567      74727563 
- 567      7400
- 568              	.LASF10:
- 569 0149 646F7562 		.ascii	"double\000"
- 569      6C6500
- 570              	.LASF25:
- 571 0150 5C5C6669 		.ascii	"\\\\files\\wj8091\\ClusterDownloads\\ECE302_NavCode"
- 571      6C65735C 
- 571      776A3830 
- 571      39315C43 
- 571      6C757374 
- 572 017e 2D6D6169 		.ascii	"-main\\ECE302_NavCode-main\\ECE302_NavProject\\Desi"
- 572      6E5C4543 
- 572      45333032 
- 572      5F4E6176 
- 572      436F6465 
- 573 01ae 676E3031 		.ascii	"gn01.cydsn\000"
- 573      2E637964 
- 573      736E00
- 574              	.LASF3:
- 575 01b9 73686F72 		.ascii	"short unsigned int\000"
- 575      7420756E 
- 575      7369676E 
- 575      65642069 
- 575      6E7400
- 576              	.LASF0:
- 577 01cc 7369676E 		.ascii	"signed char\000"
- 577      65642063 
- 577      68617200 
- 578              	.LASF14:
- 579 01d8 6C6F6E67 		.ascii	"long double\000"
- 579      20646F75 
- 579      626C6500 
- 580              	.LASF27:
- 581 01e4 434F4D50 		.ascii	"COMP_backup\000"
- 581      5F626163 
- 581      6B757000 
- 582              	.LASF22:
- 583 01f0 434F4D50 		.ascii	"COMP_Enable\000"
- 583      5F456E61 
- 583      626C6500 
- 584              	.LASF2:
- 585 01fc 73686F72 		.ascii	"short int\000"
- 585      7420696E 
- 585      7400
- 586              	.LASF13:
- 587 0206 72656738 		.ascii	"reg8\000"
- 587      00
- 588              	.LASF18:
- 589 020b 434F4D50 		.ascii	"COMP_RestoreConfig\000"
- 589      5F526573 
- 589      746F7265 
- 589      436F6E66 
- 589      696700
-ARM GAS  C:\Users\wj8091\AppData\Local\Temp\cchJZTCT.s 			page 15
+ 564 0169 63686172 		.ascii	"char\000"
+ 564      00
+ 565              	.LASF21:
+ 566 016e 434F4D50 		.ascii	"COMP_Stop\000"
+ 566      5F53746F 
+ 566      7000
+ 567              	.LASF4:
+ 568 0178 6C6F6E67 		.ascii	"long int\000"
+ 568      20696E74 
+ 568      00
+ 569              	.LASF16:
+ 570 0181 434F4D50 		.ascii	"COMP_backupStruct\000"
+ 570      5F626163 
+ 570      6B757053 
+ 570      74727563 
+ 570      7400
+ 571              	.LASF10:
+ 572 0193 646F7562 		.ascii	"double\000"
+ 572      6C6500
+ 573              	.LASF3:
+ 574 019a 73686F72 		.ascii	"short unsigned int\000"
+ 574      7420756E 
+ 574      7369676E 
+ 574      65642069 
+ 574      6E7400
+ 575              	.LASF0:
+ 576 01ad 7369676E 		.ascii	"signed char\000"
+ 576      65642063 
+ 576      68617200 
+ 577              	.LASF14:
+ 578 01b9 6C6F6E67 		.ascii	"long double\000"
+ 578      20646F75 
+ 578      626C6500 
+ 579              	.LASF27:
+ 580 01c5 434F4D50 		.ascii	"COMP_backup\000"
+ 580      5F626163 
+ 580      6B757000 
+ 581              	.LASF22:
+ 582 01d1 434F4D50 		.ascii	"COMP_Enable\000"
+ 582      5F456E61 
+ 582      626C6500 
+ 583              	.LASF2:
+ 584 01dd 73686F72 		.ascii	"short int\000"
+ 584      7420696E 
+ 584      7400
+ 585              	.LASF13:
+ 586 01e7 72656738 		.ascii	"reg8\000"
+ 586      00
+ 587              	.LASF18:
+ 588 01ec 434F4D50 		.ascii	"COMP_RestoreConfig\000"
+ 588      5F526573 
+ 588      746F7265 
+ 588      436F6E66 
+ 588      696700
+ 589              	.LASF15:
+ 590 01ff 73697A65 		.ascii	"sizetype\000"
+ 590      74797065 
+ARM GAS  C:\Users\wj8091\AppData\Local\Temp\ccZuM4jb.s 			page 15
 
 
- 590              	.LASF15:
- 591 021e 73697A65 		.ascii	"sizetype\000"
- 591      74797065 
- 591      00
- 592              	.LASF24:
- 593 0227 47656E65 		.ascii	"Generated_Source\\PSoC5\\COMP_PM.c\000"
- 593      72617465 
- 593      645F536F 
- 593      75726365 
- 593      5C50536F 
- 594              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 590      00
+ 591              	.LASF24:
+ 592 0208 47656E65 		.ascii	"Generated_Source\\PSoC5\\COMP_PM.c\000"
+ 592      72617465 
+ 592      645F536F 
+ 592      75726365 
+ 592      5C50536F 
+ 593              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

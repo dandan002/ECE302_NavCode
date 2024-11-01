@@ -1,3 +1,3 @@
-# Component constraints for \\files\wj8091\ClusterDownloads\ECE302_NavCode-main\ECE302_NavCode-main\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch
-# Project: \\files\wj8091\ClusterDownloads\ECE302_NavCode-main\ECE302_NavCode-main\ECE302_NavProject\Design01.cydsn\Design01.cyprj
-# Date: Fri, 01 Nov 2024 05:16:47 GMT
+# Component constraints for C:\Users\wj8091\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch
+# Project: C:\Users\wj8091\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cyprj
+# Date: Fri, 01 Nov 2024 06:14:56 GMT

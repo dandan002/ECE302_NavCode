@@ -1,10 +1,10 @@
-//files/wj8091/ClusterDownloads/ECE302_NavCode-main/ECE302_NavCode-main/ECE302_NavProject/Design01.cydsn/CortexM3/ARM_GCC_541/Debug/CyBootAsmGnu.o : //files/wj8091/ClusterDownloads/ECE302_NavCode-main/ECE302_NavCode-main/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s //files/wj8091/ClusterDownloads/ECE302_NavCode-main/ECE302_NavCode-main/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu.inc //files/wj8091/ClusterDownloads/ECE302_NavCode-main/ECE302_NavCode-main/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc //files/wj8091/ClusterDownloads/ECE302_NavCode-main/ECE302_NavCode-main/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cyfittergnu.inc 
+C:/Users/wj8091/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/CortexM3/ARM_GCC_541/Debug/CyBootAsmGnu.o : C:/Users/wj8091/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s C:/Users/wj8091/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu.inc C:/Users/wj8091/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc C:/Users/wj8091/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cyfittergnu.inc 
 
-//files/wj8091/ClusterDownloads/ECE302_NavCode-main/ECE302_NavCode-main/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s : 
+C:/Users/wj8091/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s : 
 
-//files/wj8091/ClusterDownloads/ECE302_NavCode-main/ECE302_NavCode-main/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu.inc : 
+C:/Users/wj8091/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu.inc : 
 
-//files/wj8091/ClusterDownloads/ECE302_NavCode-main/ECE302_NavCode-main/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc : 
+C:/Users/wj8091/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc : 
 
-//files/wj8091/ClusterDownloads/ECE302_NavCode-main/ECE302_NavCode-main/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cyfittergnu.inc : 
+C:/Users/wj8091/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cyfittergnu.inc : 
 
