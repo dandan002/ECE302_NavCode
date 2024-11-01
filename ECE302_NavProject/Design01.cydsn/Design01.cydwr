@@ -243,9 +243,9 @@
   </Group>
   <Group key="Component">
     <Group key="v1">
-      <Data key="cy_boot" value="cy_boot_v6_0" />
+      <Data key="cy_boot" value="cy_boot_v6_10" />
       <Data key="Em_EEPROM_Dynamic" value="Em_EEPROM_Dynamic_v2_20" />
-      <Data key="LIN_Dynamic" value="LIN_Dynamic_v5_0" />
+      <Data key="LIN_Dynamic" value="LIN_Dynamic_v6_0" />
     </Group>
   </Group>
   <Data key="DataVersionKey" value="2" />
@@ -3356,14 +3356,14 @@
     <Group key="a4a42fbc-611a-4d0a-9d55-07a09ae9f92a">
       <Group key="CortexM3">
         <Data key="Assigned" value="True" />
-        <Data key="Priority" value="7" />
+        <Data key="Priority" value="0" />
         <Data key="Vector" value="-1" />
       </Group>
     </Group>
     <Group key="f7ba9783-921e-4ff1-9353-3f6677c93c46">
       <Group key="CortexM3">
         <Data key="Assigned" value="True" />
-        <Data key="Priority" value="0" />
+        <Data key="Priority" value="7" />
         <Data key="Vector" value="-1" />
       </Group>
     </Group>
@@ -3396,7 +3396,7 @@
     </Group>
     <Group key="1425177d-0d0e-4468-8bcc-e638e5509a9b">
       <Group key="0">
-        <Data key="Port Format" value="12,4" />
+        <Data key="Port Format" value="6,0" />
       </Group>
     </Group>
     <Group key="bb24f92a-b0ff-482f-b53c-e84c666ac3e0">
@@ -3416,7 +3416,7 @@
     </Group>
     <Group key="ed092b9b-d398-4703-be89-cebf998501f6">
       <Group key="0">
-        <Data key="Port Format" value="12,5" />
+        <Data key="Port Format" value="6,6" />
       </Group>
     </Group>
     <Group key="UnAssigned Pins">

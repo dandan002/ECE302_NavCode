@@ -5,14 +5,14 @@
 #define TARGET_SPEED 4.0          
 #define WHEEL_CIRCUMFERENCE 0.5   
 #define PULSES_PER_TURN 5         
-#define Kp_speed 10               
-#define Ki_speed 1.5              
+#define Kp_speed 100               
+#define Ki_speed 15            
                 
 volatile double speed = 0.0;
 uint16 old = 65535;
 uint16 new;
 uint16 elapsed;
-volatile double PWM_base = 30;
+volatile double PWM_base = 1000;
 volatile double pwm;
 double err_speed;
 double acc_err_speed = 0;
@@ -21,7 +21,7 @@ char strbuf[42];
 // Line-following constants and variables       
 #define MIDDLE_LINE 700             
 #define BLACK_THRESHOLD 50         
-#define Kp_steering 2            
+#define Kp_steering 10
 #define Ki_steering 0.5 
 #define Kd_steering 0.5 
 
@@ -80,13 +80,13 @@ CY_ISR(speed_inter) {
     acc_err_speed += err_speed;
 
     if (error_steering > 200)
-       PWM_base = 15; 
+       PWM_base = 1500; 
     
     pwm = PWM_base + Kp_speed * err_speed + Ki_speed * acc_err_speed;
-    if (pwm < 5)
-        pwm = 5;
-    if (pwm > 200)
-        pwm = 200;
+    if (pwm < 500)
+        pwm = 500;
+    if (pwm > 2500)
+        pwm = 2500;
     
     sprintf(strbuf, "%d ft/s,\r\n", (int)(speed * 1000));
     UART_PutString(strbuf);

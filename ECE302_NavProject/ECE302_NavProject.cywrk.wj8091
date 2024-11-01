@@ -137,32 +137,6 @@
 <VisibleNodeIds>
 <v>ECE302_NavProject</v>
 <v>ECE302_NavProject\Design01</v>
-<v>ECE302_NavProject\Design01\CortexM3</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP_PM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CSYNC_IN.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\HE.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\HE_ISR.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\INT_SAMPLE.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motor.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -177,7 +151,7 @@
 <v>ECE302_NavProject\Design01\PSoC 5LP Architecture TRM</v>
 <v>ECE302_NavProject\Design01\CY8C58LP Family Datasheet</v>
 <v>ECE302_NavProject\Design01\System Reference Guides</v>
-<v>ECE302_NavProject\Design01\System Reference Guides\cy_boot_v6_0</v>
+<v>ECE302_NavProject\Design01\System Reference Guides\cy_boot_v6_10</v>
 <v>ECE302_NavProject\Design01\and_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\BasicCounter_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\Comp_v2_0.pdf</v>
@@ -185,8 +159,8 @@
 <v>ECE302_NavProject\Design01\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>ECE302_NavProject\Design01\cy_constant_v1_0</v>
 <v>ECE302_NavProject\Design01\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
-<v>ECE302_NavProject\Design01\cy_isr_v1_70</v>
-<v>ECE302_NavProject\Design01\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>ECE302_NavProject\Design01\cy_isr_v1_71</v>
+<v>ECE302_NavProject\Design01\cy_isr_v1_71\cy_isr_v1_71.pdf</v>
 <v>ECE302_NavProject\Design01\cy_pins_v2_20</v>
 <v>ECE302_NavProject\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>ECE302_NavProject\Design01\cy_sync_v1_0.pdf</v>
@@ -207,7 +181,7 @@
 <v>ECE302_NavProject\Design01\PSoC 5LP Architecture TRM</v>
 <v>ECE302_NavProject\Design01\CY8C58LP Family Datasheet</v>
 <v>ECE302_NavProject\Design01\System Reference Guides</v>
-<v>ECE302_NavProject\Design01\System Reference Guides\cy_boot_v6_0</v>
+<v>ECE302_NavProject\Design01\System Reference Guides\cy_boot_v6_10</v>
 <v>ECE302_NavProject\Design01\and_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\BasicCounter_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\Comp_v2_0.pdf</v>
@@ -215,8 +189,8 @@
 <v>ECE302_NavProject\Design01\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
 <v>ECE302_NavProject\Design01\cy_constant_v1_0</v>
 <v>ECE302_NavProject\Design01\cy_constant_v1_0\cy_constant_v1_0.pdf</v>
-<v>ECE302_NavProject\Design01\cy_isr_v1_70</v>
-<v>ECE302_NavProject\Design01\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>ECE302_NavProject\Design01\cy_isr_v1_71</v>
+<v>ECE302_NavProject\Design01\cy_isr_v1_71\cy_isr_v1_71.pdf</v>
 <v>ECE302_NavProject\Design01\cy_pins_v2_20</v>
 <v>ECE302_NavProject\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>ECE302_NavProject\Design01\cy_sync_v1_0.pdf</v>
@@ -249,7 +223,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="791, 399" SelectedTabbedMdiWindow="a4674596-23b9-4100-aac5-95e283bafddb"><DocumentWindow Key="C:\Users\wj8091\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\main.c" Guid="a4674596-23b9-4100-aac5-95e283bafddb" /><DocumentWindow Key="C:\Users\wj8091\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="3af9964c-99b8-426f-9983-445a47405ea2" /><DocumentWindow Key="C:\Users\wj8091\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cydwr" Guid="8e10f032-1dc3-410d-9955-deedac397fb5" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="791, 399" SelectedTabbedMdiWindow="a4674596-23b9-4100-aac5-95e283bafddb"><DocumentWindow Key="C:\Users\wj8091\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\main.c" Guid="a4674596-23b9-4100-aac5-95e283bafddb" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="fed2c466-5f91-4845-821f-b4aefcefa1d1" /><DocumentWindow Key="C:\Users\wj8091\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="b1332196-9f32-4549-8935-134863434748" /><DocumentWindow Key="C:\Users\wj8091\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cydwr" Guid="3b6a366d-e887-4469-b126-c5d13e18c20e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
