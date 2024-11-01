@@ -36,6 +36,14 @@
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>ECE302_NavProject</v>
+<v>ECE302_NavProject\Design01</v>
+<v>ECE302_NavProject\Design01\TopDesign</v>
+<v>ECE302_NavProject\Design01\Design01.cydwr</v>
+<v>ECE302_NavProject\Design01\Design01.cydwr\Pins</v>
+<v>ECE302_NavProject\Design01\Design01.cydwr\Analog</v>
+<v>ECE302_NavProject\Design01\Design01.cydwr\Clocks</v>
+<v>ECE302_NavProject\Design01\Design01.cydwr\Interrupts</v>
 <v>ECE302_NavProject\Design01\Design01.cydwr\DMA</v>
 <v>ECE302_NavProject\Design01\Design01.cydwr\System</v>
 <v>ECE302_NavProject\Design01\Design01.cydwr\Directives</v>
@@ -75,15 +83,6 @@
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydevicegnu.inc</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydeviceiar.inc</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydevicerv.inc</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cydisabledsheets.h</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cyfitter.h</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cyfitter_cfg.c</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cyfitter_cfg.h</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cyfittergnu.inc</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cyfitteriar.inc</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -277,7 +276,17 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Design01.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="477, 569" SelectedTabbedMdiWindow="3118fc96-21fe-4b98-8ec7-012942694287"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="fed2c466-5f91-4845-821f-b4aefcefa1d1" /><DocumentWindow Key="\\Files\wj8091\ClusterDownloads\ECE302_NavCode-main\ECE302_NavCode-main\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="e2546cb2-ff58-46fb-877a-5e996a813d55" /><DocumentWindow Key="\\Files\wj8091\ClusterDownloads\ECE302_NavCode-main\ECE302_NavCode-main\ECE302_NavProject\Design01.cydsn\main.c" Guid="3118fc96-21fe-4b98-8ec7-012942694287" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

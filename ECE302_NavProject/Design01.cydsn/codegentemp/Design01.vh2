@@ -2,7 +2,7 @@
 --	Conversion of Design01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Nov 01 00:02:33 2024
+--	Fri Nov 01 00:46:52 2024
 --
 
 USE cypress.cypress.all;
@@ -1435,14 +1435,14 @@ SIGNAL \VDAC:Net_83\ : bit;
 SIGNAL \VDAC:Net_81\ : bit;
 SIGNAL \VDAC:Net_82\ : bit;
 TERMINAL \VDAC:Net_77\ : bit;
-SIGNAL \GLITCHTIMER:op_clk\ : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:or_term\ : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:samples_2\ : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:samples_1\ : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:samples_0\ : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:and_term\ : bit;
+SIGNAL \GLITCHFILTER:op_clk\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:or_term\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:samples_2\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:samples_1\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:samples_0\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:and_term\ : bit;
 SIGNAL Net_2127 : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:last_state\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:last_state\ : bit;
 SIGNAL Net_3790 : bit;
 SIGNAL Net_3863 : bit;
 SIGNAL Net_3647_7 : bit;
@@ -2125,10 +2125,10 @@ SIGNAL \SERVO_PWM:PWMUDB:pwm_i_reg\\D\ : bit;
 SIGNAL \SERVO_PWM:PWMUDB:pwm1_i_reg\\D\ : bit;
 SIGNAL \SERVO_PWM:PWMUDB:pwm2_i_reg\\D\ : bit;
 SIGNAL \SERVO_PWM:PWMUDB:tc_i_reg\\D\ : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:samples_2\\D\ : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:samples_1\\D\ : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:samples_0\\D\ : bit;
-SIGNAL \GLITCHTIMER:genblk1[0]:last_state\\D\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:samples_2\\D\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:samples_1\\D\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:samples_0\\D\ : bit;
+SIGNAL \GLITCHFILTER:genblk1[0]:last_state\\D\ : bit;
 SIGNAL Net_3647_7D : bit;
 SIGNAL Net_3647_6D : bit;
 SIGNAL Net_3647_5D : bit;
@@ -2302,23 +2302,18 @@ Net_31D <= ((not \UART:BUART:reset_reg\ and \UART:BUART:tx_state_2\)
 \SERVO_PWM:PWMUDB:dith_count_0\\D\ <= ((not \SERVO_PWM:PWMUDB:dith_count_0\ and \SERVO_PWM:PWMUDB:tc_i\)
 	OR (not \SERVO_PWM:PWMUDB:tc_i\ and \SERVO_PWM:PWMUDB:dith_count_0\));
 
-\SERVO_PWM:PWMUDB:cmp1_status\ <= ((not \SERVO_PWM:PWMUDB:prevCompare1\ and \SERVO_PWM:PWMUDB:cmp1_less\)
-	OR (not \SERVO_PWM:PWMUDB:prevCompare1\ and \SERVO_PWM:PWMUDB:cmp1_eq\));
+\SERVO_PWM:PWMUDB:cmp1_status\ <= ((not \SERVO_PWM:PWMUDB:prevCompare1\ and \SERVO_PWM:PWMUDB:cmp1_less\));
 
 \SERVO_PWM:PWMUDB:status_2\ <= ((\SERVO_PWM:PWMUDB:runmode_enable\ and \SERVO_PWM:PWMUDB:tc_i\));
 
-\SERVO_PWM:PWMUDB:pwm_i\ <= ((\SERVO_PWM:PWMUDB:runmode_enable\ and \SERVO_PWM:PWMUDB:cmp1_less\)
-	OR (\SERVO_PWM:PWMUDB:runmode_enable\ and \SERVO_PWM:PWMUDB:cmp1_eq\));
+\SERVO_PWM:PWMUDB:pwm_i\ <= ((\SERVO_PWM:PWMUDB:runmode_enable\ and \SERVO_PWM:PWMUDB:cmp1_less\));
 
-\SERVO_PWM:PWMUDB:cmp1\ <= (\SERVO_PWM:PWMUDB:cmp1_less\
-	OR \SERVO_PWM:PWMUDB:cmp1_eq\);
+\GLITCHFILTER:genblk1[0]:samples_0\\D\ <= (not \COMP:Net_1\);
 
-\GLITCHTIMER:genblk1[0]:samples_0\\D\ <= (not \COMP:Net_1\);
-
-\GLITCHTIMER:genblk1[0]:last_state\\D\ <= ((not \COMP:Net_1\ and \GLITCHTIMER:genblk1[0]:samples_2\ and \GLITCHTIMER:genblk1[0]:samples_1\ and \GLITCHTIMER:genblk1[0]:samples_0\)
-	OR (\GLITCHTIMER:genblk1[0]:samples_0\ and Net_3790)
-	OR (\GLITCHTIMER:genblk1[0]:samples_1\ and Net_3790)
-	OR (\GLITCHTIMER:genblk1[0]:samples_2\ and Net_3790)
+\GLITCHFILTER:genblk1[0]:last_state\\D\ <= ((not \COMP:Net_1\ and \GLITCHFILTER:genblk1[0]:samples_2\ and \GLITCHFILTER:genblk1[0]:samples_1\ and \GLITCHFILTER:genblk1[0]:samples_0\)
+	OR (\GLITCHFILTER:genblk1[0]:samples_0\ and Net_3790)
+	OR (\GLITCHFILTER:genblk1[0]:samples_1\ and Net_3790)
+	OR (\GLITCHFILTER:genblk1[0]:samples_2\ and Net_3790)
 	OR (not \COMP:Net_1\ and Net_3790));
 
 Net_3647_7D <= ((not Net_3647_7 and Net_3229 and Net_3647_6 and Net_3647_5 and Net_3647_4 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0)
@@ -2728,7 +2723,7 @@ Clock_1:cy_clock_v1_0
 		id=>"d3edcd05-904f-4091-bec9-211701576c09",
 		source_clock_id=>"",
 		divisor=>0,
-		period=>"100000000000",
+		period=>"1000000000",
 		is_direct=>'0',
 		is_digital=>'1')
 	PORT MAP(clock_out=>Net_333,
@@ -3839,11 +3834,11 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 		iout=>\VDAC:Net_77\);
 \VDAC:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
 	PORT MAP(noconnect=>\VDAC:Net_77\);
-\GLITCHTIMER:ClkSync\:cy_psoc3_udb_clock_enable_v1_0
+\GLITCHFILTER:ClkSync\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
 	PORT MAP(clock_in=>Net_4754,
 		enable=>one,
-		clock_out=>\GLITCHTIMER:op_clk\);
+		clock_out=>\GLITCHFILTER:op_clk\);
 \COUNTER:MODULE_10:g2:a0:g1:z1:s0:g1:u0:gs(24):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
 		y=>\COUNTER:MODULE_10:g2:a0:g1:z1:s0:g1:u0:c_24\);
@@ -4347,7 +4342,7 @@ Net_31:cy_dff
 		clk=>\SERVO_PWM:PWMUDB:ClockOutFromEnBlock\,
 		q=>\SERVO_PWM:PWMUDB:dith_count_0\);
 \SERVO_PWM:PWMUDB:prevCompare1\:cy_dff
-	PORT MAP(d=>\SERVO_PWM:PWMUDB:cmp1\,
+	PORT MAP(d=>\SERVO_PWM:PWMUDB:cmp1_less\,
 		clk=>\SERVO_PWM:PWMUDB:ClockOutFromEnBlock\,
 		q=>\SERVO_PWM:PWMUDB:prevCompare1\);
 \SERVO_PWM:PWMUDB:cmp1_status_reg\:cy_dsrff
@@ -4384,21 +4379,21 @@ Net_31:cy_dff
 	PORT MAP(d=>\SERVO_PWM:PWMUDB:status_2\,
 		clk=>\SERVO_PWM:PWMUDB:ClockOutFromEnBlock\,
 		q=>\SERVO_PWM:PWMUDB:tc_i_reg\);
-\GLITCHTIMER:genblk1[0]:samples_2\:cy_dff
-	PORT MAP(d=>\GLITCHTIMER:genblk1[0]:samples_1\,
-		clk=>\GLITCHTIMER:op_clk\,
-		q=>\GLITCHTIMER:genblk1[0]:samples_2\);
-\GLITCHTIMER:genblk1[0]:samples_1\:cy_dff
-	PORT MAP(d=>\GLITCHTIMER:genblk1[0]:samples_0\,
-		clk=>\GLITCHTIMER:op_clk\,
-		q=>\GLITCHTIMER:genblk1[0]:samples_1\);
-\GLITCHTIMER:genblk1[0]:samples_0\:cy_dff
-	PORT MAP(d=>\GLITCHTIMER:genblk1[0]:samples_0\\D\,
-		clk=>\GLITCHTIMER:op_clk\,
-		q=>\GLITCHTIMER:genblk1[0]:samples_0\);
-\GLITCHTIMER:genblk1[0]:last_state\:cy_dff
-	PORT MAP(d=>\GLITCHTIMER:genblk1[0]:last_state\\D\,
-		clk=>\GLITCHTIMER:op_clk\,
+\GLITCHFILTER:genblk1[0]:samples_2\:cy_dff
+	PORT MAP(d=>\GLITCHFILTER:genblk1[0]:samples_1\,
+		clk=>\GLITCHFILTER:op_clk\,
+		q=>\GLITCHFILTER:genblk1[0]:samples_2\);
+\GLITCHFILTER:genblk1[0]:samples_1\:cy_dff
+	PORT MAP(d=>\GLITCHFILTER:genblk1[0]:samples_0\,
+		clk=>\GLITCHFILTER:op_clk\,
+		q=>\GLITCHFILTER:genblk1[0]:samples_1\);
+\GLITCHFILTER:genblk1[0]:samples_0\:cy_dff
+	PORT MAP(d=>\GLITCHFILTER:genblk1[0]:samples_0\\D\,
+		clk=>\GLITCHFILTER:op_clk\,
+		q=>\GLITCHFILTER:genblk1[0]:samples_0\);
+\GLITCHFILTER:genblk1[0]:last_state\:cy_dff
+	PORT MAP(d=>\GLITCHFILTER:genblk1[0]:last_state\\D\,
+		clk=>\GLITCHFILTER:op_clk\,
 		q=>Net_3790);
 Net_3647_7:cy_dff
 	PORT MAP(d=>Net_3647_7D,

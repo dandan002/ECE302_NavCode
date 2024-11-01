@@ -21,41 +21,46 @@ char strbuf[42];
 // Line-following constants and variables       
 #define MIDDLE_LINE 700             
 #define BLACK_THRESHOLD 50         
-#define Kp_steering 0.25            
-#define Ki_steering 0.1 
-#define Kd_steering 0.25 
+#define Kp_steering 2            
+#define Ki_steering 0.5 
+#define Kd_steering 0.5 
 
 int error_steering = 0;
 double steeringIntegral = 0;
 double steeringDerivative = 0;
 double previousSteeringError = 0;
-double steeringOutput;
-char outputBuffer[64];
+double steeringOutput;;
 int steeringPWM;
-    
-#define PWM_MIN 60
-#define PWM_CENTER 75
-#define PWM_MAX 90
+int newSampleAvailable;
+uint16 sampledTime;
+
+#define PWM_MIN 1000
+#define PWM_CENTER 1500
+#define PWM_MAX 2000
 
 CY_ISR_PROTO(sampleISR);
-
+CY_ISR_PROTO(speedControlISR);
 
 // C Sync ISR - increments line count and signals the middle line
 CY_ISR(sampleISR) {
-    int Sampled_Time = VID_TIMER_ReadCapture();
-    error_steering = 700 - Sampled_Time;
-    steeringIntegral += error_steering;
+    // Read the capture value from the sample timer
+    sampledTime = VID_TIMER_ReadCapture();
+    // Calculate steering error
+    error_steering = MIDDLE_LINE - sampledTime;
+
+    // steering calculations
     steeringDerivative = error_steering - previousSteeringError;
     previousSteeringError = error_steering;
+    steeringOutput = PWM_CENTER + Kp_steering * error_steering;
     
-    steeringOutput = PWM_CENTER + Kp_steering * error_steering + Ki_steering * steeringIntegral + Kd_steering * steeringDerivative;
-    steeringPWM = (uint8)steeringOutput;
-    
-    // Limit steeringPWM within the min and max bounds
+    // limit steering PWM within the min and max bounds
     if (steeringPWM < PWM_MIN) steeringPWM = PWM_MIN;
     if (steeringPWM > PWM_MAX) steeringPWM = PWM_MAX;
     
-  SERVO_PWM_WriteCompare(steeringPWM);
+    steeringPWM = (uint16)steeringOutput;
+    
+    // update servo PWM
+    SERVO_PWM_WriteCompare(steeringPWM);
 }
 
 
