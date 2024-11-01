@@ -250,6 +250,10 @@
   </Group>
   <Data key="DataVersionKey" value="2" />
   <Group key="DWRInstGuidMapping">
+    <Group key="Interrupt">
+      <Data key="a4a42fbc-611a-4d0a-9d55-07a09ae9f92a" value="INT_SAMPLE" />
+      <Data key="f7ba9783-921e-4ff1-9353-3f6677c93c46" value="HE_ISR" />
+    </Group>
     <Group key="Pin">
       <Data key="1ef94345-43ef-4f2b-8f02-12e8ff6fb2c5" value="VIDEO" />
       <Data key="5d474d0b-abf3-4d32-b1f9-97bf836e60d0/16a808f6-2e13-45b9-bce0-b001c8655113" value="ADC_SAR_1_Bypass" />
@@ -3345,6 +3349,22 @@
       </Group>
       <Group key="1024">
         <Data key="LevelKey" value="00" />
+      </Group>
+    </Group>
+  </Group>
+  <Group key="Interrupt">
+    <Group key="a4a42fbc-611a-4d0a-9d55-07a09ae9f92a">
+      <Group key="CortexM3">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="0" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="f7ba9783-921e-4ff1-9353-3f6677c93c46">
+      <Group key="CortexM3">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="0" />
+        <Data key="Vector" value="-1" />
       </Group>
     </Group>
   </Group>

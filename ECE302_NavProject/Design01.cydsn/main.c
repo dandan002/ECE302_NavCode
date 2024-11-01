@@ -29,8 +29,8 @@ double error_steering = 0;
 double steeringIntegral = 0;
 double steeringDerivative = 0;
 double previousSteeringError = 0;
-double steeringOutput;;
-int steeringPWM;
+double steeringOutput = 0;
+int steeringPWM = 0;
 double sampledTime;
 
 #define PWM_MIN 1000
@@ -41,7 +41,7 @@ double sampledTime;
 char str_buf [32];
 
 // C Sync ISR - increments line count and signals the middle line
-CY_ISR(sampleISR) {
+CY_ISR(steer_inter) {
     
     UART_PutString("\r\n NAV INTR");
     // Read the capture value from the sample timer
@@ -55,20 +55,20 @@ CY_ISR(sampleISR) {
     steeringOutput = PWM_CENTER + (Kp_steering * error_steering);
     
     sprintf(str_buf, "\r\n time:  %f", sampledTime);
-    UART_PutString(strbuf);
+    UART_PutString(str_buf);
+    
+    steeringPWM = steeringOutput;
     
     // limit steering PWM within the min and max bounds
     if (steeringPWM < PWM_MIN) steeringPWM = PWM_MIN;
     if (steeringPWM > PWM_MAX) steeringPWM = PWM_MAX;
-    
-    steeringPWM = steeringOutput;
     
     // update servo PWM
     SERVO_PWM_WriteCompare(steeringPWM);
 }
 
 
-CY_ISR(inter) {
+CY_ISR(speed_inter) {
     new = TIMER_ReadCapture();
     if (new <= old)
         elapsed = old - new;
@@ -90,7 +90,7 @@ CY_ISR(inter) {
     
     sprintf(strbuf, "%d ft/s,\r\n", (int)(speed * 1000));
     UART_PutString(strbuf);
-    PWM_WriteCompare((uint8)pwm);
+    PWM_WriteCompare((uint16)pwm);
     TIMER_ReadStatusRegister();
     old = new;
 }
@@ -103,7 +103,6 @@ int main(void) {
     // Speed control init
     PWM_Start();
     TIMER_Start();
-    HE_ISR_Start();
     UART_Start();
 
     // Steering control init
@@ -111,15 +110,15 @@ int main(void) {
     SERVO_PWM_Start();
     VDAC_Start();
     COMP_Start();
-    INT_SAMPLE_Start();
     
-    INT_SAMPLE_SetVector(sampleISR);
-    HE_ISR_SetVector(inter);
+    // Interrupts
+    INT_SAMPLE_Start();
+    INT_SAMPLE_SetVector(steer_inter);
+    HE_ISR_Start();
+    HE_ISR_SetVector(speed_inter);
     UART_PutString("Test");
 
    // Main loop
     for (;;) {
     }
-    
-    
 }
