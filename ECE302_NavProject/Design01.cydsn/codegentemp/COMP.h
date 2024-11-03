@@ -94,8 +94,8 @@ void COMP_Wakeup(void)                    ;
 **************************************/
 
 #define COMP_DEFAULT_SPEED       (1u) 
-#define COMP_DEFAULT_HYSTERESIS  (0u)
-#define COMP_DEFAULT_POLARITY    (1u)
+#define COMP_DEFAULT_HYSTERESIS  (1u)
+#define COMP_DEFAULT_POLARITY    (0u)
 #define COMP_DEFAULT_BYPASS_SYNC (1u)
 #define COMP_DEFAULT_PWRDWN_OVRD (0u)
 

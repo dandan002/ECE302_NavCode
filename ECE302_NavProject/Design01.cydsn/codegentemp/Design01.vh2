@@ -2,7 +2,7 @@
 --	Conversion of Design01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Nov 01 15:40:59 2024
+--	Sun Nov 03 18:12:43 2024
 --
 
 USE cypress.cypress.all;
@@ -706,6 +706,7 @@ SIGNAL tmpOE__HE_net_0 : bit;
 SIGNAL tmpIO_0__HE_net_0 : bit;
 TERMINAL tmpSIOVREF__HE_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__HE_net_0 : bit;
+SIGNAL Net_5917 : bit;
 SIGNAL tmpOE__Tx_1_net_0 : bit;
 SIGNAL Net_5942 : bit;
 SIGNAL tmpFB_0__Tx_1_net_0 : bit;
@@ -1065,14 +1066,14 @@ TERMINAL Net_1582 : bit;
 SIGNAL tmpIO_0__RAW_VIDEO_net_0 : bit;
 TERMINAL tmpSIOVREF__RAW_VIDEO_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__RAW_VIDEO_net_0 : bit;
-SIGNAL Net_4754 : bit;
+SIGNAL Net_5947 : bit;
 SIGNAL tmpOE__CSYNC_IN_net_0 : bit;
-SIGNAL Net_5925 : bit;
+SIGNAL Net_5948 : bit;
 SIGNAL tmpIO_0__CSYNC_IN_net_0 : bit;
 TERMINAL tmpSIOVREF__CSYNC_IN_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__CSYNC_IN_net_0 : bit;
 SIGNAL tmpOE__VSYNC_IN_net_0 : bit;
-SIGNAL Net_3229 : bit;
+SIGNAL Net_5951 : bit;
 SIGNAL tmpIO_0__VSYNC_IN_net_0 : bit;
 TERMINAL tmpSIOVREF__VSYNC_IN_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__VSYNC_IN_net_0 : bit;
@@ -1493,7 +1494,6 @@ SIGNAL \SERVO_PWM:PWMUDB:MODULE_9:g2:a0:g1:z1:s0:g1:u0:c_2\ : bit;
 SIGNAL \SERVO_PWM:PWMUDB:MODULE_9:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
 SIGNAL \SERVO_PWM:PWMUDB:MODULE_9:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
 SIGNAL \SERVO_PWM:PWMUDB:MODULE_9:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
-SIGNAL Net_5917 : bit;
 SIGNAL Net_5923 : bit;
 SIGNAL \SERVO_PWM:Net_113\ : bit;
 SIGNAL \SERVO_PWM:Net_107\ : bit;
@@ -1511,7 +1511,7 @@ SIGNAL \GLITCHFILTER:op_clk\ : bit;
 SIGNAL \GLITCHFILTER:state_0\ : bit;
 SIGNAL Net_2127 : bit;
 SIGNAL \GLITCHFILTER:counter_done_0\ : bit;
-SIGNAL Net_3790 : bit;
+SIGNAL Net_3980 : bit;
 SIGNAL \GLITCHFILTER:genblk2:Counter0:DP:ce0\ : bit;
 ATTRIBUTE port_state_att of \GLITCHFILTER:genblk2:Counter0:DP:ce0\:SIGNAL IS 2;
 SIGNAL \GLITCHFILTER:genblk2:Counter0:DP:cl0\ : bit;
@@ -1574,7 +1574,6 @@ SIGNAL \GLITCHFILTER:genblk2:Counter0:DP:f1_bus_stat_reg\ : bit;
 ATTRIBUTE port_state_att of \GLITCHFILTER:genblk2:Counter0:DP:f1_bus_stat_reg\:SIGNAL IS 2;
 SIGNAL \GLITCHFILTER:genblk2:Counter0:DP:f1_blk_stat_reg\ : bit;
 ATTRIBUTE port_state_att of \GLITCHFILTER:genblk2:Counter0:DP:f1_blk_stat_reg\:SIGNAL IS 2;
-SIGNAL Net_3863 : bit;
 SIGNAL Net_3647_7 : bit;
 SIGNAL Net_3041 : bit;
 SIGNAL Net_3039 : bit;
@@ -1799,8 +1798,8 @@ SIGNAL Net_3649_3 : bit;
 SIGNAL Net_3649_2 : bit;
 SIGNAL Net_3649_1 : bit;
 SIGNAL Net_3649_0 : bit;
-SIGNAL Net_3980 : bit;
-SIGNAL Net_3862 : bit;
+SIGNAL Net_5959 : bit;
+ATTRIBUTE soft of Net_5959:SIGNAL IS '1';
 SIGNAL \VID_TIMER:Net_260\ : bit;
 SIGNAL Net_4080 : bit;
 SIGNAL \VID_TIMER:Net_55\ : bit;
@@ -2445,92 +2444,87 @@ Net_5945D <= ((not \UART:BUART:reset_reg\ and \UART:BUART:tx_state_2\)
 
 \SERVO_PWM:PWMUDB:pwm_i\ <= ((\SERVO_PWM:PWMUDB:runmode_enable\ and \SERVO_PWM:PWMUDB:cmp1_less\));
 
-Net_2152 <= (not \COMP:Net_1\);
+\GLITCHFILTER:state_0\\D\ <= ((not \GLITCHFILTER:counter_done_0\ and Net_3980)
+	OR (Net_2152 and \GLITCHFILTER:counter_done_0\));
 
-\GLITCHFILTER:state_0\\D\ <= ((not \GLITCHFILTER:counter_done_0\ and Net_3790)
-	OR (not \COMP:Net_1\ and \GLITCHFILTER:counter_done_0\));
+Net_3647_7D <= ((not Net_3647_7 and Net_5951 and Net_3647_6 and Net_3647_5 and Net_3647_4 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0)
+	OR (not Net_3647_0 and Net_5951 and Net_3647_7)
+	OR (not Net_3647_1 and Net_5951 and Net_3647_7)
+	OR (not Net_3647_2 and Net_5951 and Net_3647_7)
+	OR (not Net_3647_3 and Net_5951 and Net_3647_7)
+	OR (not Net_3647_4 and Net_5951 and Net_3647_7)
+	OR (not Net_3647_5 and Net_5951 and Net_3647_7)
+	OR (not Net_3647_6 and Net_5951 and Net_3647_7));
 
-Net_3647_7D <= ((not Net_3647_7 and Net_3229 and Net_3647_6 and Net_3647_5 and Net_3647_4 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0)
-	OR (not Net_3647_0 and Net_3229 and Net_3647_7)
-	OR (not Net_3647_1 and Net_3229 and Net_3647_7)
-	OR (not Net_3647_2 and Net_3229 and Net_3647_7)
-	OR (not Net_3647_3 and Net_3229 and Net_3647_7)
-	OR (not Net_3647_4 and Net_3229 and Net_3647_7)
-	OR (not Net_3647_5 and Net_3229 and Net_3647_7)
-	OR (not Net_3647_6 and Net_3229 and Net_3647_7));
+Net_3647_6D <= ((not Net_3647_6 and Net_5951 and Net_3647_5 and Net_3647_4 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0)
+	OR (not Net_3647_0 and Net_5951 and Net_3647_6)
+	OR (not Net_3647_1 and Net_5951 and Net_3647_6)
+	OR (not Net_3647_2 and Net_5951 and Net_3647_6)
+	OR (not Net_3647_3 and Net_5951 and Net_3647_6)
+	OR (not Net_3647_4 and Net_5951 and Net_3647_6)
+	OR (not Net_3647_5 and Net_5951 and Net_3647_6));
 
-Net_3647_6D <= ((not Net_3647_6 and Net_3229 and Net_3647_5 and Net_3647_4 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0)
-	OR (not Net_3647_0 and Net_3229 and Net_3647_6)
-	OR (not Net_3647_1 and Net_3229 and Net_3647_6)
-	OR (not Net_3647_2 and Net_3229 and Net_3647_6)
-	OR (not Net_3647_3 and Net_3229 and Net_3647_6)
-	OR (not Net_3647_4 and Net_3229 and Net_3647_6)
-	OR (not Net_3647_5 and Net_3229 and Net_3647_6));
+Net_3647_5D <= ((not Net_3647_5 and Net_5951 and Net_3647_4 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0)
+	OR (not Net_3647_0 and Net_5951 and Net_3647_5)
+	OR (not Net_3647_1 and Net_5951 and Net_3647_5)
+	OR (not Net_3647_2 and Net_5951 and Net_3647_5)
+	OR (not Net_3647_3 and Net_5951 and Net_3647_5)
+	OR (not Net_3647_4 and Net_5951 and Net_3647_5));
 
-Net_3647_5D <= ((not Net_3647_5 and Net_3229 and Net_3647_4 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0)
-	OR (not Net_3647_0 and Net_3229 and Net_3647_5)
-	OR (not Net_3647_1 and Net_3229 and Net_3647_5)
-	OR (not Net_3647_2 and Net_3229 and Net_3647_5)
-	OR (not Net_3647_3 and Net_3229 and Net_3647_5)
-	OR (not Net_3647_4 and Net_3229 and Net_3647_5));
+Net_3647_4D <= ((not Net_3647_4 and Net_5951 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0)
+	OR (not Net_3647_0 and Net_5951 and Net_3647_4)
+	OR (not Net_3647_1 and Net_5951 and Net_3647_4)
+	OR (not Net_3647_2 and Net_5951 and Net_3647_4)
+	OR (not Net_3647_3 and Net_5951 and Net_3647_4));
 
-Net_3647_4D <= ((not Net_3647_4 and Net_3229 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0)
-	OR (not Net_3647_0 and Net_3229 and Net_3647_4)
-	OR (not Net_3647_1 and Net_3229 and Net_3647_4)
-	OR (not Net_3647_2 and Net_3229 and Net_3647_4)
-	OR (not Net_3647_3 and Net_3229 and Net_3647_4));
+Net_3647_3D <= ((not Net_3647_3 and Net_5951 and Net_3647_2 and Net_3647_1 and Net_3647_0)
+	OR (not Net_3647_0 and Net_5951 and Net_3647_3)
+	OR (not Net_3647_1 and Net_5951 and Net_3647_3)
+	OR (not Net_3647_2 and Net_5951 and Net_3647_3));
 
-Net_3647_3D <= ((not Net_3647_3 and Net_3229 and Net_3647_2 and Net_3647_1 and Net_3647_0)
-	OR (not Net_3647_0 and Net_3229 and Net_3647_3)
-	OR (not Net_3647_1 and Net_3229 and Net_3647_3)
-	OR (not Net_3647_2 and Net_3229 and Net_3647_3));
+Net_3647_2D <= ((not Net_3647_2 and Net_5951 and Net_3647_1 and Net_3647_0)
+	OR (not Net_3647_0 and Net_5951 and Net_3647_2)
+	OR (not Net_3647_1 and Net_5951 and Net_3647_2));
 
-Net_3647_2D <= ((not Net_3647_2 and Net_3229 and Net_3647_1 and Net_3647_0)
-	OR (not Net_3647_0 and Net_3229 and Net_3647_2)
-	OR (not Net_3647_1 and Net_3229 and Net_3647_2));
+Net_3647_1D <= ((not Net_3647_0 and Net_5951 and Net_3647_1)
+	OR (not Net_3647_1 and Net_5951 and Net_3647_0));
 
-Net_3647_1D <= ((not Net_3647_0 and Net_3229 and Net_3647_1)
-	OR (not Net_3647_1 and Net_3229 and Net_3647_0));
-
-Net_3647_0D <= ((not Net_3647_0 and Net_3229));
+Net_3647_0D <= ((not Net_3647_0 and Net_5951));
 
 \COUNTER:MODULE_10:g2:a0:g1:z1:s0:g1:u0:b_8\ <= ((Net_3647_7 and Net_3647_6 and Net_3647_5 and Net_3647_4 and Net_3647_3 and Net_3647_2 and Net_3647_1 and Net_3647_0));
 
-Net_3980 <= ((not Net_3647_7 and not Net_3647_4 and not Net_3647_3 and not Net_3647_1 and not Net_3647_0 and Net_3790 and Net_3647_6 and Net_3647_5 and Net_3647_2));
+Net_5959 <= (Net_3647_0
+	OR Net_3647_1
+	OR not Net_3647_2
+	OR Net_3647_3
+	OR Net_3647_4
+	OR not Net_3647_5
+	OR not Net_3647_6
+	OR Net_3647_7);
 
-Net_3863 <= (not Net_3862);
+\VID_TIMER:TimerUDB:fifo_load_polarized\ <= ((not \VID_TIMER:TimerUDB:capture_last\ and Net_3980));
 
-\VID_TIMER:TimerUDB:fifo_load_polarized\ <= ((Net_3647_0 and \VID_TIMER:TimerUDB:capture_last\)
-	OR (Net_3647_1 and \VID_TIMER:TimerUDB:capture_last\)
-	OR (not Net_3647_2 and \VID_TIMER:TimerUDB:capture_last\)
-	OR (Net_3647_3 and \VID_TIMER:TimerUDB:capture_last\)
-	OR (Net_3647_4 and \VID_TIMER:TimerUDB:capture_last\)
-	OR (not Net_3647_5 and \VID_TIMER:TimerUDB:capture_last\)
-	OR (not Net_3647_6 and \VID_TIMER:TimerUDB:capture_last\)
-	OR (Net_3647_7 and \VID_TIMER:TimerUDB:capture_last\)
-	OR (not Net_3790 and \VID_TIMER:TimerUDB:capture_last\));
+\VID_TIMER:TimerUDB:tmp_fifo_load\\D\ <= ((not Net_5959 and not \VID_TIMER:TimerUDB:cntr_load\ and not \VID_TIMER:TimerUDB:count_6\ and not \VID_TIMER:TimerUDB:count_5\ and not \VID_TIMER:TimerUDB:count_4\ and not \VID_TIMER:TimerUDB:count_3\ and not \VID_TIMER:TimerUDB:count_2\ and not \VID_TIMER:TimerUDB:count_1\ and \VID_TIMER:TimerUDB:count_0\));
 
-\VID_TIMER:TimerUDB:tmp_fifo_load\\D\ <= ((not \VID_TIMER:TimerUDB:cntr_load\ and not \VID_TIMER:TimerUDB:count_6\ and not \VID_TIMER:TimerUDB:count_5\ and not \VID_TIMER:TimerUDB:count_4\ and not \VID_TIMER:TimerUDB:count_3\ and not \VID_TIMER:TimerUDB:count_2\ and not \VID_TIMER:TimerUDB:count_1\ and Net_3862 and \VID_TIMER:TimerUDB:count_0\));
-
-\VID_TIMER:TimerUDB:cntr_load\\D\ <= ((not \VID_TIMER:TimerUDB:count_6\ and not \VID_TIMER:TimerUDB:count_5\ and not \VID_TIMER:TimerUDB:count_4\ and not \VID_TIMER:TimerUDB:count_3\ and not \VID_TIMER:TimerUDB:count_2\ and not \VID_TIMER:TimerUDB:count_1\ and Net_3862 and \VID_TIMER:TimerUDB:count_0\));
+\VID_TIMER:TimerUDB:cntr_load\\D\ <= ((not Net_5959 and not \VID_TIMER:TimerUDB:count_6\ and not \VID_TIMER:TimerUDB:count_5\ and not \VID_TIMER:TimerUDB:count_4\ and not \VID_TIMER:TimerUDB:count_3\ and not \VID_TIMER:TimerUDB:count_2\ and not \VID_TIMER:TimerUDB:count_1\ and \VID_TIMER:TimerUDB:count_0\));
 
 \VID_TIMER:TimerUDB:status_tc\ <= ((\VID_TIMER:TimerUDB:control_7\ and \VID_TIMER:TimerUDB:per_zero\));
 
-\VID_TIMER:TimerUDB:int_capt_count_1\\D\ <= ((not \VID_TIMER:TimerUDB:control_0\ and not \VID_TIMER:TimerUDB:int_capt_count_1\ and Net_3862 and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_0\)
-	OR (not \VID_TIMER:TimerUDB:int_capt_count_1\ and Net_3862 and \VID_TIMER:TimerUDB:control_1\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_0\)
-	OR (not \VID_TIMER:TimerUDB:int_capt_count_0\ and Net_3862 and \VID_TIMER:TimerUDB:control_0\ and \VID_TIMER:TimerUDB:int_capt_count_1\)
-	OR (not \VID_TIMER:TimerUDB:control_1\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and Net_3862 and \VID_TIMER:TimerUDB:int_capt_count_1\)
-	OR (not \VID_TIMER:TimerUDB:tmp_fifo_load\ and Net_3862 and \VID_TIMER:TimerUDB:int_capt_count_1\));
+\VID_TIMER:TimerUDB:int_capt_count_1\\D\ <= ((not Net_5959 and not \VID_TIMER:TimerUDB:control_0\ and not \VID_TIMER:TimerUDB:int_capt_count_1\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_0\)
+	OR (not Net_5959 and not \VID_TIMER:TimerUDB:int_capt_count_1\ and \VID_TIMER:TimerUDB:control_1\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_0\)
+	OR (not Net_5959 and not \VID_TIMER:TimerUDB:int_capt_count_0\ and \VID_TIMER:TimerUDB:control_0\ and \VID_TIMER:TimerUDB:int_capt_count_1\)
+	OR (not Net_5959 and not \VID_TIMER:TimerUDB:control_1\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and \VID_TIMER:TimerUDB:int_capt_count_1\)
+	OR (not Net_5959 and not \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_1\));
 
-\VID_TIMER:TimerUDB:int_capt_count_0\\D\ <= ((not \VID_TIMER:TimerUDB:int_capt_count_1\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and Net_3862 and \VID_TIMER:TimerUDB:control_1\ and \VID_TIMER:TimerUDB:tmp_fifo_load\)
-	OR (not \VID_TIMER:TimerUDB:control_1\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and Net_3862 and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_1\)
-	OR (not \VID_TIMER:TimerUDB:tmp_fifo_load\ and Net_3862 and \VID_TIMER:TimerUDB:int_capt_count_0\)
-	OR (not \VID_TIMER:TimerUDB:int_capt_count_0\ and Net_3862 and \VID_TIMER:TimerUDB:control_0\ and \VID_TIMER:TimerUDB:tmp_fifo_load\));
+\VID_TIMER:TimerUDB:int_capt_count_0\\D\ <= ((not Net_5959 and not \VID_TIMER:TimerUDB:int_capt_count_1\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and \VID_TIMER:TimerUDB:control_1\ and \VID_TIMER:TimerUDB:tmp_fifo_load\)
+	OR (not Net_5959 and not \VID_TIMER:TimerUDB:control_1\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_1\)
+	OR (not Net_5959 and not \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_0\)
+	OR (not Net_5959 and not \VID_TIMER:TimerUDB:int_capt_count_0\ and \VID_TIMER:TimerUDB:control_0\ and \VID_TIMER:TimerUDB:tmp_fifo_load\));
 
-\VID_TIMER:TimerUDB:capt_int_temp\\D\ <= ((not \VID_TIMER:TimerUDB:control_1\ and not \VID_TIMER:TimerUDB:control_0\ and not \VID_TIMER:TimerUDB:int_capt_count_1\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and Net_3862 and \VID_TIMER:TimerUDB:tmp_fifo_load\)
-	OR (not \VID_TIMER:TimerUDB:control_0\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and Net_3862 and \VID_TIMER:TimerUDB:control_1\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_1\)
-	OR (not \VID_TIMER:TimerUDB:control_1\ and not \VID_TIMER:TimerUDB:int_capt_count_1\ and Net_3862 and \VID_TIMER:TimerUDB:control_0\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_0\)
-	OR (Net_3862 and \VID_TIMER:TimerUDB:control_1\ and \VID_TIMER:TimerUDB:control_0\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_1\ and \VID_TIMER:TimerUDB:int_capt_count_0\));
+\VID_TIMER:TimerUDB:capt_int_temp\\D\ <= ((not Net_5959 and not \VID_TIMER:TimerUDB:control_1\ and not \VID_TIMER:TimerUDB:control_0\ and not \VID_TIMER:TimerUDB:int_capt_count_1\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and \VID_TIMER:TimerUDB:tmp_fifo_load\)
+	OR (not Net_5959 and not \VID_TIMER:TimerUDB:control_0\ and not \VID_TIMER:TimerUDB:int_capt_count_0\ and \VID_TIMER:TimerUDB:control_1\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_1\)
+	OR (not Net_5959 and not \VID_TIMER:TimerUDB:control_1\ and not \VID_TIMER:TimerUDB:int_capt_count_1\ and \VID_TIMER:TimerUDB:control_0\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_0\)
+	OR (not Net_5959 and \VID_TIMER:TimerUDB:control_1\ and \VID_TIMER:TimerUDB:control_0\ and \VID_TIMER:TimerUDB:tmp_fifo_load\ and \VID_TIMER:TimerUDB:int_capt_count_1\ and \VID_TIMER:TimerUDB:int_capt_count_0\));
 
 \MODULE_13:g1:a0:gx:u0:lt_7\ <= ((not Net_3647_7 and not Net_3647_6));
 
@@ -2572,7 +2566,7 @@ Net_3863 <= (not Net_3862);
 		clock=>\TIMER:TimerUDB:ClockOutFromEnBlock\,
 		status=>(zero, zero, zero, \TIMER:TimerUDB:status_3\,
 			\TIMER:TimerUDB:status_2\, \TIMER:TimerUDB:capt_int_temp\, \TIMER:TimerUDB:status_tc\),
-		interrupt=>Net_2766);
+		interrupt=>\TIMER:Net_55\);
 \TIMER:TimerUDB:sT16:timerdp:u0\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000000001000000000000000100000001000000010000000000000010000000000000001000000000000000100000000000000010000000000000001000000011111111000000001111111111111111000000000000000000000001000000000000000000011000",
 		d0_init=>"00000000",
@@ -3103,7 +3097,7 @@ HE:cy_psoc3_pins_v1_10
 HE_ISR:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_2766);
+	PORT MAP(int_signal=>Net_5917);
 Tx_1:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"ed092b9b-d398-4703-be89-cebf998501f6",
 		drive_mode=>"110",
@@ -3697,7 +3691,7 @@ Clock_2:cy_clock_v1_0
 		period=>"41666666.6666667",
 		is_direct=>'0',
 		is_digital=>'1')
-	PORT MAP(clock_out=>Net_4754,
+	PORT MAP(clock_out=>Net_5947,
 		dig_domain_out=>open);
 CSYNC_IN:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"d8e2bb6a-063c-4e2f-a56e-4211dfd44ea5",
@@ -3757,7 +3751,7 @@ CSYNC_IN:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>Net_5925,
+		fb=>Net_5948,
 		analog=>(open),
 		io=>(tmpIO_0__CSYNC_IN_net_0),
 		siovref=>(tmpSIOVREF__CSYNC_IN_net_0),
@@ -3827,7 +3821,7 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>Net_3229,
+		fb=>Net_5951,
 		analog=>(open),
 		io=>(tmpIO_0__VSYNC_IN_net_0),
 		siovref=>(tmpSIOVREF__VSYNC_IN_net_0),
@@ -3862,7 +3856,7 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 		clock=>\SERVO_PWM:PWMUDB:ClockOutFromEnBlock\,
 		status=>(zero, \SERVO_PWM:PWMUDB:status_5\, zero, \SERVO_PWM:PWMUDB:status_3\,
 			\SERVO_PWM:PWMUDB:status_2\, \SERVO_PWM:PWMUDB:status_1\, \SERVO_PWM:PWMUDB:status_0\),
-		interrupt=>\SERVO_PWM:Net_55\);
+		interrupt=>Net_5917);
 \SERVO_PWM:PWMUDB:sP16:pwmdp:u0\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000",
 		d0_init=>"00000000",
@@ -4050,7 +4044,7 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 		vminus=>Net_1594,
 		clock=>zero,
 		clk_udb=>zero,
-		cmpout=>\COMP:Net_1\);
+		cmpout=>Net_2152);
 \VDAC:viDAC8\:cy_psoc3_vidac8_v1_0
 	GENERIC MAP(cy_registers=>"",
 		reg_data=>'0',
@@ -4068,7 +4062,7 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 	PORT MAP(noconnect=>\VDAC:Net_77\);
 \GLITCHFILTER:ClkSync\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_4754,
+	PORT MAP(clock_in=>Net_5947,
 		enable=>one,
 		clock_out=>\GLITCHFILTER:op_clk\);
 \GLITCHFILTER:genblk2:Counter0:DP:u0\:cy_psoc3_dp
@@ -4095,7 +4089,7 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 		f1_blk_sync=>'1')
 	PORT MAP(reset=>zero,
 		clk=>\GLITCHFILTER:op_clk\,
-		cs_addr=>(zero, Net_2152, Net_3790),
+		cs_addr=>(zero, Net_2152, Net_3980),
 		route_si=>zero,
 		route_ci=>zero,
 		f0_load=>zero,
@@ -4168,12 +4162,12 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 		y=>\COUNTER:MODULE_10:g2:a0:g1:z1:s0:g1:u0:c_8\);
 \VID_TIMER:TimerUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_4754,
+	PORT MAP(clock_in=>Net_5947,
 		enable=>one,
 		clock_out=>\VID_TIMER:TimerUDB:ClockOutFromEnBlock\);
 \VID_TIMER:TimerUDB:sCTRLReg:SyncCtl:cy_psoc3_udb_Ctl_Clk_Sync\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_4754,
+	PORT MAP(clock_in=>Net_5947,
 		enable=>one,
 		clock_out=>\VID_TIMER:TimerUDB:Clk_Ctl_i\);
 \VID_TIMER:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\:cy_psoc3_control
@@ -4193,7 +4187,7 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 		cy_route_en=>'1',
 		cy_alt_mode=>'0')
 	PORT MAP(clock=>\VID_TIMER:TimerUDB:ClockOutFromEnBlock\,
-		reset=>Net_3863,
+		reset=>Net_5959,
 		load=>\VID_TIMER:TimerUDB:cntr_load\,
 		enable=>\VID_TIMER:TimerUDB:fifo_load_polarized\,
 		count=>(\VID_TIMER:TimerUDB:count_6\, \VID_TIMER:TimerUDB:count_5\, \VID_TIMER:TimerUDB:count_4\, \VID_TIMER:TimerUDB:count_3\,
@@ -4203,7 +4197,7 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 	GENERIC MAP(cy_force_order=>'1',
 		cy_md_select=>"0000011",
 		cy_int_mask=>"1111111")
-	PORT MAP(reset=>Net_3863,
+	PORT MAP(reset=>Net_5959,
 		clock=>\VID_TIMER:TimerUDB:ClockOutFromEnBlock\,
 		status=>(zero, zero, zero, \VID_TIMER:TimerUDB:status_3\,
 			\VID_TIMER:TimerUDB:status_2\, \VID_TIMER:TimerUDB:capt_int_temp\, \VID_TIMER:TimerUDB:status_tc\),
@@ -4232,7 +4226,7 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 		f1_blk_sync=>'1')
 	PORT MAP(reset=>zero,
 		clk=>\VID_TIMER:TimerUDB:ClockOutFromEnBlock\,
-		cs_addr=>(Net_3863, \VID_TIMER:TimerUDB:control_7\, \VID_TIMER:TimerUDB:per_zero\),
+		cs_addr=>(Net_5959, \VID_TIMER:TimerUDB:control_7\, \VID_TIMER:TimerUDB:per_zero\),
 		route_si=>zero,
 		route_ci=>zero,
 		f0_load=>\VID_TIMER:TimerUDB:tmp_fifo_load\,
@@ -4318,7 +4312,7 @@ VSYNC_IN:cy_psoc3_pins_v1_10
 		f1_blk_sync=>'1')
 	PORT MAP(reset=>zero,
 		clk=>\VID_TIMER:TimerUDB:ClockOutFromEnBlock\,
-		cs_addr=>(Net_3863, \VID_TIMER:TimerUDB:control_7\, \VID_TIMER:TimerUDB:per_zero\),
+		cs_addr=>(Net_5959, \VID_TIMER:TimerUDB:control_7\, \VID_TIMER:TimerUDB:per_zero\),
 		route_si=>zero,
 		route_ci=>zero,
 		f0_load=>\VID_TIMER:TimerUDB:tmp_fifo_load\,
@@ -4384,10 +4378,6 @@ INT_SAMPLE:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
 	PORT MAP(int_signal=>Net_4080);
-\SYNC:genblk1[0]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_4754,
-		sc_in=>Net_5925,
-		sc_out=>Net_3862);
 \MODULE_13:g1:a0:gx:u0:gne(2):c4:c6:u1\:cy_buf
 	PORT MAP(x=>\MODULE_13:g1:a0:gx:u0:lt_7\,
 		y=>\MODULE_13:g1:a0:gx:u0:lti_2\);
@@ -4713,38 +4703,38 @@ Net_5945:cy_dff
 \GLITCHFILTER:state_0\:cy_dff
 	PORT MAP(d=>\GLITCHFILTER:state_0\\D\,
 		clk=>\GLITCHFILTER:op_clk\,
-		q=>Net_3790);
+		q=>Net_3980);
 Net_3647_7:cy_dff
 	PORT MAP(d=>Net_3647_7D,
-		clk=>Net_3863,
+		clk=>Net_5948,
 		q=>Net_3647_7);
 Net_3647_6:cy_dff
 	PORT MAP(d=>Net_3647_6D,
-		clk=>Net_3863,
+		clk=>Net_5948,
 		q=>Net_3647_6);
 Net_3647_5:cy_dff
 	PORT MAP(d=>Net_3647_5D,
-		clk=>Net_3863,
+		clk=>Net_5948,
 		q=>Net_3647_5);
 Net_3647_4:cy_dff
 	PORT MAP(d=>Net_3647_4D,
-		clk=>Net_3863,
+		clk=>Net_5948,
 		q=>Net_3647_4);
 Net_3647_3:cy_dff
 	PORT MAP(d=>Net_3647_3D,
-		clk=>Net_3863,
+		clk=>Net_5948,
 		q=>Net_3647_3);
 Net_3647_2:cy_dff
 	PORT MAP(d=>Net_3647_2D,
-		clk=>Net_3863,
+		clk=>Net_5948,
 		q=>Net_3647_2);
 Net_3647_1:cy_dff
 	PORT MAP(d=>Net_3647_1D,
-		clk=>Net_3863,
+		clk=>Net_5948,
 		q=>Net_3647_1);
 Net_3647_0:cy_dff
 	PORT MAP(d=>Net_3647_0D,
-		clk=>Net_3863,
+		clk=>Net_5948,
 		q=>Net_3647_0);
 \VID_TIMER:TimerUDB:capture_last\:cy_dff
 	PORT MAP(d=>Net_3980,

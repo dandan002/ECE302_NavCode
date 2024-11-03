@@ -19,11 +19,11 @@ double acc_err_speed = 0;
 char strbuf[42];
 
 // Line-following constants and variables       
-#define MIDDLE_LINE 700             
-#define BLACK_THRESHOLD 50         
+#define MIDDLE_LINE 700
+#define BLACK_THRESHOLD 50
 #define Kp_steering 10
-#define Ki_steering 0.5 
-#define Kd_steering 0.5 
+#define Ki_steering 0.5
+#define Kd_steering 0.5
 
 double error_steering = 0;
 double steeringIntegral = 0;
@@ -43,18 +43,20 @@ char str_buf [32];
 // C Sync ISR - increments line count and signals the middle line
 CY_ISR(steer_inter) {
     
-    UART_PutString("\r\n NAV INTR");
     // Read the capture value from the sample timer
     sampledTime =  65535 - (double) VID_TIMER_ReadCapture();
     // Calculate steering error
     error_steering = MIDDLE_LINE - sampledTime;
 
     // steering calculations
-    //steeringDerivative = error_steering - previousSteeringError;
+    // steeringDerivative = error_steering - previousSteeringError;
     // previousSteeringError = error_steering;
     steeringOutput = PWM_CENTER + (Kp_steering * error_steering);
     
+    // DEBUG
+    UART_PutString("\r\n NAV INTR");
     sprintf(str_buf, "\r\n time:  %f", sampledTime);
+    sprintf(str_buf, "\r\n steering error:  %f", error_steering);
     UART_PutString(str_buf);
     
     steeringPWM = steeringOutput;
@@ -88,7 +90,7 @@ CY_ISR(speed_inter) {
     if (pwm > 2500)
         pwm = 2500;
     
-    sprintf(strbuf, "%d ft/s,\r\n", (int)(speed * 1000));
+    //sprintf(strbuf, "%d ft/s,\r\n", (int)(speed * 1000));
     UART_PutString(strbuf);
     PWM_WriteCompare((uint16)pwm);
     TIMER_ReadStatusRegister();
