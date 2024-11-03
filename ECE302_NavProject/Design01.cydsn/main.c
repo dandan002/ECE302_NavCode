@@ -19,7 +19,7 @@ double acc_err_speed = 0;
 char strbuf[42];
 
 // Line-following constants and variables       
-#define MIDDLE_LINE 700
+#define MIDDLE_LINE 126
 #define BLACK_THRESHOLD 50
 #define Kp_steering 10
 #define Ki_steering 0.5

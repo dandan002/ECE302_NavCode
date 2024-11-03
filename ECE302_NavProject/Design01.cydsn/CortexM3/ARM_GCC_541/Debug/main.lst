@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 1
 
 
    1              		.syntax unified
@@ -54,11 +54,11 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
   19:main.c        **** char strbuf[42];
   20:main.c        **** 
   21:main.c        **** // Line-following constants and variables       
-  22:main.c        **** #define MIDDLE_LINE 700
+  22:main.c        **** #define MIDDLE_LINE 126
   23:main.c        **** #define BLACK_THRESHOLD 50
   24:main.c        **** #define Kp_steering 10
   25:main.c        **** #define Ki_steering 0.5
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 2
 
 
   26:main.c        **** #define Kd_steering 0.5
@@ -118,13 +118,13 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
   63 002a 234C     		ldr	r4, .L5+24
   64 002c C4E90001 		strd	r0, [r4]
   50:main.c        **** 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 3
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 3
 
 
   51:main.c        ****     // steering calculations
   52:main.c        ****     // steeringDerivative = error_steering - previousSteeringError;
   53:main.c        ****     // previousSteeringError = error_steering;
-  54:main.c        ****     steeringOutput = 127 + (Kp_steering * error_steering);
+  54:main.c        ****     steeringOutput = PWM_CENTER + (Kp_steering * error_steering);
   65              		.loc 1 54 0
   66 0030 0022     		movs	r2, #0
   67 0032 224B     		ldr	r3, .L5+28
@@ -135,69 +135,68 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
   72 003e FFF7FEFF 		bl	__aeabi_dadd
   73              	.LVL5:
   74 0042 C4E90201 		strd	r0, [r4, #8]
-  55:main.c        ****     //steeringOutput = PWM_CENTER + (Kp_steering * error_steering);
-  56:main.c        ****     
-  57:main.c        ****     // DEBUG
-  58:main.c        ****     UART_PutString("\r\n NAV INTR");
-  75              		.loc 1 58 0
+  55:main.c        ****     
+  56:main.c        ****     // DEBUG
+  57:main.c        ****     UART_PutString("\r\n NAV INTR");
+  75              		.loc 1 57 0
   76 0046 1E48     		ldr	r0, .L5+32
   77 0048 FFF7FEFF 		bl	UART_PutString
   78              	.LVL6:
-  59:main.c        ****     sprintf(str_buf, "\r\n time:  %f", sampledTime);
-  79              		.loc 1 59 0
+  58:main.c        ****     sprintf(str_buf, "\r\n time:  %f", sampledTime);
+  79              		.loc 1 58 0
   80 004c 1D4D     		ldr	r5, .L5+36
   81 004e D6E90023 		ldrd	r2, [r6]
   82 0052 1D49     		ldr	r1, .L5+40
   83 0054 2846     		mov	r0, r5
   84 0056 FFF7FEFF 		bl	sprintf
   85              	.LVL7:
-  60:main.c        ****     sprintf(str_buf, "\r\n steering error:  %f", error_steering);
-  86              		.loc 1 60 0
+  59:main.c        ****     sprintf(str_buf, "\r\n steering error:  %f", error_steering);
+  86              		.loc 1 59 0
   87 005a D4E90023 		ldrd	r2, [r4]
   88 005e 1B49     		ldr	r1, .L5+44
   89 0060 2846     		mov	r0, r5
   90 0062 FFF7FEFF 		bl	sprintf
   91              	.LVL8:
-  61:main.c        ****     UART_PutString(str_buf);
-  92              		.loc 1 61 0
+  60:main.c        ****     UART_PutString(str_buf);
+  92              		.loc 1 60 0
   93 0066 2846     		mov	r0, r5
   94 0068 FFF7FEFF 		bl	UART_PutString
   95              	.LVL9:
-  62:main.c        ****     
-  63:main.c        ****     steeringPWM = steeringOutput;
-  96              		.loc 1 63 0
+  61:main.c        ****     
+  62:main.c        ****     steeringPWM = steeringOutput;
+  96              		.loc 1 62 0
   97 006c D4E90201 		ldrd	r0, [r4, #8]
   98 0070 FFF7FEFF 		bl	__aeabi_d2iz
   99              	.LVL10:
  100 0074 2061     		str	r0, [r4, #16]
-  64:main.c        ****     
-  65:main.c        ****     // limit steering PWM within the min and max bounds
-  66:main.c        ****     if (steeringPWM < PWM_MIN) steeringPWM = PWM_MIN;
- 101              		.loc 1 66 0
+  63:main.c        ****     
+  64:main.c        ****     // limit steering PWM within the min and max bounds
+  65:main.c        ****     if (steeringPWM < PWM_MIN) steeringPWM = PWM_MIN;
+ 101              		.loc 1 65 0
  102 0076 B0F57A7F 		cmp	r0, #1000
  103 007a 02DA     		bge	.L2
- 104              		.loc 1 66 0 is_stmt 0 discriminator 1
+ 104              		.loc 1 65 0 is_stmt 0 discriminator 1
  105 007c 4FF47A72 		mov	r2, #1000
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 4
-
-
  106 0080 2261     		str	r2, [r4, #16]
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 4
+
+
  107              	.L2:
-  67:main.c        ****     if (steeringPWM > PWM_MAX) steeringPWM = PWM_MAX;
- 108              		.loc 1 67 0 is_stmt 1
+  66:main.c        ****     if (steeringPWM > PWM_MAX) steeringPWM = PWM_MAX;
+ 108              		.loc 1 66 0 is_stmt 1
  109 0082 0D4B     		ldr	r3, .L5+24
  110 0084 1B69     		ldr	r3, [r3, #16]
  111 0086 B3F5FA6F 		cmp	r3, #2000
  112 008a 03DD     		ble	.L3
- 113              		.loc 1 67 0 is_stmt 0 discriminator 1
+ 113              		.loc 1 66 0 is_stmt 0 discriminator 1
  114 008c 4FF4FA62 		mov	r2, #2000
  115 0090 094B     		ldr	r3, .L5+24
  116 0092 1A61     		str	r2, [r3, #16]
  117              	.L3:
-  68:main.c        ****     
-  69:main.c        ****     // update servo PWM
-  70:main.c        ****     SERVO_PWM_WriteCompare(steeringPWM);
- 118              		.loc 1 70 0 is_stmt 1
+  67:main.c        ****     
+  68:main.c        ****     // update servo PWM
+  69:main.c        ****     SERVO_PWM_WriteCompare(steeringPWM);
+ 118              		.loc 1 69 0 is_stmt 1
  119 0094 084B     		ldr	r3, .L5+24
  120 0096 188A     		ldrh	r0, [r3, #16]
  121 0098 FFF7FEFF 		bl	SERVO_PWM_WriteCompare
@@ -209,9 +208,9 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  127 00a0 00000000 		.word	0
  128 00a4 E0FFEF40 		.word	1089470432
  129 00a8 00000000 		.word	0
- 130 00ac 00C05F40 		.word	1080016896
+ 130 00ac 00709740 		.word	1083666432
  131 00b0 00000000 		.word	sampledTime
- 132 00b4 00E08540 		.word	1082515456
+ 132 00b4 00805F40 		.word	1080000512
  133 00b8 00000000 		.word	.LANCHOR0
  134 00bc 00002440 		.word	1076101120
  135 00c0 00000000 		.word	.LC0
@@ -233,15 +232,15 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  151              		.type	speed_inter, %function
  152              	speed_inter:
  153              	.LFB65:
-  71:main.c        **** }
+  70:main.c        **** }
+  71:main.c        **** 
   72:main.c        **** 
-  73:main.c        **** 
-  74:main.c        **** CY_ISR(speed_inter) {
- 154              		.loc 1 74 0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 5
-
-
+  73:main.c        **** CY_ISR(speed_inter) {
+ 154              		.loc 1 73 0
  155              		.cfi_startproc
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 5
+
+
  156              		@ args = 0, pretend = 0, frame = 0
  157              		@ frame_needed = 0, uses_anonymous_args = 0
  158 0000 2DE9F843 		push	{r3, r4, r5, r6, r7, r8, r9, lr}
@@ -254,36 +253,36 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  165              		.cfi_offset 8, -12
  166              		.cfi_offset 9, -8
  167              		.cfi_offset 14, -4
-  75:main.c        ****     new = TIMER_ReadCapture();
- 168              		.loc 1 75 0
+  74:main.c        ****     new = TIMER_ReadCapture();
+ 168              		.loc 1 74 0
  169 0004 FFF7FEFF 		bl	TIMER_ReadCapture
  170              	.LVL12:
  171 0008 454B     		ldr	r3, .L20+16
  172 000a 1880     		strh	r0, [r3]	@ movhi
-  76:main.c        ****     if (new <= old)
- 173              		.loc 1 76 0
+  75:main.c        ****     if (new <= old)
+ 173              		.loc 1 75 0
  174 000c 454B     		ldr	r3, .L20+20
  175 000e 1B88     		ldrh	r3, [r3]
  176 0010 9842     		cmp	r0, r3
  177 0012 03D8     		bhi	.L8
-  77:main.c        ****         elapsed = old - new;
- 178              		.loc 1 77 0
+  76:main.c        ****         elapsed = old - new;
+ 178              		.loc 1 76 0
  179 0014 1B1A     		subs	r3, r3, r0
  180 0016 444A     		ldr	r2, .L20+24
  181 0018 1380     		strh	r3, [r2]	@ movhi
  182 001a 03E0     		b	.L9
  183              	.L8:
-  78:main.c        ****     else
-  79:main.c        ****         elapsed = 65535 - new + old;
- 184              		.loc 1 79 0
+  77:main.c        ****     else
+  78:main.c        ****         elapsed = 65535 - new + old;
+ 184              		.loc 1 78 0
  185 001c 1B1A     		subs	r3, r3, r0
  186 001e 013B     		subs	r3, r3, #1
  187 0020 414A     		ldr	r2, .L20+24
  188 0022 1380     		strh	r3, [r2]	@ movhi
  189              	.L9:
-  80:main.c        ****     
-  81:main.c        ****     speed = 1256.0 / (double) elapsed;
- 190              		.loc 1 81 0
+  79:main.c        ****     
+  80:main.c        ****     speed = 1256.0 / (double) elapsed;
+ 190              		.loc 1 80 0
  191 0024 404B     		ldr	r3, .L20+24
  192 0026 1888     		ldrh	r0, [r3]
  193 0028 FFF7FEFF 		bl	__aeabi_ui2d
@@ -296,12 +295,12 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  200              	.LVL14:
  201 0038 3D4C     		ldr	r4, .L20+32
  202 003a C4E90601 		strd	r0, [r4, #24]
-  82:main.c        ****     err_speed = TARGET_SPEED - speed;
- 203              		.loc 1 82 0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 6
-
-
+  81:main.c        ****     err_speed = TARGET_SPEED - speed;
+ 203              		.loc 1 81 0
  204 003e D4E90623 		ldrd	r2, [r4, #24]
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 6
+
+
  205 0042 0020     		movs	r0, #0
  206 0044 3B49     		ldr	r1, .L20+36
  207 0046 FFF7FEFF 		bl	__aeabi_dsub
@@ -310,33 +309,33 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  210 004c 8946     		mov	r9, r1
  211 004e 3A4B     		ldr	r3, .L20+40
  212 0050 C3E90089 		strd	r8, [r3]
-  83:main.c        ****     acc_err_speed += err_speed;
- 213              		.loc 1 83 0
+  82:main.c        ****     acc_err_speed += err_speed;
+ 213              		.loc 1 82 0
  214 0054 D4E90823 		ldrd	r2, [r4, #32]
  215 0058 FFF7FEFF 		bl	__aeabi_dadd
  216              	.LVL16:
  217 005c 0646     		mov	r6, r0
  218 005e 0F46     		mov	r7, r1
  219 0060 C4E90867 		strd	r6, [r4, #32]
-  84:main.c        **** 
-  85:main.c        ****     if (error_steering > 200)
- 220              		.loc 1 85 0
+  83:main.c        **** 
+  84:main.c        ****     if (error_steering > 200)
+ 220              		.loc 1 84 0
  221 0064 0022     		movs	r2, #0
  222 0066 354B     		ldr	r3, .L20+44
  223 0068 D4E90001 		ldrd	r0, [r4]
  224 006c FFF7FEFF 		bl	__aeabi_dcmpgt
  225              	.LVL17:
  226 0070 28B1     		cbz	r0, .L10
-  86:main.c        ****        PWM_base = 1500; 
- 227              		.loc 1 86 0
+  85:main.c        ****        PWM_base = 1500; 
+ 227              		.loc 1 85 0
  228 0072 27A1     		adr	r1, .L20
  229 0074 D1E90001 		ldrd	r0, [r1]
  230 0078 2A4B     		ldr	r3, .L20+20
  231 007a C3E90201 		strd	r0, [r3, #8]
  232              	.L10:
-  87:main.c        ****     
-  88:main.c        ****     pwm = PWM_base + Kp_speed * err_speed + Ki_speed * acc_err_speed;
- 233              		.loc 1 88 0
+  86:main.c        ****     
+  87:main.c        ****     pwm = PWM_base + Kp_speed * err_speed + Ki_speed * acc_err_speed;
+ 233              		.loc 1 87 0
  234 007e 0022     		movs	r2, #0
  235 0080 2F4B     		ldr	r3, .L20+48
  236 0082 4046     		mov	r0, r8
@@ -358,30 +357,30 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  252 00a4 0246     		mov	r2, r0
  253 00a6 0B46     		mov	r3, r1
  254 00a8 2046     		mov	r0, r4
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 7
-
-
  255 00aa 2946     		mov	r1, r5
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 7
+
+
  256 00ac FFF7FEFF 		bl	__aeabi_dadd
  257              	.LVL21:
  258 00b0 254C     		ldr	r4, .L20+56
  259 00b2 C4E90001 		strd	r0, [r4]
-  89:main.c        ****     if (pwm < 500)
- 260              		.loc 1 89 0
+  88:main.c        ****     if (pwm < 500)
+ 260              		.loc 1 88 0
  261 00b6 0022     		movs	r2, #0
  262 00b8 244B     		ldr	r3, .L20+60
  263 00ba D4E90001 		ldrd	r0, [r4]
  264 00be FFF7FEFF 		bl	__aeabi_dcmplt
  265              	.LVL22:
  266 00c2 18B1     		cbz	r0, .L12
-  90:main.c        ****         pwm = 500;
- 267              		.loc 1 90 0
+  89:main.c        ****         pwm = 500;
+ 267              		.loc 1 89 0
  268 00c4 0020     		movs	r0, #0
  269 00c6 2149     		ldr	r1, .L20+60
  270 00c8 C4E90001 		strd	r0, [r4]
  271              	.L12:
-  91:main.c        ****     if (pwm > 2500)
- 272              		.loc 1 91 0
+  90:main.c        ****     if (pwm > 2500)
+ 272              		.loc 1 90 0
  273 00cc 12A3     		adr	r3, .L20+8
  274 00ce D3E90023 		ldrd	r2, [r3]
  275 00d2 1D49     		ldr	r1, .L20+56
@@ -389,22 +388,22 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  277 00d8 FFF7FEFF 		bl	__aeabi_dcmpgt
  278              	.LVL23:
  279 00dc 28B1     		cbz	r0, .L14
-  92:main.c        ****         pwm = 2500;
- 280              		.loc 1 92 0
+  91:main.c        ****         pwm = 2500;
+ 280              		.loc 1 91 0
  281 00de 0EA1     		adr	r1, .L20+8
  282 00e0 D1E90001 		ldrd	r0, [r1]
  283 00e4 184B     		ldr	r3, .L20+56
  284 00e6 C3E90001 		strd	r0, [r3]
  285              	.L14:
-  93:main.c        ****     
-  94:main.c        ****     //sprintf(strbuf, "%d ft/s,\r\n", (int)(speed * 1000));
-  95:main.c        ****     UART_PutString(strbuf);
- 286              		.loc 1 95 0
+  92:main.c        ****     
+  93:main.c        ****     //sprintf(strbuf, "%d ft/s,\r\n", (int)(speed * 1000));
+  94:main.c        ****     UART_PutString(strbuf);
+ 286              		.loc 1 94 0
  287 00ea 1948     		ldr	r0, .L20+64
  288 00ec FFF7FEFF 		bl	UART_PutString
  289              	.LVL24:
-  96:main.c        ****     PWM_WriteCompare((uint16)pwm);
- 290              		.loc 1 96 0
+  95:main.c        ****     PWM_WriteCompare((uint16)pwm);
+ 290              		.loc 1 95 0
  291 00f0 154B     		ldr	r3, .L20+56
  292 00f2 D3E90001 		ldrd	r0, [r3]
  293 00f6 FFF7FEFF 		bl	__aeabi_d2uiz
@@ -412,16 +411,16 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  295 00fa 80B2     		uxth	r0, r0
  296 00fc FFF7FEFF 		bl	PWM_WriteCompare
  297              	.LVL26:
-  97:main.c        ****     TIMER_ReadStatusRegister();
- 298              		.loc 1 97 0
+  96:main.c        ****     TIMER_ReadStatusRegister();
+ 298              		.loc 1 96 0
  299 0100 FFF7FEFF 		bl	TIMER_ReadStatusRegister
  300              	.LVL27:
-  98:main.c        ****     old = new;
- 301              		.loc 1 98 0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 8
-
-
+  97:main.c        ****     old = new;
+ 301              		.loc 1 97 0
  302 0104 064B     		ldr	r3, .L20+16
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 8
+
+
  303 0106 1A88     		ldrh	r2, [r3]
  304 0108 064B     		ldr	r3, .L20+20
  305 010a 1A80     		strh	r2, [r3]	@ movhi
@@ -457,12 +456,12 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  335              		.type	main, %function
  336              	main:
  337              	.LFB66:
-  99:main.c        **** }
+  98:main.c        **** }
+  99:main.c        **** 
  100:main.c        **** 
- 101:main.c        **** 
- 102:main.c        **** // Main function
- 103:main.c        **** int main(void) {
- 338              		.loc 1 103 0
+ 101:main.c        **** // Main function
+ 102:main.c        **** int main(void) {
+ 338              		.loc 1 102 0
  339              		.cfi_startproc
  340              		@ Volatile: function does not return.
  341              		@ args = 0, pretend = 0, frame = 0
@@ -471,77 +470,77 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  344              		.cfi_def_cfa_offset 8
  345              		.cfi_offset 3, -8
  346              		.cfi_offset 14, -4
- 104:main.c        ****     CyGlobalIntEnable;
- 347              		.loc 1 104 0
+ 103:main.c        ****     CyGlobalIntEnable;
+ 347              		.loc 1 103 0
  348              		.syntax unified
- 349              	@ 104 "main.c" 1
+ 349              	@ 103 "main.c" 1
  350 0002 62B6     		CPSIE   i
  351              	@ 0 "" 2
- 105:main.c        ****     
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 9
+ 104:main.c        ****     
+ 105:main.c        ****     // Speed control init
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 9
 
 
- 106:main.c        ****     // Speed control init
- 107:main.c        ****     PWM_Start();
- 352              		.loc 1 107 0
+ 106:main.c        ****     PWM_Start();
+ 352              		.loc 1 106 0
  353              		.thumb
  354              		.syntax unified
  355 0004 FFF7FEFF 		bl	PWM_Start
  356              	.LVL28:
- 108:main.c        ****     TIMER_Start();
- 357              		.loc 1 108 0
+ 107:main.c        ****     TIMER_Start();
+ 357              		.loc 1 107 0
  358 0008 FFF7FEFF 		bl	TIMER_Start
  359              	.LVL29:
- 109:main.c        ****     UART_Start();
- 360              		.loc 1 109 0
+ 108:main.c        ****     UART_Start();
+ 360              		.loc 1 108 0
  361 000c FFF7FEFF 		bl	UART_Start
  362              	.LVL30:
- 110:main.c        **** 
- 111:main.c        ****     // Steering control init
- 112:main.c        ****     VID_TIMER_Start();
- 363              		.loc 1 112 0
+ 109:main.c        **** 
+ 110:main.c        ****     // Steering control init
+ 111:main.c        ****     VID_TIMER_Start();
+ 363              		.loc 1 111 0
  364 0010 FFF7FEFF 		bl	VID_TIMER_Start
  365              	.LVL31:
- 113:main.c        ****     SERVO_PWM_Start();
- 366              		.loc 1 113 0
+ 112:main.c        ****     SERVO_PWM_Start();
+ 366              		.loc 1 112 0
  367 0014 FFF7FEFF 		bl	SERVO_PWM_Start
  368              	.LVL32:
- 114:main.c        ****     VDAC_Start();
- 369              		.loc 1 114 0
+ 113:main.c        ****     VDAC_Start();
+ 369              		.loc 1 113 0
  370 0018 FFF7FEFF 		bl	VDAC_Start
  371              	.LVL33:
- 115:main.c        ****     COMP_Start();
- 372              		.loc 1 115 0
+ 114:main.c        ****     COMP_Start();
+ 372              		.loc 1 114 0
  373 001c FFF7FEFF 		bl	COMP_Start
  374              	.LVL34:
- 116:main.c        ****     
- 117:main.c        ****     // Interrupts
- 118:main.c        ****     INT_SAMPLE_Start();
- 375              		.loc 1 118 0
+ 115:main.c        ****     
+ 116:main.c        ****     // Interrupts
+ 117:main.c        ****     INT_SAMPLE_Start();
+ 375              		.loc 1 117 0
  376 0020 FFF7FEFF 		bl	INT_SAMPLE_Start
  377              	.LVL35:
- 119:main.c        ****     INT_SAMPLE_SetVector(steer_inter);
- 378              		.loc 1 119 0
+ 118:main.c        ****     INT_SAMPLE_SetVector(steer_inter);
+ 378              		.loc 1 118 0
  379 0024 0548     		ldr	r0, .L25
  380 0026 FFF7FEFF 		bl	INT_SAMPLE_SetVector
  381              	.LVL36:
- 120:main.c        ****     HE_ISR_Start();
- 382              		.loc 1 120 0
+ 119:main.c        ****     HE_ISR_Start();
+ 382              		.loc 1 119 0
  383 002a FFF7FEFF 		bl	HE_ISR_Start
  384              	.LVL37:
- 121:main.c        ****     HE_ISR_SetVector(speed_inter);
- 385              		.loc 1 121 0
+ 120:main.c        ****     HE_ISR_SetVector(speed_inter);
+ 385              		.loc 1 120 0
  386 002e 0448     		ldr	r0, .L25+4
  387 0030 FFF7FEFF 		bl	HE_ISR_SetVector
  388              	.LVL38:
- 122:main.c        ****     UART_PutString("Test");
- 389              		.loc 1 122 0
+ 121:main.c        ****     UART_PutString("Test");
+ 389              		.loc 1 121 0
  390 0034 0348     		ldr	r0, .L25+8
  391 0036 FFF7FEFF 		bl	UART_PutString
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 10
-
-
  392              	.LVL39:
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 10
+
+
  393              	.L23:
  394 003a FEE7     		b	.L23
  395              	.L26:
@@ -598,10 +597,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  440 0019 000000   		.space	3
  441              	.LC2:
  442 001c 0D0A2073 		.ascii	"\015\012 steering error:  %f\000"
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 11
-
-
  442      74656572 
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 11
+
+
  442      696E6720 
  442      6572726F 
  442      723A2020 
@@ -658,10 +657,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  485              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
  486              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
  487              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 12
-
-
  488              		.file 6 "Generated_Source\\PSoC5/VID_TIMER.h"
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 12
+
+
  489              		.file 7 "Generated_Source\\PSoC5/UART.h"
  490              		.file 8 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
  491              		.file 9 "Generated_Source\\PSoC5/SERVO_PWM.h"
@@ -718,10 +717,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  542 005b 08       		.byte	0x8
  543 005c 05       		.byte	0x5
  544 005d DA020000 		.4byte	.LASF6
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 13
-
-
  545 0061 02       		.uleb128 0x2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 13
+
+
  546 0062 08       		.byte	0x8
  547 0063 07       		.byte	0x7
  548 0064 7A020000 		.4byte	.LASF7
@@ -778,10 +777,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  599 00ce 08       		.uleb128 0x8
  600 00cf 4C000000 		.4byte	.LVL6
  601 00d3 93030000 		.4byte	0x393
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 14
-
-
  602 00d7 E5000000 		.4byte	0xe5
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 14
+
+
  603 00db 09       		.uleb128 0x9
  604 00dc 01       		.uleb128 0x1
  605 00dd 50       		.byte	0x50
@@ -838,13 +837,13 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  656 0134 9C000000 		.4byte	.LVL11
  657 0138 A9030000 		.4byte	0x3a9
  658 013c 00       		.byte	0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 15
-
-
  659 013d 06       		.uleb128 0x6
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 15
+
+
  660 013e 6E020000 		.4byte	.LASF18
  661 0142 01       		.byte	0x1
- 662 0143 4A       		.byte	0x4a
+ 662 0143 49       		.byte	0x49
  663 0144 00000000 		.4byte	.LFB65
  664 0148 54010000 		.4byte	.LFE65-.LFB65
  665 014c 01       		.uleb128 0x1
@@ -874,7 +873,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  689 0185 0A       		.uleb128 0xa
  690 0186 5C020000 		.4byte	.LASF55
  691 018a 01       		.byte	0x1
- 692 018b 67       		.byte	0x67
+ 692 018b 66       		.byte	0x66
  693 018c 68000000 		.4byte	0x68
  694 0190 00000000 		.4byte	.LFB66
  695 0194 48000000 		.4byte	.LFE66-.LFB66
@@ -898,10 +897,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  713 01c7 01040000 		.4byte	0x401
  714 01cb 07       		.uleb128 0x7
  715 01cc 1C000000 		.4byte	.LVL33
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 16
-
-
  716 01d0 0C040000 		.4byte	0x40c
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 16
+
+
  717 01d4 07       		.uleb128 0x7
  718 01d5 20000000 		.4byte	.LVL34
  719 01d9 17040000 		.4byte	0x417
@@ -958,10 +957,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  770 0249 53020000 		.4byte	0x253
  771 024d 05       		.uleb128 0x5
  772 024e 03       		.byte	0x3
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 17
-
-
  773 024f 00000000 		.4byte	speed
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 17
+
+
  774 0253 0D       		.uleb128 0xd
  775 0254 94000000 		.4byte	0x94
  776 0258 0F       		.uleb128 0xf
@@ -1018,10 +1017,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  827 02c4 12       		.byte	0x12
  828 02c5 94000000 		.4byte	0x94
  829 02c9 05       		.uleb128 0x5
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 18
-
-
  830 02ca 03       		.byte	0x3
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 18
+
+
  831 02cb 00000000 		.4byte	acc_err_speed
  832 02cf 10       		.uleb128 0x10
  833 02d0 9B000000 		.4byte	0x9b
@@ -1078,10 +1077,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  884 033f 05       		.uleb128 0x5
  885 0340 03       		.byte	0x3
  886 0341 00000000 		.4byte	steeringOutput
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 19
-
-
  887 0345 0E       		.uleb128 0xe
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 19
+
+
  888 0346 41000000 		.4byte	.LASF31
  889 034a 01       		.byte	0x1
  890 034b 21       		.byte	0x21
@@ -1138,10 +1137,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  941 03bd 0A       		.byte	0xa
  942 03be 6B       		.byte	0x6b
  943 03bf 12       		.uleb128 0x12
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 20
-
-
  944 03c0 EA010000 		.4byte	.LASF39
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 20
+
+
  945 03c4 EA010000 		.4byte	.LASF39
  946 03c8 0B       		.byte	0xb
  947 03c9 C3       		.byte	0xc3
@@ -1198,10 +1197,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  998 0438 12       		.uleb128 0x12
  999 0439 34000000 		.4byte	.LASF50
  1000 043d 34000000 		.4byte	.LASF50
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 21
-
-
  1001 0441 0F       		.byte	0xf
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 21
+
+
  1002 0442 17       		.byte	0x17
  1003 0443 12       		.uleb128 0x12
  1004 0444 F4020000 		.4byte	.LASF51
@@ -1258,10 +1257,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  1055 002c 24       		.uleb128 0x24
  1056 002d 00       		.byte	0
  1057 002e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 22
-
-
  1058 002f 0B       		.uleb128 0xb
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 22
+
+
  1059 0030 3E       		.uleb128 0x3e
  1060 0031 0B       		.uleb128 0xb
  1061 0032 03       		.uleb128 0x3
@@ -1318,10 +1317,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  1112 0068 08       		.uleb128 0x8
  1113 0069 898201   		.uleb128 0x4109
  1114 006c 01       		.byte	0x1
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 23
-
-
  1115 006d 11       		.uleb128 0x11
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 23
+
+
  1116 006e 01       		.uleb128 0x1
  1117 006f 31       		.uleb128 0x31
  1118 0070 13       		.uleb128 0x13
@@ -1378,10 +1377,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  1169 00aa 00       		.byte	0
  1170 00ab 0C       		.uleb128 0xc
  1171 00ac 34       		.uleb128 0x34
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 24
-
-
  1172 00ad 00       		.byte	0
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 24
+
+
  1173 00ae 03       		.uleb128 0x3
  1174 00af 0E       		.uleb128 0xe
  1175 00b0 3A       		.uleb128 0x3a
@@ -1438,10 +1437,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  1226 00e3 00       		.byte	0
  1227 00e4 00       		.byte	0
  1228 00e5 10       		.uleb128 0x10
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 25
-
-
  1229 00e6 01       		.uleb128 0x1
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 25
+
+
  1230 00e7 01       		.byte	0x1
  1231 00e8 49       		.uleb128 0x49
  1232 00e9 13       		.uleb128 0x13
@@ -1498,10 +1497,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  1283 0004 D0000000 		.4byte	.LFE64
  1284 0008 00000000 		.4byte	.LFB65
  1285 000c 54010000 		.4byte	.LFE65
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 26
-
-
  1286 0010 00000000 		.4byte	.LFB66
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 26
+
+
  1287 0014 48000000 		.4byte	.LFE66
  1288 0018 00000000 		.4byte	0
  1289 001c 00000000 		.4byte	0
@@ -1558,10 +1557,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  1312      4C455F53 
  1312      74617274 
  1312      00
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 27
-
-
  1313              	.LASF12:
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 27
+
+
  1314 0081 666C6F61 		.ascii	"float\000"
  1314      7400
  1315              	.LASF40:
@@ -1618,10 +1617,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  1332      73706565 
  1332      6400
  1333              	.LASF33:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 28
-
-
  1334 0191 7374725F 		.ascii	"str_buf\000"
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 28
+
+
  1334      62756600 
  1335              	.LASF43:
  1336 0199 55415254 		.ascii	"UART_Start\000"
@@ -1678,10 +1677,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  1355 0255 75696E74 		.ascii	"uint16\000"
  1355      313600
  1356              	.LASF55:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 29
-
-
  1357 025c 6D61696E 		.ascii	"main\000"
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 29
+
+
  1357      00
  1358              	.LASF8:
  1359 0261 756E7369 		.ascii	"unsigned int\000"
@@ -1738,10 +1737,10 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 1
  1382              	.LASF51:
  1383 02f4 48455F49 		.ascii	"HE_ISR_SetVector\000"
  1383      53525F53 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDj5Wtf.s 			page 30
-
-
  1383      65745665 
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccqlndWd.s 			page 30
+
+
  1383      63746F72 
  1383      00
  1384              	.LASF32:

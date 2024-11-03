@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ECE302_NavProject\Design01\TopDesign">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ECE302_NavProject\Design01\Source Files\main.c">
 <ExpandedNodeIds>
 <v>ECE302_NavProject</v>
 <v>ECE302_NavProject\Design01</v>
@@ -212,8 +212,6 @@
 <v>ECE302_NavProject\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>ECE302_NavProject\Design01\DigitalComp_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\GlitchFilter_v2_0.pdf</v>
-<v>ECE302_NavProject\Design01\not_v1_0</v>
-<v>ECE302_NavProject\Design01\not_v1_0\not_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30\PWM_v3_30.pdf</v>
 <v>ECE302_NavProject\Design01\Timer_v2_80</v>
@@ -240,8 +238,6 @@
 <v>ECE302_NavProject\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>ECE302_NavProject\Design01\DigitalComp_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\GlitchFilter_v2_0.pdf</v>
-<v>ECE302_NavProject\Design01\not_v1_0</v>
-<v>ECE302_NavProject\Design01\not_v1_0\not_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30\PWM_v3_30.pdf</v>
 <v>ECE302_NavProject\Design01\Timer_v2_80</v>
@@ -258,8 +254,8 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\Design01.cydsn\Design01.cydwr" />
-<name v=".\Design01.cydsn\main.c" />
 <name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Design01.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -267,7 +263,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1084, 492" SelectedTabbedMdiWindow="0f653504-0b36-4437-9a59-c24288608242"><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cydwr" Guid="823a65ff-376d-4d86-bf71-09905622d9f1" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\main.c" Guid="0f653504-0b36-4437-9a59-c24288608242" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="a529f5cb-9962-4eb1-b7ee-01fd4bee4531" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b1eade91-b3de-47a2-b5ba-ed002a3f0e99" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1084, 464" SelectedTabbedMdiWindow="436e2bf0-5ac9-42d1-84e0-6c2f9cb4f587"><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cydwr" Guid="823a65ff-376d-4d86-bf71-09905622d9f1" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="a529f5cb-9962-4eb1-b7ee-01fd4bee4531" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b1eade91-b3de-47a2-b5ba-ed002a3f0e99" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\main.c" Guid="436e2bf0-5ac9-42d1-84e0-6c2f9cb4f587" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -1,6 +1,6 @@
 // ======================================================================
 // Design01.v generated from TopDesign.cysch
-// 11/03/2024 at 18:12
+// 11/03/2024 at 18:38
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -823,7 +823,6 @@ module top ;
           wire  Net_5916;
           wire  Net_5915;
           wire  Net_5914;
-          wire  Net_5951;
           wire  Net_5948;
           wire  Net_2600;
           wire  Net_1457;
@@ -860,7 +859,6 @@ module top ;
           wire  Net_2766;
           wire  Net_2781;
           wire  Net_2780;
-          wire  Net_5959;
           wire  Net_3791;
           wire  Net_4080;
           wire  Net_3980;
@@ -1557,7 +1555,7 @@ module top ;
 		VSYNC_IN
 		 (.oe(tmpOE__VSYNC_IN_net),
 		  .y({1'b0}),
-		  .fb({Net_5951}),
+		  .fb({Net_3041}),
 		  .io({tmpIO_0__VSYNC_IN_net[0:0]}),
 		  .siovref(tmpSIOVREF__VSYNC_IN_net),
 		  .interrupt({tmpINTERRUPT_0__VSYNC_IN_net[0:0]}),
@@ -1627,16 +1625,13 @@ module top ;
 
     assign Net_3649[7:0] = 8'h64;
 
-
-    assign Net_5959 = ~Net_3791;
-
     Timer_v2_80_6 VID_TIMER (
         .capture(Net_3980),
         .capture_out(Net_5930),
         .clock(Net_5947),
         .enable(1'b1),
         .interrupt(Net_4080),
-        .reset(Net_5959),
+        .reset(Net_3791),
         .tc(Net_5932),
         .trigger(1'b1));
     defparam VID_TIMER.CaptureCount = 2;
@@ -1646,9 +1641,6 @@ module top ;
     defparam VID_TIMER.InterruptOnTC = 0;
     defparam VID_TIMER.Resolution = 16;
     defparam VID_TIMER.SiliconRevision = "0";
-
-
-    assign Net_3041 = ~Net_5951;
 
 
 	cy_isr_v1_0

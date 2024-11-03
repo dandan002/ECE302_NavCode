@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 11/03/2024 18:12:43
+-- Generated: 11/03/2024 18:39:01
 -- PSoC Creator  4.4
 
 ENTITY Design01 IS
@@ -44,6 +44,7 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     SIGNAL Net_2152 : bit;
     SIGNAL Net_2752 : bit;
     SIGNAL Net_2768 : bit;
+    SIGNAL Net_3041 : bit;
     SIGNAL Net_333 : bit;
     ATTRIBUTE udbclken_assigned OF Net_333 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_333 : SIGNAL IS true;
@@ -56,6 +57,8 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     SIGNAL Net_3647_5 : bit;
     SIGNAL Net_3647_6 : bit;
     SIGNAL Net_3647_7 : bit;
+    SIGNAL Net_3791 : bit;
+    ATTRIBUTE soft OF Net_3791 : SIGNAL IS 1;
     SIGNAL Net_3980 : bit;
     SIGNAL Net_4080 : bit;
     SIGNAL Net_5917 : bit;
@@ -66,9 +69,6 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE global_signal OF Net_5947 : SIGNAL IS true;
     SIGNAL Net_5947_local : bit;
     SIGNAL Net_5948 : bit;
-    SIGNAL Net_5951 : bit;
-    SIGNAL Net_5959 : bit;
-    ATTRIBUTE soft OF Net_5959 : SIGNAL IS 1;
     SIGNAL RAW_VIDEO(0)__PA : bit;
     SIGNAL Rx_1(0)__PA : bit;
     SIGNAL SERVO(0)__PA : bit;
@@ -276,7 +276,7 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE lib_model OF \UART:BUART:rx_status_4\ : LABEL IS "macrocell10";
     ATTRIBUTE lib_model OF \UART:BUART:rx_status_5\ : LABEL IS "macrocell11";
     ATTRIBUTE lib_model OF \SERVO_PWM:PWMUDB:status_2\ : LABEL IS "macrocell12";
-    ATTRIBUTE lib_model OF Net_5959 : LABEL IS "macrocell13";
+    ATTRIBUTE lib_model OF Net_3791 : LABEL IS "macrocell13";
     ATTRIBUTE lib_model OF \VID_TIMER:TimerUDB:fifo_load_polarized\ : LABEL IS "macrocell14";
     ATTRIBUTE lib_model OF \VID_TIMER:TimerUDB:status_tc\ : LABEL IS "macrocell15";
     ATTRIBUTE lib_model OF \TIMER:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\ : LABEL IS "controlcell1";
@@ -1437,7 +1437,7 @@ BEGIN
         PORT MAP(
             pa_out => VSYNC_IN(0)__PA,
             oe => open,
-            fb => Net_5951,
+            fb => Net_3041,
             pad_in => VSYNC_IN(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -1574,14 +1574,14 @@ BEGIN
             main_0 => \SERVO_PWM:PWMUDB:runmode_enable\,
             main_1 => \SERVO_PWM:PWMUDB:tc_i\);
 
-    Net_5959:macrocell
+    Net_3791:macrocell
         GENERIC MAP(
             soft => 1,
             eqn_main => "(!main_0 * main_1 * main_2 * !main_3 * !main_4 * main_5 * !main_6 * !main_7)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => Net_5959,
+            q => Net_3791,
             main_0 => Net_3647_7,
             main_1 => Net_3647_6,
             main_2 => Net_3647_5,
@@ -2275,7 +2275,7 @@ BEGIN
             reset_inv => '0')
         PORT MAP(
             clock => Net_5947,
-            reset => Net_5959,
+            reset => Net_3791,
             load => \VID_TIMER:TimerUDB:cntr_load\,
             enable => \VID_TIMER:TimerUDB:fifo_load_polarized\,
             count_6 => \VID_TIMER:TimerUDB:count_6\,
@@ -2295,7 +2295,7 @@ BEGIN
             clken_mode => 1,
             reset_inv => '0')
         PORT MAP(
-            reset => Net_5959,
+            reset => Net_3791,
             clock => Net_5947,
             status_6 => open,
             status_5 => open,
@@ -2335,7 +2335,7 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_5947,
-            cs_addr_2 => Net_5959,
+            cs_addr_2 => Net_3791,
             cs_addr_1 => \VID_TIMER:TimerUDB:control_7\,
             cs_addr_0 => \VID_TIMER:TimerUDB:per_zero\,
             f0_load => \VID_TIMER:TimerUDB:tmp_fifo_load\,
@@ -2383,7 +2383,7 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_5947,
-            cs_addr_2 => Net_5959,
+            cs_addr_2 => Net_3791,
             cs_addr_1 => \VID_TIMER:TimerUDB:control_7\,
             cs_addr_0 => \VID_TIMER:TimerUDB:per_zero\,
             f0_load => \VID_TIMER:TimerUDB:tmp_fifo_load\,
@@ -2827,7 +2827,7 @@ BEGIN
 
     Net_3647_7:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1) + (main_0 * main_2 * main_3 * main_4 * main_5 * main_6 * main_7 * main_8)",
+            eqn_main => "(!main_0 * main_2 * main_3 * main_4 * main_5 * main_6 * main_7 * main_8) + (main_0 * main_1)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -2835,7 +2835,7 @@ BEGIN
             q => Net_3647_7,
             clk_en => open,
             clock_0 => Net_5948,
-            main_0 => Net_5951,
+            main_0 => Net_3041,
             main_1 => Net_3647_7,
             main_2 => Net_3647_6,
             main_3 => Net_3647_5,
@@ -2847,7 +2847,7 @@ BEGIN
 
     Net_3647_6:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1) + (main_0 * main_2 * main_3 * main_4 * main_5 * main_6 * main_7)",
+            eqn_main => "(!main_0 * main_2 * main_3 * main_4 * main_5 * main_6 * main_7) + (main_0 * main_1)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -2855,7 +2855,7 @@ BEGIN
             q => Net_3647_6,
             clk_en => open,
             clock_0 => Net_5948,
-            main_0 => Net_5951,
+            main_0 => Net_3041,
             main_1 => Net_3647_6,
             main_2 => Net_3647_5,
             main_3 => Net_3647_4,
@@ -2866,7 +2866,7 @@ BEGIN
 
     Net_3647_5:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1) + (main_0 * main_2 * main_3 * main_4 * main_5 * main_6)",
+            eqn_main => "(!main_0 * main_2 * main_3 * main_4 * main_5 * main_6) + (main_0 * main_1)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -2874,7 +2874,7 @@ BEGIN
             q => Net_3647_5,
             clk_en => open,
             clock_0 => Net_5948,
-            main_0 => Net_5951,
+            main_0 => Net_3041,
             main_1 => Net_3647_5,
             main_2 => Net_3647_4,
             main_3 => Net_3647_3,
@@ -2884,7 +2884,7 @@ BEGIN
 
     Net_3647_4:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1) + (main_0 * main_2 * main_3 * main_4 * main_5)",
+            eqn_main => "(!main_0 * main_2 * main_3 * main_4 * main_5) + (main_0 * main_1)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -2892,7 +2892,7 @@ BEGIN
             q => Net_3647_4,
             clk_en => open,
             clock_0 => Net_5948,
-            main_0 => Net_5951,
+            main_0 => Net_3041,
             main_1 => Net_3647_4,
             main_2 => Net_3647_3,
             main_3 => Net_3647_2,
@@ -2901,7 +2901,7 @@ BEGIN
 
     Net_3647_3:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1) + (main_0 * main_2 * main_3 * main_4)",
+            eqn_main => "(!main_0 * main_2 * main_3 * main_4) + (main_0 * main_1)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -2909,7 +2909,7 @@ BEGIN
             q => Net_3647_3,
             clk_en => open,
             clock_0 => Net_5948,
-            main_0 => Net_5951,
+            main_0 => Net_3041,
             main_1 => Net_3647_3,
             main_2 => Net_3647_2,
             main_3 => Net_3647_1,
@@ -2917,7 +2917,7 @@ BEGIN
 
     Net_3647_2:macrocell
         GENERIC MAP(
-            eqn_main => "(!main_0 * main_1) + (main_0 * main_2 * main_3)",
+            eqn_main => "(!main_0 * main_2 * main_3) + (main_0 * main_1)",
             regmode => 2,
             clk_inv => '0',
             clken_mode => 1)
@@ -2925,14 +2925,14 @@ BEGIN
             q => Net_3647_2,
             clk_en => open,
             clock_0 => Net_5948,
-            main_0 => Net_5951,
+            main_0 => Net_3041,
             main_1 => Net_3647_2,
             main_2 => Net_3647_1,
             main_3 => Net_3647_0);
 
     Net_3647_1:macrocell
         GENERIC MAP(
-            eqn_main => "(main_0 * !main_1 * main_2) + (main_0 * main_1 * !main_2)",
+            eqn_main => "(!main_0 * !main_1 * main_2) + (!main_0 * main_1 * !main_2)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
@@ -2940,13 +2940,13 @@ BEGIN
             q => Net_3647_1,
             clk_en => open,
             clock_0 => Net_5948,
-            main_0 => Net_5951,
+            main_0 => Net_3041,
             main_1 => Net_3647_1,
             main_2 => Net_3647_0);
 
     Net_3647_0:macrocell
         GENERIC MAP(
-            eqn_main => "(main_0 * !main_1)",
+            eqn_main => "(!main_0 * !main_1)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
@@ -2954,7 +2954,7 @@ BEGIN
             q => Net_3647_0,
             clk_en => open,
             clock_0 => Net_5948,
-            main_0 => Net_5951,
+            main_0 => Net_3041,
             main_1 => Net_3647_0);
 
     \VID_TIMER:TimerUDB:capture_last\:macrocell
@@ -2977,7 +2977,7 @@ BEGIN
         PORT MAP(
             q => \VID_TIMER:TimerUDB:cntr_load\,
             clock_0 => Net_5947,
-            main_0 => Net_5959,
+            main_0 => Net_3791,
             main_1 => \VID_TIMER:TimerUDB:count_6\,
             main_2 => \VID_TIMER:TimerUDB:count_5\,
             main_3 => \VID_TIMER:TimerUDB:count_4\,
@@ -2995,7 +2995,7 @@ BEGIN
         PORT MAP(
             q => \VID_TIMER:TimerUDB:tmp_fifo_load\,
             clock_0 => Net_5947,
-            main_0 => Net_5959,
+            main_0 => Net_3791,
             main_1 => \VID_TIMER:TimerUDB:cntr_load\,
             main_2 => \VID_TIMER:TimerUDB:count_6\,
             main_3 => \VID_TIMER:TimerUDB:count_5\,
@@ -3014,7 +3014,7 @@ BEGIN
         PORT MAP(
             q => \VID_TIMER:TimerUDB:int_capt_count_1\,
             clock_0 => Net_5947,
-            main_0 => Net_5959,
+            main_0 => Net_3791,
             main_1 => \VID_TIMER:TimerUDB:control_1\,
             main_2 => \VID_TIMER:TimerUDB:control_0\,
             main_3 => \VID_TIMER:TimerUDB:tmp_fifo_load\,
@@ -3030,7 +3030,7 @@ BEGIN
         PORT MAP(
             q => \VID_TIMER:TimerUDB:int_capt_count_0\,
             clock_0 => Net_5947,
-            main_0 => Net_5959,
+            main_0 => Net_3791,
             main_1 => \VID_TIMER:TimerUDB:control_1\,
             main_2 => \VID_TIMER:TimerUDB:control_0\,
             main_3 => \VID_TIMER:TimerUDB:tmp_fifo_load\,
@@ -3046,7 +3046,7 @@ BEGIN
         PORT MAP(
             q => \VID_TIMER:TimerUDB:capt_int_temp\,
             clock_0 => Net_5947,
-            main_0 => Net_5959,
+            main_0 => Net_3791,
             main_1 => \VID_TIMER:TimerUDB:control_1\,
             main_2 => \VID_TIMER:TimerUDB:control_0\,
             main_3 => \VID_TIMER:TimerUDB:tmp_fifo_load\,
