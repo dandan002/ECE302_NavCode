@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
   28:Generated_Source\PSoC5/SERVO.c **** *
   29:Generated_Source\PSoC5/SERVO.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/SERVO.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 2
 
 
   31:Generated_Source\PSoC5/SERVO.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
   52              		.size	SERVO_Write, .-SERVO_Write
   53              		.section	.text.SERVO_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 3
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 3
 
 
   55              		.global	SERVO_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 27500040 		.word	1073762343
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 4
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 4
 
 
   80              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  110              		.align	2
  111              		.global	SERVO_ReadDataReg
  112              		.thumb
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 5
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 5
 
 
  113              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 6
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 6
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -307,7 +307,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  145 000c 25000000 		.4byte	.LASF20
  146 0010 0C       		.byte	0xc
  147 0011 A3010000 		.4byte	.LASF21
- 148 0015 0E010000 		.4byte	.LASF22
+ 148 0015 E8000000 		.4byte	.LASF22
  149 0019 00000000 		.4byte	.Ldebug_ranges0+0
  150 001d 00000000 		.4byte	0
  151 0021 00000000 		.4byte	.Ldebug_line0
@@ -338,11 +338,11 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  176 004f 02       		.uleb128 0x2
  177 0050 08       		.byte	0x8
  178 0051 05       		.byte	0x5
- 179 0052 80010000 		.4byte	.LASF6
+ 179 0052 6D010000 		.4byte	.LASF6
  180 0056 02       		.uleb128 0x2
  181 0057 08       		.byte	0x8
  182 0058 07       		.byte	0x7
- 183 0059 64010000 		.4byte	.LASF7
+ 183 0059 51010000 		.4byte	.LASF7
  184 005d 03       		.uleb128 0x3
  185 005e 04       		.byte	0x4
  186 005f 05       		.byte	0x5
@@ -350,7 +350,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  188 0064 02       		.uleb128 0x2
  189 0065 04       		.byte	0x4
  190 0066 07       		.byte	0x7
- 191 0067 57010000 		.4byte	.LASF8
+ 191 0067 44010000 		.4byte	.LASF8
  192 006b 04       		.uleb128 0x4
  193 006c 9D010000 		.4byte	.LASF12
  194 0070 02       		.byte	0x2
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 7
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 7
 
 
  199 0079 04       		.byte	0x4
@@ -366,7 +366,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  201 007e 02       		.uleb128 0x2
  202 007f 08       		.byte	0x8
  203 0080 04       		.byte	0x4
- 204 0081 FB000000 		.4byte	.LASF10
+ 204 0081 31010000 		.4byte	.LASF10
  205 0085 02       		.uleb128 0x2
  206 0086 01       		.byte	0x1
  207 0087 08       		.byte	0x8
@@ -379,7 +379,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  214 0098 05       		.uleb128 0x5
  215 0099 6B000000 		.4byte	0x6b
  216 009d 06       		.uleb128 0x6
- 217 009e 02010000 		.4byte	.LASF14
+ 217 009e 38010000 		.4byte	.LASF14
  218 00a2 01       		.byte	0x1
  219 00a3 39       		.byte	0x39
  220 00a4 00000000 		.4byte	.LFB0
@@ -402,7 +402,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  237 00cd 53       		.byte	0x53
  238 00ce 00       		.byte	0
  239 00cf 06       		.uleb128 0x6
- 240 00d0 E8000000 		.4byte	.LASF15
+ 240 00d0 7B010000 		.4byte	.LASF15
  241 00d4 01       		.byte	0x1
  242 00d5 5A       		.byte	0x5a
  243 00d6 00000000 		.4byte	.LFB1
@@ -411,14 +411,14 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  246 00df 9C       		.byte	0x9c
  247 00e0 F4000000 		.4byte	0xf4
  248 00e4 07       		.uleb128 0x7
- 249 00e5 7B010000 		.4byte	.LASF17
+ 249 00e5 68010000 		.4byte	.LASF17
  250 00e9 01       		.byte	0x1
  251 00ea 5A       		.byte	0x5a
  252 00eb 6B000000 		.4byte	0x6b
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 8
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 8
 
 
  256 00f5 CA000000 		.4byte	.LASF18
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 9
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 9
 
 
  313 0025 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 10
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 10
 
 
  370 005f 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 11
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 11
 
 
  427 0013 0400     		.2byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  480      02004200 
  480      00000201 
  480      FB0E0D00 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 12
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 12
 
 
  480      01010101 
@@ -712,52 +712,52 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  500      7369676E 
  500      65642069 
  500      6E7400
- 501              	.LASF15:
- 502 00e8 53455256 		.ascii	"SERVO_SetDriveMode\000"
- 502      4F5F5365 
- 502      74447269 
- 502      76654D6F 
- 502      646500
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 13
+ 501              	.LASF22:
+ 502 00e8 433A5C55 		.ascii	"C:\\Users\\danie\\Downloads\\ECE302_NavCode\\ECE302"
+ 502      73657273 
+ 502      5C64616E 
+ 502      69655C44 
+ 502      6F776E6C 
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 13
 
 
- 503              	.LASF10:
- 504 00fb 646F7562 		.ascii	"double\000"
- 504      6C6500
- 505              	.LASF14:
- 506 0102 53455256 		.ascii	"SERVO_Write\000"
- 506      4F5F5772 
- 506      69746500 
- 507              	.LASF22:
- 508 010e 433A5C55 		.ascii	"C:\\Users\\danie\\Documents\\ECE302_NavCode\\ECE302"
- 508      73657273 
- 508      5C64616E 
- 508      69655C44 
- 508      6F63756D 
- 509 013c 5F4E6176 		.ascii	"_NavProject\\Design01.cydsn\000"
- 509      50726F6A 
- 509      6563745C 
- 509      44657369 
- 509      676E3031 
- 510              	.LASF8:
- 511 0157 756E7369 		.ascii	"unsigned int\000"
- 511      676E6564 
- 511      20696E74 
- 511      00
- 512              	.LASF7:
- 513 0164 6C6F6E67 		.ascii	"long long unsigned int\000"
- 513      206C6F6E 
- 513      6720756E 
- 513      7369676E 
- 513      65642069 
- 514              	.LASF17:
- 515 017b 6D6F6465 		.ascii	"mode\000"
- 515      00
- 516              	.LASF6:
- 517 0180 6C6F6E67 		.ascii	"long long int\000"
- 517      206C6F6E 
- 517      6720696E 
- 517      7400
+ 503 0116 5F4E6176 		.ascii	"_NavProject\\Design01.cydsn\000"
+ 503      50726F6A 
+ 503      6563745C 
+ 503      44657369 
+ 503      676E3031 
+ 504              	.LASF10:
+ 505 0131 646F7562 		.ascii	"double\000"
+ 505      6C6500
+ 506              	.LASF14:
+ 507 0138 53455256 		.ascii	"SERVO_Write\000"
+ 507      4F5F5772 
+ 507      69746500 
+ 508              	.LASF8:
+ 509 0144 756E7369 		.ascii	"unsigned int\000"
+ 509      676E6564 
+ 509      20696E74 
+ 509      00
+ 510              	.LASF7:
+ 511 0151 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 511      206C6F6E 
+ 511      6720756E 
+ 511      7369676E 
+ 511      65642069 
+ 512              	.LASF17:
+ 513 0168 6D6F6465 		.ascii	"mode\000"
+ 513      00
+ 514              	.LASF6:
+ 515 016d 6C6F6E67 		.ascii	"long long int\000"
+ 515      206C6F6E 
+ 515      6720696E 
+ 515      7400
+ 516              	.LASF15:
+ 517 017b 53455256 		.ascii	"SERVO_SetDriveMode\000"
+ 517      4F5F5365 
+ 517      74447269 
+ 517      76654D6F 
+ 517      646500
  518              	.LASF11:
  519 018e 63686172 		.ascii	"char\000"
  519      00
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 1
  527 01c2 6C6F6E67 		.ascii	"long int\000"
  527      20696E74 
  527      00
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccCduWTE.s 			page 14
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc8OLD3h.s 			page 14
 
 
  528              	.LASF0:

@@ -1,5 +1,5 @@
 # Design01
-# 2024-11-04 01:29:20Z
+# 2024-11-04 06:30:42Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -15,5 +15,9 @@ set_io "SERVO(0)" iocell 4 7
 set_io "RAW_VIDEO(0)" iocell 4 5
 set_io "CSYNC_IN(0)" iocell 4 1
 set_io "VSYNC_IN(0)" iocell 4 3
+set_io "DEBUG_COMP_OUT_2(0)" iocell 5 2
+set_io "DEBUG_VID_IN_3(0)" iocell 5 3
+set_io "DEBUG_INTERRUPT_4(0)" iocell 5 4
+set_io "DEBUG_VID_COMPARED_5(0)" iocell 5 5
 set_location "\COMP:ctComp\" comparatorcell -1 -1 0
 set_location "\VDAC:viDAC8\" vidaccell -1 -1 2

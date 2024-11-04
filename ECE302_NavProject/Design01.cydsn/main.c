@@ -1,3 +1,5 @@
+// ALL DEBUG OUTPUTS ARE IN P5[1-5]
+
 #include "project.h"
 #include <stdio.h>
 
