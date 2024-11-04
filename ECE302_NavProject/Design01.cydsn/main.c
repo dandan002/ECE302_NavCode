@@ -19,9 +19,8 @@ double acc_err_speed = 0;
 char strbuf[42];
 
 // Line-following constants and variables       
-#define MIDDLE_LINE 126
-#define BLACK_THRESHOLD 50
-#define Kp_steering 10
+#define MIDDLE_LINE 120
+#define Kp_steering 1
 #define Ki_steering 0.5
 #define Kd_steering 0.5
 
@@ -59,7 +58,7 @@ CY_ISR(steer_inter) {
     sprintf(str_buf, "\r\n steering error:  %f", error_steering);
     UART_PutString(str_buf);
     
-    steeringPWM = steeringOutput;
+    steeringPWM = (uint16)steeringOutput;
     
     // limit steering PWM within the min and max bounds
     if (steeringPWM < PWM_MIN) steeringPWM = PWM_MIN;
@@ -90,13 +89,12 @@ CY_ISR(speed_inter) {
     if (pwm > 2500)
         pwm = 2500;
     
-    //sprintf(strbuf, "%d ft/s,\r\n", (int)(speed * 1000));
+    sprintf(strbuf, "%d ft/s,\r\n", (int)(speed * 1000));
     UART_PutString(strbuf);
     PWM_WriteCompare((uint16)pwm);
     TIMER_ReadStatusRegister();
     old = new;
 }
-
 
 // Main function
 int main(void) {
@@ -116,8 +114,11 @@ int main(void) {
     // Interrupts
     INT_SAMPLE_Start();
     INT_SAMPLE_SetVector(steer_inter);
+    
     HE_ISR_Start();
     HE_ISR_SetVector(speed_inter);
+    
+    // DEBUG
     UART_PutString("Test");
 
    // Main loop

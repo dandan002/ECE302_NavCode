@@ -42,6 +42,7 @@
 #include "VDAC.h"
 #include "VID_TIMER.h"
 #include "INT_SAMPLE.h"
+#include "Clock_3.h"
 #include "UART_IntClock.h"
 #include "core_cm3_psoc5.h"
 #include "CyDmac.h"

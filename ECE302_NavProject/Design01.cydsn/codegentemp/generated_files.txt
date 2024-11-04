@@ -67,6 +67,8 @@
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\VID_TIMER_PM.c" value="SOURCE_C;CortexM3;;;;VID_TIMER" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\INT_SAMPLE.c" value="SOURCE_C;CortexM3;;;;INT_SAMPLE" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\INT_SAMPLE.h" value="HEADER;;;;;INT_SAMPLE" />
+  <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\Clock_3.c" value="SOURCE_C;CortexM3;;;;Clock_3" />
+  <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\Clock_3.h" value="HEADER;;;;;Clock_3" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\UART_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_IntClock" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\UART_IntClock.h" value="HEADER;;;;;UART_IntClock" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />

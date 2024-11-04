@@ -1,6 +1,6 @@
 // ======================================================================
 // Design01.v generated from TopDesign.cysch
-// 11/03/2024 at 18:38
+// 11/03/2024 at 20:29
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -729,7 +729,7 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\DigitalComp_v1_0\DigitalComp_v1_0.v"
 `endif
 
-// Timer_v2_80(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=true, CaptureInputEnabled=true, CaptureMode=1, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DeviceFamily=PSoC5, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=true, InterruptOnCapture=true, InterruptOnFIFOFull=false, InterruptOnTC=false, IntOnCapture=1, IntOnFIFOFull=0, IntOnTC=0, NumberOfCaptures=1, param45=1, Period=65535, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, Resolution=16, RstStatusReplacementString=rstSts, RunMode=0, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=true, UDB24=false, UDB32=false, UDB8=false, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=Timer_v2_80, CY_CONFIG_TITLE=VID_TIMER, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=VID_TIMER, CY_INSTANCE_SHORT_NAME=VID_TIMER, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=80, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=VID_TIMER, )
+// Timer_v2_80(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=true, CaptureMode=3, CONTROL3=0, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DeviceFamily=PSoC5, EnableMode=0, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, HWCaptureCounterEnabled=false, InterruptOnCapture=true, InterruptOnFIFOFull=false, InterruptOnTC=false, IntOnCapture=1, IntOnFIFOFull=0, IntOnTC=0, NumberOfCaptures=1, param45=1, Period=65535, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, Resolution=16, RstStatusReplacementString=rstSts, RunMode=0, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=true, UDB24=false, UDB32=false, UDB8=false, UDBControlReg=true, UsesHWEnable=0, VerilogSectionReplacementString=sT16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=Timer_v2_80, CY_CONFIG_TITLE=VID_TIMER, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=VID_TIMER, CY_INSTANCE_SHORT_NAME=VID_TIMER, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=80, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=VID_TIMER, )
 module Timer_v2_80_6 (
     capture,
     capture_out,
@@ -749,7 +749,7 @@ module Timer_v2_80_6 (
     input       trigger;
 
     parameter CaptureCount = 2;
-    parameter CaptureCounterEnabled = 1;
+    parameter CaptureCounterEnabled = 0;
     parameter DeviceFamily = "PSoC5";
     parameter InterruptOnCapture = 1;
     parameter InterruptOnTC = 0;
@@ -784,8 +784,8 @@ module Timer_v2_80_6 (
         .tc(Net_53),
         .trigger(trigger));
     defparam TimerUDB.Capture_Count = 2;
-    defparam TimerUDB.CaptureCounterEnabled = 1;
-    defparam TimerUDB.CaptureMode = 1;
+    defparam TimerUDB.CaptureCounterEnabled = 0;
+    defparam TimerUDB.CaptureMode = 3;
     defparam TimerUDB.EnableMode = 0;
     defparam TimerUDB.InterruptOnCapture = 1;
     defparam TimerUDB.Resolution = 16;
@@ -802,9 +802,24 @@ module Timer_v2_80_6 (
 
 endmodule
 
+// Component: cy_sync_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_sync_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_sync_v1_0\cy_sync_v1_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_sync_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_sync_v1_0\cy_sync_v1_0.v"
+`endif
+
 // top
 module top ;
 
+          wire  Net_5983;
+          wire  Net_5980;
           wire  Net_5933;
           wire  Net_5932;
           wire  Net_5931;
@@ -823,7 +838,6 @@ module top ;
           wire  Net_5916;
           wire  Net_5915;
           wire  Net_5914;
-          wire  Net_5948;
           wire  Net_2600;
           wire  Net_1457;
           wire  Net_5946;
@@ -859,19 +873,21 @@ module top ;
           wire  Net_2766;
           wire  Net_2781;
           wire  Net_2780;
+          wire [7:0] Net_5962;
+          wire [7:0] Net_5978;
+          wire  Net_5947;
+          wire  Net_5948;
+          wire  Net_3041;
+          wire  Net_3039;
           wire  Net_3791;
           wire  Net_4080;
           wire  Net_3980;
           wire [7:0] Net_3649;
-          wire [7:0] Net_3647;
-          wire  Net_5947;
           wire  Net_2127;
           wire  Net_2152;
-          wire  Net_3041;
           wire  Net_16;
     electrical  Net_1594;
     electrical  Net_1582;
-          wire  Net_3039;
           wire  Net_333;
           wire  Net_2752;
 
@@ -1614,14 +1630,14 @@ module top ;
 
     BasicCounter_v1_0 COUNTER (
         .clock(Net_5948),
-        .cnt(Net_3647[7:0]),
+        .cnt(Net_5962[7:0]),
         .en(Net_3039),
         .reset(Net_3041));
     defparam COUNTER.Width = 8;
 
     assign Net_3039 = 1'h1;
 
-    assign Net_3791 = (Net_3647[7:0] == Net_3649[7:0]);
+    assign Net_3791 = (Net_5978[7:0] == Net_3649[7:0]);
 
     assign Net_3649[7:0] = 8'h64;
 
@@ -1635,7 +1651,7 @@ module top ;
         .tc(Net_5932),
         .trigger(1'b1));
     defparam VID_TIMER.CaptureCount = 2;
-    defparam VID_TIMER.CaptureCounterEnabled = 1;
+    defparam VID_TIMER.CaptureCounterEnabled = 0;
     defparam VID_TIMER.DeviceFamily = "PSoC5";
     defparam VID_TIMER.InterruptOnCapture = 1;
     defparam VID_TIMER.InterruptOnTC = 0;
@@ -1647,6 +1663,24 @@ module top ;
 		#(.int_type(2'b10))
 		INT_SAMPLE
 		 (.int_signal(Net_4080));
+
+
+    cy_sync_v1_0 Sync_1 (
+        .clock(Net_5980),
+        .s_in(Net_5962[7:0]),
+        .s_out(Net_5978[7:0]));
+    defparam Sync_1.SignalWidth = 8;
+
+
+	cy_clock_v1_0
+		#(.id("7853907e-69ea-42b6-b493-9b7626247a7d"),
+		  .source_clock_id(""),
+		  .divisor(0),
+		  .period("41666666.6666667"),
+		  .is_direct(0),
+		  .is_digital(1))
+		Clock_3
+		 (.clock_out(Net_5980));
 
 
 

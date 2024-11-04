@@ -142,6 +142,8 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VID_TIMER.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VID_TIMER.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\VID_TIMER_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_3.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Export\ARM_GCC_Generic">

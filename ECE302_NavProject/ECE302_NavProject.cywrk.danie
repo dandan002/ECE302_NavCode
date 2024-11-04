@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="ECE302_NavProject\Design01\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>ECE302_NavProject</v>
 <v>ECE302_NavProject\Design01</v>
@@ -57,6 +57,7 @@
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\Clock_1</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\Clock_2</v>
+<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\Clock_3</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\COMP</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\CSYNC_IN</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cy_boot</v>
@@ -74,7 +75,6 @@
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\UART_IntClock</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\VDAC</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\VID_TIMER</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\VSYNC_IN</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -101,6 +101,7 @@
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
+<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_3.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP_PM.lst</v>
@@ -154,6 +155,7 @@
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
+<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_3.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP_PM.lst</v>
@@ -184,7 +186,6 @@
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_IntClock.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -210,6 +211,7 @@
 <v>ECE302_NavProject\Design01\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>ECE302_NavProject\Design01\cy_pins_v2_20</v>
 <v>ECE302_NavProject\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>ECE302_NavProject\Design01\cy_sync_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\DigitalComp_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\GlitchFilter_v2_0.pdf</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30</v>
@@ -236,6 +238,7 @@
 <v>ECE302_NavProject\Design01\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>ECE302_NavProject\Design01\cy_pins_v2_20</v>
 <v>ECE302_NavProject\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>ECE302_NavProject\Design01\cy_sync_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\DigitalComp_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\GlitchFilter_v2_0.pdf</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30</v>
@@ -263,7 +266,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1084, 464" SelectedTabbedMdiWindow="436e2bf0-5ac9-42d1-84e0-6c2f9cb4f587"><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cydwr" Guid="823a65ff-376d-4d86-bf71-09905622d9f1" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="a529f5cb-9962-4eb1-b7ee-01fd4bee4531" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b1eade91-b3de-47a2-b5ba-ed002a3f0e99" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\main.c" Guid="436e2bf0-5ac9-42d1-84e0-6c2f9cb4f587" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1062, 548" SelectedTabbedMdiWindow="a529f5cb-9962-4eb1-b7ee-01fd4bee4531"><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cydwr" Guid="823a65ff-376d-4d86-bf71-09905622d9f1" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="a529f5cb-9962-4eb1-b7ee-01fd4bee4531" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b1eade91-b3de-47a2-b5ba-ed002a3f0e99" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\main.c" Guid="b72c787b-f3b4-4611-bdd0-4b9e7a22c3f2" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
