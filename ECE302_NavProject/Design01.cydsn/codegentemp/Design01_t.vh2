@@ -1,5 +1,5 @@
 -- Project:   C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cyprj
--- Generated: 11/04/2024 10:05:45
+-- Generated: 11/04/2024 13:16:43
 -- PSoC Creator  4.4
 
 ENTITY Design01 IS
@@ -325,9 +325,9 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE lib_model OF HE(0) : LABEL IS "iocell2";
     ATTRIBUTE Location OF HE(0) : LABEL IS "P3[4]";
     ATTRIBUTE lib_model OF Tx_1(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF Tx_1(0) : LABEL IS "P6[6]";
+    ATTRIBUTE Location OF Tx_1(0) : LABEL IS "P6[0]";
     ATTRIBUTE lib_model OF Rx_1(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF Rx_1(0) : LABEL IS "P6[0]";
+    ATTRIBUTE Location OF Rx_1(0) : LABEL IS "P6[6]";
     ATTRIBUTE lib_model OF SERVO(0) : LABEL IS "iocell5";
     ATTRIBUTE Location OF SERVO(0) : LABEL IS "P4[7]";
     ATTRIBUTE lib_model OF RAW_VIDEO(0) : LABEL IS "iocell6";

@@ -162,11 +162,11 @@
 #define COMP_ctComp__WRK_SHIFT 0u
 
 /* Rx_1 */
-#define Rx_1__0__INTTYPE CYREG_PICU6_INTTYPE0
-#define Rx_1__0__MASK 0x01u
-#define Rx_1__0__PC CYREG_PRT6_PC0
+#define Rx_1__0__INTTYPE CYREG_PICU6_INTTYPE6
+#define Rx_1__0__MASK 0x40u
+#define Rx_1__0__PC CYREG_PRT6_PC6
 #define Rx_1__0__PORT 6u
-#define Rx_1__0__SHIFT 0u
+#define Rx_1__0__SHIFT 6u
 #define Rx_1__AG CYREG_PRT6_AG
 #define Rx_1__AMUX CYREG_PRT6_AMUX
 #define Rx_1__BIE CYREG_PRT6_BIE
@@ -181,7 +181,7 @@
 #define Rx_1__INTTYPE_BASE CYDEV_PICU_INTTYPE_PICU6_BASE
 #define Rx_1__LCD_COM_SEG CYREG_PRT6_LCD_COM_SEG
 #define Rx_1__LCD_EN CYREG_PRT6_LCD_EN
-#define Rx_1__MASK 0x01u
+#define Rx_1__MASK 0x40u
 #define Rx_1__PORT 6u
 #define Rx_1__PRT CYREG_PRT6_PRT
 #define Rx_1__PRTDSI__CAPS_SEL CYREG_PRT6_CAPS_SEL
@@ -192,15 +192,15 @@
 #define Rx_1__PRTDSI__OUT_SEL1 CYREG_PRT6_OUT_SEL1
 #define Rx_1__PRTDSI__SYNC_OUT CYREG_PRT6_SYNC_OUT
 #define Rx_1__PS CYREG_PRT6_PS
-#define Rx_1__SHIFT 0u
+#define Rx_1__SHIFT 6u
 #define Rx_1__SLW CYREG_PRT6_SLW
 
 /* Tx_1 */
-#define Tx_1__0__INTTYPE CYREG_PICU6_INTTYPE6
-#define Tx_1__0__MASK 0x40u
-#define Tx_1__0__PC CYREG_PRT6_PC6
+#define Tx_1__0__INTTYPE CYREG_PICU6_INTTYPE0
+#define Tx_1__0__MASK 0x01u
+#define Tx_1__0__PC CYREG_PRT6_PC0
 #define Tx_1__0__PORT 6u
-#define Tx_1__0__SHIFT 6u
+#define Tx_1__0__SHIFT 0u
 #define Tx_1__AG CYREG_PRT6_AG
 #define Tx_1__AMUX CYREG_PRT6_AMUX
 #define Tx_1__BIE CYREG_PRT6_BIE
@@ -215,7 +215,7 @@
 #define Tx_1__INTTYPE_BASE CYDEV_PICU_INTTYPE_PICU6_BASE
 #define Tx_1__LCD_COM_SEG CYREG_PRT6_LCD_COM_SEG
 #define Tx_1__LCD_EN CYREG_PRT6_LCD_EN
-#define Tx_1__MASK 0x40u
+#define Tx_1__MASK 0x01u
 #define Tx_1__PORT 6u
 #define Tx_1__PRT CYREG_PRT6_PRT
 #define Tx_1__PRTDSI__CAPS_SEL CYREG_PRT6_CAPS_SEL
@@ -226,7 +226,7 @@
 #define Tx_1__PRTDSI__OUT_SEL1 CYREG_PRT6_OUT_SEL1
 #define Tx_1__PRTDSI__SYNC_OUT CYREG_PRT6_SYNC_OUT
 #define Tx_1__PS CYREG_PRT6_PS
-#define Tx_1__SHIFT 6u
+#define Tx_1__SHIFT 0u
 #define Tx_1__SLW CYREG_PRT6_SLW
 
 /* UART */

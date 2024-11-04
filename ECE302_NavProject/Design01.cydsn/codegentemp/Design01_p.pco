@@ -86,7 +86,7 @@ set_location "\COMP:ctComp\" comparatorcell -1 -1 0
 set_location "\Sync_1:genblk1[5]:INST\" synccell 2 0 5 0
 set_location "\Sync_1:genblk1[4]:INST\" synccell 3 4 5 0
 set_location "\Sync_1:genblk1[7]:INST\" synccell 2 0 5 1
-set_io "Rx_1(0)" iocell 6 0
+set_io "Rx_1(0)" iocell 6 6
 set_io "DEBUG_VID_COMPARED_5(0)" iocell 5 5
 set_io "motor(0)" iocell 0 1
 set_io "DEBUG_VID_IN_3(0)" iocell 5 3
@@ -102,7 +102,7 @@ set_location "\VDAC:viDAC8\" vidaccell -1 -1 2
 set_io "DEBUG_2(0)" iocell 5 2
 set_location "ClockBlock" clockblockcell -1 -1 0
 set_io "SERVO(0)" iocell 4 7
-set_io "Tx_1(0)" iocell 6 6
+set_io "Tx_1(0)" iocell 6 0
 set_io "DEBUG_6(0)" iocell 5 6
 set_location "INT_SAMPLE" interrupt -1 -1 1
 set_location "HE_ISR" interrupt -1 -1 0
