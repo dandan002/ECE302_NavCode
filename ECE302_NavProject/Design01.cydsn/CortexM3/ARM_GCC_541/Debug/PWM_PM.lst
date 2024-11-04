@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
   28:Generated_Source\PSoC5/PWM_PM.c **** *  Saves the current user configuration of the component.
   29:Generated_Source\PSoC5/PWM_PM.c **** *
   30:Generated_Source\PSoC5/PWM_PM.c **** * Parameters:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 2
 
 
   31:Generated_Source\PSoC5/PWM_PM.c **** *  None
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
   64:Generated_Source\PSoC5/PWM_PM.c ****             PWM_backup.PWMControlRegister = PWM_ReadControlRegister();
   49              		.loc 1 64 0
   50 0016 FFF7FEFF 		bl	PWM_ReadControlRegister
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 3
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 3
 
 
   51              	.LVL2:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
   92:Generated_Source\PSoC5/PWM_PM.c ****                 PWM_WritePeriod(PWM_backup.PWMPeriod);
   78              		.loc 1 92 0
   79 0002 074C     		ldr	r4, .L7
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 4
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 4
 
 
   80 0004 A088     		ldrh	r0, [r4, #4]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  115:Generated_Source\PSoC5/PWM_PM.c **** 
  116:Generated_Source\PSoC5/PWM_PM.c **** 
  117:Generated_Source\PSoC5/PWM_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 5
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 5
 
 
  118:Generated_Source\PSoC5/PWM_PM.c **** * Function Name: PWM_Sleep
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  148:Generated_Source\PSoC5/PWM_PM.c ****         }
  149:Generated_Source\PSoC5/PWM_PM.c ****     #endif /* (PWM_UseControl) */
  150:Generated_Source\PSoC5/PWM_PM.c **** 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 6
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 6
 
 
  151:Generated_Source\PSoC5/PWM_PM.c ****     /* Stop component */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  161              		@ args = 0, pretend = 0, frame = 0
  162              		@ frame_needed = 0, uses_anonymous_args = 0
  163 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 7
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 7
 
 
  164              		.cfi_def_cfa_offset 8
@@ -412,13 +412,13 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  204 000c 6B000000 		.4byte	.LASF35
  205 0010 0C       		.byte	0xc
  206 0011 9E020000 		.4byte	.LASF36
- 207 0015 3B010000 		.4byte	.LASF37
+ 207 0015 64010000 		.4byte	.LASF37
  208 0019 00000000 		.4byte	.Ldebug_ranges0+0
  209 001d 00000000 		.4byte	0
  210 0021 00000000 		.4byte	.Ldebug_line0
  211 0025 02       		.uleb128 0x2
  212 0026 01       		.byte	0x1
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 8
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 8
 
 
  213 0027 06       		.byte	0x6
@@ -476,9 +476,9 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  265 008a 02       		.uleb128 0x2
  266 008b 08       		.byte	0x8
  267 008c 04       		.byte	0x4
- 268 008d 97010000 		.4byte	.LASF12
+ 268 008d 4E010000 		.4byte	.LASF12
  269 0091 02       		.uleb128 0x2
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 9
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 9
 
 
  270 0092 01       		.byte	0x1
@@ -529,7 +529,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  315 00ea 6B000000 		.4byte	0x6b
  316 00ee 06       		.byte	0x6
  317 00ef 07       		.uleb128 0x7
- 318 00f0 84010000 		.4byte	.LASF21
+ 318 00f0 3B010000 		.4byte	.LASF21
  319 00f4 03       		.byte	0x3
  320 00f5 86       		.byte	0x86
  321 00f6 6B000000 		.4byte	0x6b
@@ -538,13 +538,13 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  324 00fc 08       		.uleb128 0x8
  325 00fd 3B000000 		.4byte	.LASF22
  326 0101 03       		.byte	0x3
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 10
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 10
 
 
  327 0102 8B       		.byte	0x8b
  328 0103 B7000000 		.4byte	0xb7
  329 0107 09       		.uleb128 0x9
- 330 0108 9E010000 		.4byte	.LASF23
+ 330 0108 55010000 		.4byte	.LASF23
  331 010c 01       		.byte	0x1
  332 010d 2A       		.byte	0x2a
  333 010e 00000000 		.4byte	.LFB0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  381 018c 07010000 		.4byte	0x107
  382 0190 00       		.byte	0
  383 0191 09       		.uleb128 0x9
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 11
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 11
 
 
  384 0192 30010000 		.4byte	.LASF26
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  438 020d 51020000 		.4byte	.LASF33
  439 0211 51020000 		.4byte	.LASF33
  440 0215 03       		.byte	0x3
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 12
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 12
 
 
  441 0216 93       		.byte	0x93
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  495 002d 0E       		.uleb128 0xe
  496 002e 3A       		.uleb128 0x3a
  497 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 13
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 13
 
 
  498 0030 3B       		.uleb128 0x3b
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  552 0066 09       		.uleb128 0x9
  553 0067 2E       		.uleb128 0x2e
  554 0068 01       		.byte	0x1
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 14
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 14
 
 
  555 0069 3F       		.uleb128 0x3f
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  609 00a2 0E       		.uleb128 0xe
  610 00a3 03       		.uleb128 0x3
  611 00a4 0E       		.uleb128 0xe
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 15
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 15
 
 
  612 00a5 3A       		.uleb128 0x3a
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  658              	.LASF3:
  659 0016 73686F72 		.ascii	"short unsigned int\000"
  659      7420756E 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 16
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 16
 
 
  659      7369676E 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  678              	.LASF28:
  679 011a 50574D5F 		.ascii	"PWM_ReadCounter\000"
  679      52656164 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 17
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 17
 
 
  679      436F756E 
@@ -970,31 +970,31 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  683 0130 50574D5F 		.ascii	"PWM_Wakeup\000"
  683      57616B65 
  683      757000
- 684              	.LASF37:
- 685 013b 433A5C55 		.ascii	"C:\\Users\\danie\\Downloads\\ECE302_NavCode\\ECE302"
- 685      73657273 
- 685      5C64616E 
- 685      69655C44 
- 685      6F776E6C 
- 686 0169 5F4E6176 		.ascii	"_NavProject\\Design01.cydsn\000"
- 686      50726F6A 
- 686      6563745C 
- 686      44657369 
- 686      676E3031 
- 687              	.LASF21:
- 688 0184 50574D43 		.ascii	"PWMControlRegister\000"
- 688      6F6E7472 
- 688      6F6C5265 
- 688      67697374 
- 688      657200
- 689              	.LASF12:
- 690 0197 646F7562 		.ascii	"double\000"
- 690      6C6500
- 691              	.LASF23:
- 692 019e 50574D5F 		.ascii	"PWM_SaveConfig\000"
- 692      53617665 
- 692      436F6E66 
- 692      696700
+ 684              	.LASF21:
+ 685 013b 50574D43 		.ascii	"PWMControlRegister\000"
+ 685      6F6E7472 
+ 685      6F6C5265 
+ 685      67697374 
+ 685      657200
+ 686              	.LASF12:
+ 687 014e 646F7562 		.ascii	"double\000"
+ 687      6C6500
+ 688              	.LASF23:
+ 689 0155 50574D5F 		.ascii	"PWM_SaveConfig\000"
+ 689      53617665 
+ 689      436F6E66 
+ 689      696700
+ 690              	.LASF37:
+ 691 0164 433A5C55 		.ascii	"C:\\Users\\danie\\Documents\\ECE302_NavCode\\ECE302"
+ 691      73657273 
+ 691      5C64616E 
+ 691      69655C44 
+ 691      6F63756D 
+ 692 0192 5F4E6176 		.ascii	"_NavProject\\Design01.cydsn\000"
+ 692      50726F6A 
+ 692      6563745C 
+ 692      44657369 
+ 692      676E3031 
  693              	.LASF10:
  694 01ad 75696E74 		.ascii	"uint16\000"
  694      313600
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  702      57726974 
  702      65506572 
  702      696F6400 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 18
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 18
 
 
  703              	.LASF16:
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 1
  726      68617200 
  727              	.LASF34:
  728 0293 50574D5F 		.ascii	"PWM_Enable\000"
-ARM GAS  C:\Users\danie\AppData\Local\Temp\cc4ZXd5m.s 			page 19
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccdBgIef.s 			page 19
 
 
  728      456E6162 

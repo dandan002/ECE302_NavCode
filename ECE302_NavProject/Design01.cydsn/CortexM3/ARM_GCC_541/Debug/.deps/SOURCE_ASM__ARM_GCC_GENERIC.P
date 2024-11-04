@@ -1,10 +1,10 @@
-C:/Users/danie/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/CortexM3/ARM_GCC_541/Debug/CyBootAsmGnu.o : C:/Users/danie/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s C:/Users/danie/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu.inc C:/Users/danie/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc C:/Users/danie/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cyfittergnu.inc 
+C:/Users/danie/Documents/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/CortexM3/ARM_GCC_541/Debug/CyBootAsmGnu.o : C:/Users/danie/Documents/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s C:/Users/danie/Documents/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu.inc C:/Users/danie/Documents/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc C:/Users/danie/Documents/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cyfittergnu.inc 
 
-C:/Users/danie/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s : 
+C:/Users/danie/Documents/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/CyBootAsmGnu.s : 
 
-C:/Users/danie/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu.inc : 
+C:/Users/danie/Documents/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu.inc : 
 
-C:/Users/danie/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc : 
+C:/Users/danie/Documents/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cydevicegnu_trm.inc : 
 
-C:/Users/danie/Downloads/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cyfittergnu.inc : 
+C:/Users/danie/Documents/ECE302_NavCode/ECE302_NavProject/Design01.cydsn/Generated_Source/PSoC5/cyfittergnu.inc : 
 

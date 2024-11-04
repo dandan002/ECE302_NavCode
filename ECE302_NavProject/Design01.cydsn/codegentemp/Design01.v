@@ -1,6 +1,6 @@
 // ======================================================================
 // Design01.v generated from TopDesign.cysch
-// 11/04/2024 at 13:29
+// 11/04/2024 at 17:30
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -643,7 +643,7 @@ module Comp_v2_0_4 (
 
 endmodule
 
-// VDAC8_v1_90(Data_Source=0, Initial_Value=100, Strobe_Mode=0, VDAC_Range=0, VDAC_Speed=0, Voltage=400, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=VDAC8_v1_90, CY_CONFIG_TITLE=VDAC, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=VDAC, CY_INSTANCE_SHORT_NAME=VDAC, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=VDAC, )
+// VDAC8_v1_90(Data_Source=0, Initial_Value=225, Strobe_Mode=0, VDAC_Range=0, VDAC_Speed=2, Voltage=900, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=VDAC8_v1_90, CY_CONFIG_TITLE=VDAC, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=VDAC, CY_INSTANCE_SHORT_NAME=VDAC, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=VDAC, )
 module VDAC8_v1_90_5 (
     data,
     strobe,
@@ -654,7 +654,7 @@ module VDAC8_v1_90_5 (
     electrical  vOut;
 
     parameter Data_Source = 0;
-    parameter Initial_Value = 100;
+    parameter Initial_Value = 225;
     parameter Strobe_Mode = 0;
 
     electrical  Net_77;
@@ -1616,7 +1616,7 @@ module top ;
         .strobe(1'b0),
         .vOut(Net_1594));
     defparam VDAC.Data_Source = 0;
-    defparam VDAC.Initial_Value = 100;
+    defparam VDAC.Initial_Value = 225;
     defparam VDAC.Strobe_Mode = 0;
 
     GlitchFilter_v2_0 GLITCHFILTER (
