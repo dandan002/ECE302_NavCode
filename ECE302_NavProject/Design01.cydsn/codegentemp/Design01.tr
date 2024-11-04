@@ -81,17 +81,17 @@ VSYNC_IN(0)_PAD  3628          CSYNC_IN(0)_PAD:R
                        3.2::Clock to Out
                        -----------------
 
-Port Name                 Clock to Out  Clock Name:Phase   
-------------------------  ------------  -----------------  
-DEBUG_2(0)_PAD            34590         Clock_3:R          
-DEBUG_6(0)_PAD            34446         CSYNC_IN(0)_PAD:R  
-DEBUG_6(0)_PAD            34446         CSYNC_IN(0)_PAD:F  
-DEBUG_INTERRUPT_4(0)_PAD  33456         CyBUS_CLK:R        
-DEBUG_INTERRUPT_4(0)_PAD  27232         Clock_2:R          
-DEBUG_VID_IN_3(0)_PAD     31419         Clock_2:R          
-SERVO(0)_PAD              22975         Clock_1:R          
-Tx_1(0)_PAD               30589         UART_IntClock:R    
-motor(0)_PAD              24094         Clock_1:R          
+Port Name       Clock to Out  Clock Name:Phase   
+--------------  ------------  -----------------  
+DEBUG_2(0)_PAD  34590         Clock_3:R          
+DEBUG_3(0)_PAD  31419         Clock_2:R          
+DEBUG_4(0)_PAD  33456         CyBUS_CLK:R        
+DEBUG_4(0)_PAD  27232         Clock_2:R          
+DEBUG_6(0)_PAD  34446         CSYNC_IN(0)_PAD:R  
+DEBUG_6(0)_PAD  34446         CSYNC_IN(0)_PAD:F  
+SERVO(0)_PAD    22975         Clock_1:R          
+Tx_1(0)_PAD     30589         UART_IntClock:R    
+motor(0)_PAD    24094         Clock_1:R          
 
 
                          3.3::Pad to Pad

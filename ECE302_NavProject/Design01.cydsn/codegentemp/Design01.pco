@@ -1,5 +1,5 @@
 # Design01
-# 2024-11-04 18:16:42Z
+# 2024-11-04 18:30:03Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -17,9 +17,9 @@ set_io "RAW_VIDEO(0)" iocell 4 5
 set_io "CSYNC_IN(0)" iocell 4 1
 set_io "VSYNC_IN(0)" iocell 4 3
 set_io "DEBUG_2(0)" iocell 5 2
-set_io "DEBUG_VID_IN_3(0)" iocell 5 3
-set_io "DEBUG_INTERRUPT_4(0)" iocell 5 4
-set_io "DEBUG_VID_COMPARED_5(0)" iocell 5 5
+set_io "DEBUG_3(0)" iocell 5 3
+set_io "DEBUG_4(0)" iocell 5 4
+set_io "DEBUG_5(0)" iocell 5 5
 set_io "DEBUG_1(0)" iocell 5 1
 set_io "DEBUG_6(0)" iocell 5 6
 set_location "\TIMER:TimerUDB:capt_fifo_load\" 3 0 1 0

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
   28:Generated_Source\PSoC5/motor.c **** *
   29:Generated_Source\PSoC5/motor.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/motor.c **** *  and shifting the bits appropriately. 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 2
 
 
   31:Generated_Source\PSoC5/motor.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
   52              		.size	motor_Write, .-motor_Write
   53              		.section	.text.motor_SetDriveMode,"ax",%progbits
   54              		.align	2
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 3
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 3
 
 
   55              		.global	motor_SetDriveMode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
   77 0012 00BF     		.align	2
   78              	.L5:
   79 0014 01500040 		.word	1073762305
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 4
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 4
 
 
   80              		.cfi_endproc
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  110              		.align	2
  111              		.global	motor_ReadDataReg
  112              		.thumb
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 5
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 5
 
 
  113              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  139              	.Ldebug_info0:
  140 0000 1B010000 		.4byte	0x11b
  141 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 6
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 6
 
 
  142 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -307,7 +307,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  145 000c 62000000 		.4byte	.LASF20
  146 0010 0C       		.byte	0xc
  147 0011 00000000 		.4byte	.LASF21
- 148 0015 34010000 		.4byte	.LASF22
+ 148 0015 1A010000 		.4byte	.LASF22
  149 0019 00000000 		.4byte	.Ldebug_ranges0+0
  150 001d 00000000 		.4byte	0
  151 0021 00000000 		.4byte	.Ldebug_line0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  196 0073 2C000000 		.4byte	0x2c
  197 0077 02       		.uleb128 0x2
  198 0078 04       		.byte	0x4
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 7
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 7
 
 
  199 0079 04       		.byte	0x4
@@ -366,7 +366,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  201 007e 02       		.uleb128 0x2
  202 007f 08       		.byte	0x8
  203 0080 04       		.byte	0x4
- 204 0081 2D010000 		.4byte	.LASF10
+ 204 0081 76010000 		.4byte	.LASF10
  205 0085 02       		.uleb128 0x2
  206 0086 01       		.byte	0x1
  207 0087 08       		.byte	0x8
@@ -402,7 +402,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  237 00cd 53       		.byte	0x53
  238 00ce 00       		.byte	0
  239 00cf 06       		.uleb128 0x6
- 240 00d0 1A010000 		.4byte	.LASF15
+ 240 00d0 63010000 		.4byte	.LASF15
  241 00d4 01       		.byte	0x1
  242 00d5 5A       		.byte	0x5a
  243 00d6 00000000 		.4byte	.LFB1
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  253 00ef 21000000 		.4byte	.LLST1
  254 00f3 00       		.byte	0
  255 00f4 09       		.uleb128 0x9
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 8
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 8
 
 
  256 00f5 B9010000 		.4byte	.LASF18
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  310 0022 0B       		.uleb128 0xb
  311 0023 3E       		.uleb128 0x3e
  312 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 9
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 9
 
 
  313 0025 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  367 005c 3A       		.uleb128 0x3a
  368 005d 0B       		.uleb128 0xb
  369 005e 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 10
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 10
 
 
  370 005f 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  424 000a 50       		.byte	0x50
  425 000b 0A000000 		.4byte	.LVL2
  426 000f 18000000 		.4byte	.LFE0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 11
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 11
 
 
  427 0013 0400     		.2byte	0x4
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  480      02004200 
  480      00000201 
  480      FB0E0D00 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 12
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 12
 
 
  480      01010101 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  502      69676E65 
  502      6420696E 
  502      7400
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 13
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 13
 
 
  503              	.LASF3:
@@ -727,26 +727,26 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  504      7369676E 
  504      65642069 
  504      6E7400
- 505              	.LASF15:
- 506 011a 6D6F746F 		.ascii	"motor_SetDriveMode\000"
- 506      725F5365 
- 506      74447269 
- 506      76654D6F 
- 506      646500
- 507              	.LASF10:
- 508 012d 646F7562 		.ascii	"double\000"
- 508      6C6500
- 509              	.LASF22:
- 510 0134 433A5C55 		.ascii	"C:\\Users\\danie\\Documents\\ECE302_NavCode\\ECE302"
- 510      73657273 
- 510      5C64616E 
- 510      69655C44 
- 510      6F63756D 
- 511 0162 5F4E6176 		.ascii	"_NavProject\\Design01.cydsn\000"
- 511      50726F6A 
- 511      6563745C 
- 511      44657369 
- 511      676E3031 
+ 505              	.LASF22:
+ 506 011a 433A5C55 		.ascii	"C:\\Users\\danie\\Downloads\\ECE302_NavCode\\ECE302"
+ 506      73657273 
+ 506      5C64616E 
+ 506      69655C44 
+ 506      6F776E6C 
+ 507 0148 5F4E6176 		.ascii	"_NavProject\\Design01.cydsn\000"
+ 507      50726F6A 
+ 507      6563745C 
+ 507      44657369 
+ 507      676E3031 
+ 508              	.LASF15:
+ 509 0163 6D6F746F 		.ascii	"motor_SetDriveMode\000"
+ 509      725F5365 
+ 509      74447269 
+ 509      76654D6F 
+ 509      646500
+ 510              	.LASF10:
+ 511 0176 646F7562 		.ascii	"double\000"
+ 511      6C6500
  512              	.LASF8:
  513 017d 756E7369 		.ascii	"unsigned int\000"
  513      676E6564 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 1
  525      7420696E 
  525      7400
  526              	.LASF12:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccQqMwof.s 			page 14
+ARM GAS  C:\Users\danie\AppData\Local\Temp\cc2O6oMD.s 			page 14
 
 
  527 01ce 75696E74 		.ascii	"uint8\000"

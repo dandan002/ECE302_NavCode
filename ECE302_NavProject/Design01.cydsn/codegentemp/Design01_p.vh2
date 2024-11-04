@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 11/04/2024 13:16:41
+-- Generated: 11/04/2024 13:30:01
 -- PSoC Creator  4.4
 
 ENTITY Design01 IS
@@ -12,9 +12,9 @@ ENTITY Design01 IS
         CSYNC_IN(0)_PAD : IN std_ulogic;
         VSYNC_IN(0)_PAD : IN std_ulogic;
         DEBUG_2(0)_PAD : OUT std_ulogic;
-        DEBUG_VID_IN_3(0)_PAD : OUT std_ulogic;
-        DEBUG_INTERRUPT_4(0)_PAD : OUT std_ulogic;
-        DEBUG_VID_COMPARED_5(0)_PAD : OUT std_ulogic;
+        DEBUG_3(0)_PAD : OUT std_ulogic;
+        DEBUG_4(0)_PAD : OUT std_ulogic;
+        DEBUG_5(0)_PAD : OUT std_ulogic;
         DEBUG_1(0)_PAD : OUT std_ulogic;
         DEBUG_6(0)_PAD : OUT std_ulogic);
     ATTRIBUTE voltage_VDDABUF OF __DEFAULT__ : ENTITY IS 5e0;
@@ -43,10 +43,10 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     SIGNAL ClockBlock_XTAL_32KHZ : bit;
     SIGNAL DEBUG_1(0)__PA : bit;
     SIGNAL DEBUG_2(0)__PA : bit;
+    SIGNAL DEBUG_3(0)__PA : bit;
+    SIGNAL DEBUG_4(0)__PA : bit;
+    SIGNAL DEBUG_5(0)__PA : bit;
     SIGNAL DEBUG_6(0)__PA : bit;
-    SIGNAL DEBUG_INTERRUPT_4(0)__PA : bit;
-    SIGNAL DEBUG_VID_COMPARED_5(0)__PA : bit;
-    SIGNAL DEBUG_VID_IN_3(0)__PA : bit;
     SIGNAL HE(0)__PA : bit;
     SIGNAL MODIN1_0 : bit;
     SIGNAL MODIN1_1 : bit;
@@ -281,12 +281,12 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE Location OF VSYNC_IN(0) : LABEL IS "P4[3]";
     ATTRIBUTE lib_model OF DEBUG_2(0) : LABEL IS "iocell9";
     ATTRIBUTE Location OF DEBUG_2(0) : LABEL IS "P5[2]";
-    ATTRIBUTE lib_model OF DEBUG_VID_IN_3(0) : LABEL IS "iocell10";
-    ATTRIBUTE Location OF DEBUG_VID_IN_3(0) : LABEL IS "P5[3]";
-    ATTRIBUTE lib_model OF DEBUG_INTERRUPT_4(0) : LABEL IS "iocell11";
-    ATTRIBUTE Location OF DEBUG_INTERRUPT_4(0) : LABEL IS "P5[4]";
-    ATTRIBUTE lib_model OF DEBUG_VID_COMPARED_5(0) : LABEL IS "iocell12";
-    ATTRIBUTE Location OF DEBUG_VID_COMPARED_5(0) : LABEL IS "P5[5]";
+    ATTRIBUTE lib_model OF DEBUG_3(0) : LABEL IS "iocell10";
+    ATTRIBUTE Location OF DEBUG_3(0) : LABEL IS "P5[3]";
+    ATTRIBUTE lib_model OF DEBUG_4(0) : LABEL IS "iocell11";
+    ATTRIBUTE Location OF DEBUG_4(0) : LABEL IS "P5[4]";
+    ATTRIBUTE lib_model OF DEBUG_5(0) : LABEL IS "iocell12";
+    ATTRIBUTE Location OF DEBUG_5(0) : LABEL IS "P5[5]";
     ATTRIBUTE lib_model OF DEBUG_1(0) : LABEL IS "iocell13";
     ATTRIBUTE Location OF DEBUG_1(0) : LABEL IS "P5[1]";
     ATTRIBUTE lib_model OF DEBUG_6(0) : LABEL IS "iocell14";
@@ -1577,7 +1577,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    DEBUG_VID_IN_3:logicalport
+    DEBUG_3:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -1648,20 +1648,20 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    DEBUG_VID_IN_3(0):iocell
+    DEBUG_3(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "DEBUG_VID_IN_3",
+            logicalport => "DEBUG_3",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
-            pa_out => DEBUG_VID_IN_3(0)__PA,
+            pa_out => DEBUG_3(0)__PA,
             oe => open,
             pin_input => Net_3980,
-            pad_out => DEBUG_VID_IN_3(0)_PAD,
-            pad_in => DEBUG_VID_IN_3(0)_PAD,
+            pad_out => DEBUG_3(0)_PAD,
+            pad_in => DEBUG_3(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',
@@ -1669,7 +1669,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    DEBUG_INTERRUPT_4:logicalport
+    DEBUG_4:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -1740,20 +1740,20 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    DEBUG_INTERRUPT_4(0):iocell
+    DEBUG_4(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "DEBUG_INTERRUPT_4",
+            logicalport => "DEBUG_4",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
-            pa_out => DEBUG_INTERRUPT_4(0)__PA,
+            pa_out => DEBUG_4(0)__PA,
             oe => open,
             pin_input => Net_4080,
-            pad_out => DEBUG_INTERRUPT_4(0)_PAD,
-            pad_in => DEBUG_INTERRUPT_4(0)_PAD,
+            pad_out => DEBUG_4(0)_PAD,
+            pad_in => DEBUG_4(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',
@@ -1761,7 +1761,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    DEBUG_VID_COMPARED_5:logicalport
+    DEBUG_5:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -1832,20 +1832,20 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    DEBUG_VID_COMPARED_5(0):iocell
+    DEBUG_5(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "DEBUG_VID_COMPARED_5",
+            logicalport => "DEBUG_5",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
-            pa_out => DEBUG_VID_COMPARED_5(0)__PA,
+            pa_out => DEBUG_5(0)__PA,
             oe => open,
             pin_input => Net_2152,
-            pad_out => DEBUG_VID_COMPARED_5(0)_PAD,
-            pad_in => DEBUG_VID_COMPARED_5(0)_PAD,
+            pad_out => DEBUG_5(0)_PAD,
+            pad_in => DEBUG_5(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',

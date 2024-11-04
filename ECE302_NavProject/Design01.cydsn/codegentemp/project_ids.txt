@@ -1,6 +1,6 @@
-C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cyprj|de4c261f-e3fc-4d5b-9a0b-63ff9e86ac94
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a87ed587-ab35-4b3f-a85a-8e61e8c8b583
-C:\Users\danie\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|169e7e74-0f7e-453c-82dd-4b6cc77c46c3
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a6f627a9-abd7-40c2-9692-713611feb714
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|fe2708d7-dcd5-43cc-9a6b-b3f9e1d352b3
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|500479fe-2ded-416d-8793-2ab10463936e
+C:\Users\danie\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cyprj|122493a0-177a-4c97-9511-c659eb639fa1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|76860b6a-b655-4cb3-af94-614346e016da
+C:\Users\danie\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|b9c13875-1af3-4f24-a4a3-924f7d306a97
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|fb216b28-ac15-4476-8c08-48a2ab5e5d20
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|6ae2aafb-ca7e-4a66-bea6-73dd381aa2bb
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|8c73c5fc-0043-4155-9fba-6055bc53c312

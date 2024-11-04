@@ -2,7 +2,7 @@
 --	Conversion of Design01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Nov 04 13:16:40 2024
+--	Mon Nov 04 13:30:00 2024
 --
 
 USE cypress.cypress.all;
@@ -2071,21 +2071,21 @@ SIGNAL tmpFB_0__DEBUG_2_net_0 : bit;
 SIGNAL tmpIO_0__DEBUG_2_net_0 : bit;
 TERMINAL tmpSIOVREF__DEBUG_2_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__DEBUG_2_net_0 : bit;
-SIGNAL tmpOE__DEBUG_VID_IN_3_net_0 : bit;
-SIGNAL tmpFB_0__DEBUG_VID_IN_3_net_0 : bit;
-SIGNAL tmpIO_0__DEBUG_VID_IN_3_net_0 : bit;
-TERMINAL tmpSIOVREF__DEBUG_VID_IN_3_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__DEBUG_VID_IN_3_net_0 : bit;
-SIGNAL tmpOE__DEBUG_INTERRUPT_4_net_0 : bit;
-SIGNAL tmpFB_0__DEBUG_INTERRUPT_4_net_0 : bit;
-SIGNAL tmpIO_0__DEBUG_INTERRUPT_4_net_0 : bit;
-TERMINAL tmpSIOVREF__DEBUG_INTERRUPT_4_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__DEBUG_INTERRUPT_4_net_0 : bit;
-SIGNAL tmpOE__DEBUG_VID_COMPARED_5_net_0 : bit;
-SIGNAL tmpFB_0__DEBUG_VID_COMPARED_5_net_0 : bit;
-SIGNAL tmpIO_0__DEBUG_VID_COMPARED_5_net_0 : bit;
-TERMINAL tmpSIOVREF__DEBUG_VID_COMPARED_5_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__DEBUG_VID_COMPARED_5_net_0 : bit;
+SIGNAL tmpOE__DEBUG_3_net_0 : bit;
+SIGNAL tmpFB_0__DEBUG_3_net_0 : bit;
+SIGNAL tmpIO_0__DEBUG_3_net_0 : bit;
+TERMINAL tmpSIOVREF__DEBUG_3_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__DEBUG_3_net_0 : bit;
+SIGNAL tmpOE__DEBUG_4_net_0 : bit;
+SIGNAL tmpFB_0__DEBUG_4_net_0 : bit;
+SIGNAL tmpIO_0__DEBUG_4_net_0 : bit;
+TERMINAL tmpSIOVREF__DEBUG_4_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__DEBUG_4_net_0 : bit;
+SIGNAL tmpOE__DEBUG_5_net_0 : bit;
+SIGNAL tmpFB_0__DEBUG_5_net_0 : bit;
+SIGNAL tmpIO_0__DEBUG_5_net_0 : bit;
+TERMINAL tmpSIOVREF__DEBUG_5_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__DEBUG_5_net_0 : bit;
 SIGNAL tmpOE__DEBUG_1_net_0 : bit;
 SIGNAL tmpFB_0__DEBUG_1_net_0 : bit;
 SIGNAL tmpIO_0__DEBUG_1_net_0 : bit;
@@ -4502,7 +4502,7 @@ DEBUG_2:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__DEBUG_2_net_0);
-DEBUG_VID_IN_3:cy_psoc3_pins_v1_10
+DEBUG_3:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"24f2714f-f777-40c9-8f25-07b20aaab61e",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -4560,10 +4560,10 @@ DEBUG_VID_IN_3:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>Net_3980,
-		fb=>(tmpFB_0__DEBUG_VID_IN_3_net_0),
+		fb=>(tmpFB_0__DEBUG_3_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__DEBUG_VID_IN_3_net_0),
-		siovref=>(tmpSIOVREF__DEBUG_VID_IN_3_net_0),
+		io=>(tmpIO_0__DEBUG_3_net_0),
+		siovref=>(tmpSIOVREF__DEBUG_3_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -4571,8 +4571,8 @@ DEBUG_VID_IN_3:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__DEBUG_VID_IN_3_net_0);
-DEBUG_INTERRUPT_4:cy_psoc3_pins_v1_10
+		interrupt=>tmpINTERRUPT_0__DEBUG_3_net_0);
+DEBUG_4:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"280e2ccb-6f4f-4330-98b2-ef4809bfe7f9",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -4630,10 +4630,10 @@ DEBUG_INTERRUPT_4:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>Net_4080,
-		fb=>(tmpFB_0__DEBUG_INTERRUPT_4_net_0),
+		fb=>(tmpFB_0__DEBUG_4_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__DEBUG_INTERRUPT_4_net_0),
-		siovref=>(tmpSIOVREF__DEBUG_INTERRUPT_4_net_0),
+		io=>(tmpIO_0__DEBUG_4_net_0),
+		siovref=>(tmpSIOVREF__DEBUG_4_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -4641,8 +4641,8 @@ DEBUG_INTERRUPT_4:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__DEBUG_INTERRUPT_4_net_0);
-DEBUG_VID_COMPARED_5:cy_psoc3_pins_v1_10
+		interrupt=>tmpINTERRUPT_0__DEBUG_4_net_0);
+DEBUG_5:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"66599b49-8832-4b6b-b887-5634e9889450",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -4700,10 +4700,10 @@ DEBUG_VID_COMPARED_5:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>Net_2152,
-		fb=>(tmpFB_0__DEBUG_VID_COMPARED_5_net_0),
+		fb=>(tmpFB_0__DEBUG_5_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__DEBUG_VID_COMPARED_5_net_0),
-		siovref=>(tmpSIOVREF__DEBUG_VID_COMPARED_5_net_0),
+		io=>(tmpIO_0__DEBUG_5_net_0),
+		siovref=>(tmpSIOVREF__DEBUG_5_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -4711,7 +4711,7 @@ DEBUG_VID_COMPARED_5:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__DEBUG_VID_COMPARED_5_net_0);
+		interrupt=>tmpINTERRUPT_0__DEBUG_5_net_0);
 DEBUG_1:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"7170f142-c110-4fe3-8c78-6f023d48dbe7",
 		drive_mode=>"110",

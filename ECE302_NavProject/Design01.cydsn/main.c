@@ -58,6 +58,7 @@ CY_ISR(steer_inter) {
     UART_PutString("\r\n NAV INTR");
     sprintf(str_buf, "\r\n time:  %f", sampledTime);
     sprintf(str_buf, "\r\n steering error:  %f", error_steering);
+    sprintf(str_buf, "\r\n steering pwm:  %f", steeringOutput);
     UART_PutString(str_buf);
     
     steeringPWM = (uint16)steeringOutput;

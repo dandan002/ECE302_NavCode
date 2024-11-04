@@ -1,6 +1,6 @@
 // ======================================================================
 // Design01.v generated from TopDesign.cysch
-// 11/04/2024 at 13:16
+// 11/04/2024 at 13:29
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1760,11 +1760,11 @@ module top ;
 
 	assign tmpOE__DEBUG_2_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-	wire [0:0] tmpOE__DEBUG_VID_IN_3_net;
-	wire [0:0] tmpFB_0__DEBUG_VID_IN_3_net;
-	wire [0:0] tmpIO_0__DEBUG_VID_IN_3_net;
-	wire [0:0] tmpINTERRUPT_0__DEBUG_VID_IN_3_net;
-	electrical [0:0] tmpSIOVREF__DEBUG_VID_IN_3_net;
+	wire [0:0] tmpOE__DEBUG_3_net;
+	wire [0:0] tmpFB_0__DEBUG_3_net;
+	wire [0:0] tmpIO_0__DEBUG_3_net;
+	wire [0:0] tmpINTERRUPT_0__DEBUG_3_net;
+	electrical [0:0] tmpSIOVREF__DEBUG_3_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("24f2714f-f777-40c9-8f25-07b20aaab61e"),
@@ -1819,13 +1819,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		DEBUG_VID_IN_3
-		 (.oe(tmpOE__DEBUG_VID_IN_3_net),
+		DEBUG_3
+		 (.oe(tmpOE__DEBUG_3_net),
 		  .y({Net_3980}),
-		  .fb({tmpFB_0__DEBUG_VID_IN_3_net[0:0]}),
-		  .io({tmpIO_0__DEBUG_VID_IN_3_net[0:0]}),
-		  .siovref(tmpSIOVREF__DEBUG_VID_IN_3_net),
-		  .interrupt({tmpINTERRUPT_0__DEBUG_VID_IN_3_net[0:0]}),
+		  .fb({tmpFB_0__DEBUG_3_net[0:0]}),
+		  .io({tmpIO_0__DEBUG_3_net[0:0]}),
+		  .siovref(tmpSIOVREF__DEBUG_3_net),
+		  .interrupt({tmpINTERRUPT_0__DEBUG_3_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -1833,13 +1833,13 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__DEBUG_VID_IN_3_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__DEBUG_3_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-	wire [0:0] tmpOE__DEBUG_INTERRUPT_4_net;
-	wire [0:0] tmpFB_0__DEBUG_INTERRUPT_4_net;
-	wire [0:0] tmpIO_0__DEBUG_INTERRUPT_4_net;
-	wire [0:0] tmpINTERRUPT_0__DEBUG_INTERRUPT_4_net;
-	electrical [0:0] tmpSIOVREF__DEBUG_INTERRUPT_4_net;
+	wire [0:0] tmpOE__DEBUG_4_net;
+	wire [0:0] tmpFB_0__DEBUG_4_net;
+	wire [0:0] tmpIO_0__DEBUG_4_net;
+	wire [0:0] tmpINTERRUPT_0__DEBUG_4_net;
+	electrical [0:0] tmpSIOVREF__DEBUG_4_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("280e2ccb-6f4f-4330-98b2-ef4809bfe7f9"),
@@ -1894,13 +1894,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		DEBUG_INTERRUPT_4
-		 (.oe(tmpOE__DEBUG_INTERRUPT_4_net),
+		DEBUG_4
+		 (.oe(tmpOE__DEBUG_4_net),
 		  .y({Net_4080}),
-		  .fb({tmpFB_0__DEBUG_INTERRUPT_4_net[0:0]}),
-		  .io({tmpIO_0__DEBUG_INTERRUPT_4_net[0:0]}),
-		  .siovref(tmpSIOVREF__DEBUG_INTERRUPT_4_net),
-		  .interrupt({tmpINTERRUPT_0__DEBUG_INTERRUPT_4_net[0:0]}),
+		  .fb({tmpFB_0__DEBUG_4_net[0:0]}),
+		  .io({tmpIO_0__DEBUG_4_net[0:0]}),
+		  .siovref(tmpSIOVREF__DEBUG_4_net),
+		  .interrupt({tmpINTERRUPT_0__DEBUG_4_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -1908,13 +1908,13 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__DEBUG_INTERRUPT_4_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__DEBUG_4_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-	wire [0:0] tmpOE__DEBUG_VID_COMPARED_5_net;
-	wire [0:0] tmpFB_0__DEBUG_VID_COMPARED_5_net;
-	wire [0:0] tmpIO_0__DEBUG_VID_COMPARED_5_net;
-	wire [0:0] tmpINTERRUPT_0__DEBUG_VID_COMPARED_5_net;
-	electrical [0:0] tmpSIOVREF__DEBUG_VID_COMPARED_5_net;
+	wire [0:0] tmpOE__DEBUG_5_net;
+	wire [0:0] tmpFB_0__DEBUG_5_net;
+	wire [0:0] tmpIO_0__DEBUG_5_net;
+	wire [0:0] tmpINTERRUPT_0__DEBUG_5_net;
+	electrical [0:0] tmpSIOVREF__DEBUG_5_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("66599b49-8832-4b6b-b887-5634e9889450"),
@@ -1969,13 +1969,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		DEBUG_VID_COMPARED_5
-		 (.oe(tmpOE__DEBUG_VID_COMPARED_5_net),
+		DEBUG_5
+		 (.oe(tmpOE__DEBUG_5_net),
 		  .y({Net_2152}),
-		  .fb({tmpFB_0__DEBUG_VID_COMPARED_5_net[0:0]}),
-		  .io({tmpIO_0__DEBUG_VID_COMPARED_5_net[0:0]}),
-		  .siovref(tmpSIOVREF__DEBUG_VID_COMPARED_5_net),
-		  .interrupt({tmpINTERRUPT_0__DEBUG_VID_COMPARED_5_net[0:0]}),
+		  .fb({tmpFB_0__DEBUG_5_net[0:0]}),
+		  .io({tmpIO_0__DEBUG_5_net[0:0]}),
+		  .siovref(tmpSIOVREF__DEBUG_5_net),
+		  .interrupt({tmpINTERRUPT_0__DEBUG_5_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -1983,7 +1983,7 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__DEBUG_VID_COMPARED_5_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__DEBUG_5_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__DEBUG_1_net;
 	wire [0:0] tmpFB_0__DEBUG_1_net;

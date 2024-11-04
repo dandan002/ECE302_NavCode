@@ -87,12 +87,11 @@ set_location "\Sync_1:genblk1[5]:INST\" synccell 2 0 5 0
 set_location "\Sync_1:genblk1[4]:INST\" synccell 3 4 5 0
 set_location "\Sync_1:genblk1[7]:INST\" synccell 2 0 5 1
 set_io "Rx_1(0)" iocell 6 6
-set_io "DEBUG_VID_COMPARED_5(0)" iocell 5 5
+set_io "DEBUG_4(0)" iocell 5 4
 set_io "motor(0)" iocell 0 1
-set_io "DEBUG_VID_IN_3(0)" iocell 5 3
 set_io "HE(0)" iocell 3 4
+set_io "DEBUG_5(0)" iocell 5 5
 set_io "CSYNC_IN(0)" iocell 4 1
-set_io "DEBUG_INTERRUPT_4(0)" iocell 5 4
 set_io "VSYNC_IN(0)" iocell 4 3
 set_io "DEBUG_1(0)" iocell 5 1
 set_location "\VID_TIMER:TimerUDB:sCTRLReg:SyncCtl:ctrlreg\" controlcell 2 2 6 
@@ -101,6 +100,7 @@ set_location "\SERVO_PWM:PWMUDB:genblk1:ctrlreg\" controlcell 2 4 6
 set_location "\VDAC:viDAC8\" vidaccell -1 -1 2
 set_io "DEBUG_2(0)" iocell 5 2
 set_location "ClockBlock" clockblockcell -1 -1 0
+set_io "DEBUG_3(0)" iocell 5 3
 set_io "SERVO(0)" iocell 4 7
 set_io "Tx_1(0)" iocell 6 0
 set_io "DEBUG_6(0)" iocell 5 6
