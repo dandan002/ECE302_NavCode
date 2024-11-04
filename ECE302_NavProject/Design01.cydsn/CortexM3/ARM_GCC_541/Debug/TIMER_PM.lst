@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
   28:Generated_Source\PSoC5/TIMER_PM.c **** * Summary:
   29:Generated_Source\PSoC5/TIMER_PM.c **** *     Save the current user configuration
   30:Generated_Source\PSoC5/TIMER_PM.c **** *
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 2
 
 
   31:Generated_Source\PSoC5/TIMER_PM.c **** * Parameters:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
   59              		.align	2
   60              		.global	TIMER_RestoreConfig
   61              		.thumb
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 3
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 3
 
 
   62              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
   87:Generated_Source\PSoC5/TIMER_PM.c ****         #if(!TIMER_UDB_CONTROL_REG_REMOVED)
   88:Generated_Source\PSoC5/TIMER_PM.c ****             TIMER_WriteControlRegister(TIMER_backup.TimerControlRegister);
   83              		.loc 1 88 0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 4
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 4
 
 
   84 0010 6079     		ldrb	r0, [r4, #5]	@ zero_extendqisi2
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  115:Generated_Source\PSoC5/TIMER_PM.c ****         /* Save Counter's enable state */
  116:Generated_Source\PSoC5/TIMER_PM.c ****         if(TIMER_CTRL_ENABLE == (TIMER_CONTROL & TIMER_CTRL_ENABLE))
  112              		.loc 1 116 0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 5
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 5
 
 
  113 0002 084B     		ldr	r3, .L13
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  133:Generated_Source\PSoC5/TIMER_PM.c **** * Function Name: TIMER_Wakeup
  134:Generated_Source\PSoC5/TIMER_PM.c **** ********************************************************************************
  135:Generated_Source\PSoC5/TIMER_PM.c **** *
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 6
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 6
 
 
  136:Generated_Source\PSoC5/TIMER_PM.c **** * Summary:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  184              	TIMER_backup:
  185 0000 00000000 		.space	6
  185      0000
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 7
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 7
 
 
  186              		.text
@@ -375,7 +375,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  197 000c C7000000 		.4byte	.LASF32
  198 0010 0C       		.byte	0xc
  199 0011 5B000000 		.4byte	.LASF33
- 200 0015 7F010000 		.4byte	.LASF34
+ 200 0015 A1010000 		.4byte	.LASF34
  201 0019 00000000 		.4byte	.Ldebug_ranges0+0
  202 001d 00000000 		.4byte	0
  203 0021 00000000 		.4byte	.Ldebug_line0
@@ -386,7 +386,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  208 002c 02       		.uleb128 0x2
  209 002d 01       		.byte	0x1
  210 002e 08       		.byte	0x8
- 211 002f C8010000 		.4byte	.LASF1
+ 211 002f 7F010000 		.4byte	.LASF1
  212 0033 02       		.uleb128 0x2
  213 0034 02       		.byte	0x2
  214 0035 05       		.byte	0x5
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  240 0064 02       		.uleb128 0x2
  241 0065 04       		.byte	0x4
  242 0066 07       		.byte	0x7
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 8
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 8
 
 
  243 0067 03020000 		.4byte	.LASF8
@@ -439,7 +439,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  258 008a 02       		.uleb128 0x2
  259 008b 08       		.byte	0x8
  260 008c 04       		.byte	0x4
- 261 008d D6010000 		.4byte	.LASF12
+ 261 008d 8D010000 		.4byte	.LASF12
  262 0091 02       		.uleb128 0x2
  263 0092 01       		.byte	0x1
  264 0093 08       		.byte	0x8
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  297 00d6 02       		.byte	0x2
  298 00d7 07       		.uleb128 0x7
  299 00d8 A0020000 		.4byte	.LASF19
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 9
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 9
 
 
  300 00dc 03       		.byte	0x3
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  354 015a 01       		.uleb128 0x1
  355 015b 9C       		.byte	0x9c
  356 015c 73010000 		.4byte	0x173
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 10
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 10
 
 
  357 0160 0A       		.uleb128 0xa
@@ -598,11 +598,11 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  411 01e1 03       		.byte	0x3
  412 01e2 5B       		.byte	0x5b
  413 01e3 0C       		.uleb128 0xc
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 11
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 11
 
 
- 414 01e4 DD010000 		.4byte	.LASF31
- 415 01e8 DD010000 		.4byte	.LASF31
+ 414 01e4 94010000 		.4byte	.LASF31
+ 415 01e8 94010000 		.4byte	.LASF31
  416 01ec 03       		.byte	0x3
  417 01ed 8B       		.byte	0x8b
  418 01ee 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  468 002f 0B       		.uleb128 0xb
  469 0030 3B       		.uleb128 0x3b
  470 0031 05       		.uleb128 0x5
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 12
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 12
 
 
  471 0032 49       		.uleb128 0x49
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  525 0068 01       		.byte	0x1
  526 0069 3F       		.uleb128 0x3f
  527 006a 19       		.uleb128 0x19
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 13
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 13
 
 
  528 006b 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  582 00a4 0E       		.uleb128 0xe
  583 00a5 3A       		.uleb128 0x3a
  584 00a6 0B       		.uleb128 0xb
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 14
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 14
 
 
  585 00a7 3B       		.uleb128 0x3b
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  627              	.LASF27:
  628 0022 54494D45 		.ascii	"TIMER_ReadControlRegister\000"
  628      525F5265 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 15
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 15
 
 
  628      6164436F 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  648 012d 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  648      66756E63 
  648      74696F6E 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 16
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 16
 
 
  648      2D736563 
@@ -920,30 +920,30 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  656      525F5761 
  656      6B657570 
  656      00
- 657              	.LASF34:
- 658 017f 433A5C55 		.ascii	"C:\\Users\\danie\\Downloads\\ECE302_NavCode\\ECE302"
- 658      73657273 
- 658      5C64616E 
- 658      69655C44 
- 658      6F776E6C 
- 659 01ad 5F4E6176 		.ascii	"_NavProject\\Design01.cydsn\000"
- 659      50726F6A 
- 659      6563745C 
- 659      44657369 
- 659      676E3031 
- 660              	.LASF1:
- 661 01c8 756E7369 		.ascii	"unsigned char\000"
- 661      676E6564 
- 661      20636861 
- 661      7200
- 662              	.LASF12:
- 663 01d6 646F7562 		.ascii	"double\000"
- 663      6C6500
- 664              	.LASF31:
- 665 01dd 54494D45 		.ascii	"TIMER_Enable\000"
- 665      525F456E 
- 665      61626C65 
- 665      00
+ 657              	.LASF1:
+ 658 017f 756E7369 		.ascii	"unsigned char\000"
+ 658      676E6564 
+ 658      20636861 
+ 658      7200
+ 659              	.LASF12:
+ 660 018d 646F7562 		.ascii	"double\000"
+ 660      6C6500
+ 661              	.LASF31:
+ 662 0194 54494D45 		.ascii	"TIMER_Enable\000"
+ 662      525F456E 
+ 662      61626C65 
+ 662      00
+ 663              	.LASF34:
+ 664 01a1 433A5C55 		.ascii	"C:\\Users\\danie\\Documents\\ECE302_NavCode\\ECE302"
+ 664      73657273 
+ 664      5C64616E 
+ 664      69655C44 
+ 664      6F63756D 
+ 665 01cf 5F4E6176 		.ascii	"_NavProject\\Design01.cydsn\000"
+ 665      50726F6A 
+ 665      6563745C 
+ 665      44657369 
+ 665      676E3031 
  666              	.LASF10:
  667 01ea 75696E74 		.ascii	"uint16\000"
  667      313600
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  671      676E6564 
  671      20696E74 
  671      00
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 17
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 17
 
 
  672              	.LASF7:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 1
  695      6B56616C 
  695      756500
  696              	.LASF20:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccEmbZDa.s 			page 18
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccDQ0YmB.s 			page 18
 
 
  697 02b3 54696D65 		.ascii	"TimerControlRegister\000"

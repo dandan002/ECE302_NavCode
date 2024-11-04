@@ -61,7 +61,9 @@
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\COMP</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\CSYNC_IN</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cy_boot</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\DEBUG_COMP_OUT_2</v>
+<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\DEBUG_1</v>
+<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\DEBUG_2</v>
+<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\DEBUG_6</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\DEBUG_INTERRUPT_4</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\DEBUG_VID_COMPARED_5</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\DEBUG_VID_IN_3</v>
@@ -73,16 +75,6 @@
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\PWM</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\RAW_VIDEO</v>
 <v>ECE302_NavProject\Design01\Generated_Source\PSoC5\SERVO</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\SERVO_PWM</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\TIMER</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\UART</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\UART_IntClock</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\VDAC</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\VID_TIMER</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\VSYNC_IN</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cycodeshareexport.ld</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cycodeshareimport.ld</v>
-<v>ECE302_NavProject\Design01\Generated_Source\PSoC5\cycodeshareimport.scat</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -124,7 +116,9 @@
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_COMP_OUT_2.lst</v>
+<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_1.lst</v>
+<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_2.lst</v>
+<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_6.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_INTERRUPT_4.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_VID_COMPARED_5.lst</v>
 <v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_VID_IN_3.lst</v>
@@ -189,6 +183,8 @@
 <v>ECE302_NavProject\Design01\cy_sync_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\DigitalComp_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\GlitchFilter_v2_0.pdf</v>
+<v>ECE302_NavProject\Design01\not_v1_0</v>
+<v>ECE302_NavProject\Design01\not_v1_0\not_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30\PWM_v3_30.pdf</v>
 <v>ECE302_NavProject\Design01\Timer_v2_80</v>
@@ -216,6 +212,8 @@
 <v>ECE302_NavProject\Design01\cy_sync_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\DigitalComp_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\GlitchFilter_v2_0.pdf</v>
+<v>ECE302_NavProject\Design01\not_v1_0</v>
+<v>ECE302_NavProject\Design01\not_v1_0\not_v1_0.pdf</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30</v>
 <v>ECE302_NavProject\Design01\PWM_v3_30\PWM_v3_30.pdf</v>
 <v>ECE302_NavProject\Design01\Timer_v2_80</v>
@@ -231,9 +229,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\Design01.cydsn\Design01.cydwr" />
 <name v=".\Design01.cydsn\main.c" />
+<name v=".\Design01.cydsn\Design01.cydwr" />
+<name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -241,7 +239,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1407, 703" SelectedTabbedMdiWindow="f9e4376e-c4a7-4663-a0cc-32bdf7e86a7d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b1eade91-b3de-47a2-b5ba-ed002a3f0e99" /><DocumentWindow Key="C:\Users\danie\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="8fe284ec-2413-4834-a2d7-9b84cba9215c" /><DocumentWindow Key="C:\Users\danie\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cydwr" Guid="aa17b9cf-6112-4857-a51e-07195b0b8967" /><DocumentWindow Key="C:\Users\danie\Downloads\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\main.c" Guid="f9e4376e-c4a7-4663-a0cc-32bdf7e86a7d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1084, 548" SelectedTabbedMdiWindow="d142bc74-9f18-4a60-a935-5a24f631d1a0"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b1eade91-b3de-47a2-b5ba-ed002a3f0e99" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\main.c" Guid="d142bc74-9f18-4a60-a935-5a24f631d1a0" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cydwr" Guid="e920bcd4-5c69-4b59-912f-93946bee8fe1" /><DocumentWindow Key="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="03179395-59b2-4c47-877b-4deb8c0f17bd" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -22,7 +22,7 @@ char strbuf[42];
 
 // Line-following constants and variables       
 #define MIDDLE_LINE 120
-#define Kp_steering 1
+#define Kp_steering 10
 #define Ki_steering 0.5
 #define Kd_steering 0.5
 
