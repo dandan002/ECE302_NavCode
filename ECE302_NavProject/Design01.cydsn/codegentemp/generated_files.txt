@@ -67,8 +67,6 @@
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\VID_TIMER_PM.c" value="SOURCE_C;CortexM3;;;;VID_TIMER" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\INT_SAMPLE.c" value="SOURCE_C;CortexM3;;;;INT_SAMPLE" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\INT_SAMPLE.h" value="HEADER;;;;;INT_SAMPLE" />
-  <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\Clock_3.c" value="SOURCE_C;CortexM3;;;;Clock_3" />
-  <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\Clock_3.h" value="HEADER;;;;;Clock_3" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\DEBUG_2_aliases.h" value="HEADER;;;;;DEBUG_2" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\DEBUG_2.c" value="SOURCE_C;CortexM3;;;;DEBUG_2" />
   <file name="C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\codegentemp\DEBUG_2.h" value="HEADER;;;;;DEBUG_2" />

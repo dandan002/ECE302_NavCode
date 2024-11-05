@@ -42,7 +42,6 @@
 #include "VDAC.h"
 #include "VID_TIMER.h"
 #include "INT_SAMPLE.h"
-#include "Clock_3.h"
 #include "DEBUG_2_aliases.h"
 #include "DEBUG_2.h"
 #include "DEBUG_3_aliases.h"

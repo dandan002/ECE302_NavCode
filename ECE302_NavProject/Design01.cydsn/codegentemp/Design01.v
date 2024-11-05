@@ -1,6 +1,6 @@
 // ======================================================================
 // Design01.v generated from TopDesign.cysch
-// 11/04/2024 at 18:49
+// 11/04/2024 at 20:28
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -643,7 +643,7 @@ module Comp_v2_0_4 (
 
 endmodule
 
-// VDAC8_v1_90(Data_Source=0, Initial_Value=225, Strobe_Mode=0, VDAC_Range=0, VDAC_Speed=2, Voltage=900, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=VDAC8_v1_90, CY_CONFIG_TITLE=VDAC, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=VDAC, CY_INSTANCE_SHORT_NAME=VDAC, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=VDAC, )
+// VDAC8_v1_90(Data_Source=0, Initial_Value=62, Strobe_Mode=0, VDAC_Range=4, VDAC_Speed=2, Voltage=992, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=VDAC8_v1_90, CY_CONFIG_TITLE=VDAC, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=VDAC, CY_INSTANCE_SHORT_NAME=VDAC, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=90, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=VDAC, )
 module VDAC8_v1_90_5 (
     data,
     strobe,
@@ -654,7 +654,7 @@ module VDAC8_v1_90_5 (
     electrical  vOut;
 
     parameter Data_Source = 0;
-    parameter Initial_Value = 225;
+    parameter Initial_Value = 62;
     parameter Strobe_Mode = 0;
 
     electrical  Net_77;
@@ -818,8 +818,6 @@ endmodule
 // top
 module top ;
 
-          wire  Net_5983;
-          wire  Net_5980;
           wire  Net_6062;
           wire  Net_6061;
           wire  Net_6060;
@@ -875,8 +873,8 @@ module top ;
           wire  Net_2766;
           wire  Net_2781;
           wire  Net_2780;
-    electrical  Net_1594;
     electrical  Net_1582;
+    electrical  Net_1594;
           wire [7:0] Net_5978;
           wire [7:0] Net_3649;
           wire  Net_3791;
@@ -1616,7 +1614,7 @@ module top ;
         .strobe(1'b0),
         .vOut(Net_1594));
     defparam VDAC.Data_Source = 0;
-    defparam VDAC.Initial_Value = 225;
+    defparam VDAC.Initial_Value = 62;
     defparam VDAC.Strobe_Mode = 0;
 
     GlitchFilter_v2_0 GLITCHFILTER (
@@ -1668,22 +1666,10 @@ module top ;
 
 
     cy_sync_v1_0 Sync_1 (
-        .clock(Net_5980),
+        .clock(Net_5947),
         .s_in(Net_5962[7:0]),
         .s_out(Net_5978[7:0]));
     defparam Sync_1.SignalWidth = 8;
-
-
-	cy_clock_v1_0
-		#(.id("7853907e-69ea-42b6-b493-9b7626247a7d"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("41666666.6666667"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_3
-		 (.clock_out(Net_5980));
-
 
 	wire [0:0] tmpOE__DEBUG_2_net;
 	wire [0:0] tmpFB_0__DEBUG_2_net;

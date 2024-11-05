@@ -1,3 +1,3 @@
 # Component constraints for C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\TopDesign\TopDesign.cysch
 # Project: C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cyprj
-# Date: Mon, 04 Nov 2024 23:49:55 GMT
+# Date: Tue, 05 Nov 2024 01:28:43 GMT

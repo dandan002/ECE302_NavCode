@@ -2,7 +2,7 @@
 --	Conversion of Design01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Nov 04 18:49:57 2024
+--	Mon Nov 04 20:28:45 2024
 --
 
 USE cypress.cypress.all;
@@ -2057,7 +2057,6 @@ SIGNAL \VID_TIMER:TimerUDB:sT16:timerdp:f1_blk_stat_reg_1\ : bit;
 ATTRIBUTE port_state_att of \VID_TIMER:TimerUDB:sT16:timerdp:f1_blk_stat_reg_1\:SIGNAL IS 2;
 SIGNAL \VID_TIMER:Net_102\ : bit;
 SIGNAL \VID_TIMER:Net_266\ : bit;
-SIGNAL Net_5980 : bit;
 SIGNAL Net_5978_0 : bit;
 SIGNAL Net_5978_1 : bit;
 SIGNAL Net_5978_2 : bit;
@@ -4391,47 +4390,37 @@ INT_SAMPLE:cy_isr_v1_0
 		is_nmi=>'0')
 	PORT MAP(int_signal=>Net_4080);
 \Sync_1:genblk1[0]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_5980,
+	PORT MAP(clock=>Net_5947,
 		sc_in=>Net_5962_0,
 		sc_out=>Net_5978_0);
 \Sync_1:genblk1[1]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_5980,
+	PORT MAP(clock=>Net_5947,
 		sc_in=>Net_5962_1,
 		sc_out=>Net_5978_1);
 \Sync_1:genblk1[2]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_5980,
+	PORT MAP(clock=>Net_5947,
 		sc_in=>Net_5962_2,
 		sc_out=>Net_5978_2);
 \Sync_1:genblk1[3]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_5980,
+	PORT MAP(clock=>Net_5947,
 		sc_in=>Net_5962_3,
 		sc_out=>Net_5978_3);
 \Sync_1:genblk1[4]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_5980,
+	PORT MAP(clock=>Net_5947,
 		sc_in=>Net_5962_4,
 		sc_out=>Net_5978_4);
 \Sync_1:genblk1[5]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_5980,
+	PORT MAP(clock=>Net_5947,
 		sc_in=>Net_5962_5,
 		sc_out=>Net_5978_5);
 \Sync_1:genblk1[6]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_5980,
+	PORT MAP(clock=>Net_5947,
 		sc_in=>Net_5962_6,
 		sc_out=>Net_5978_6);
 \Sync_1:genblk1[7]:INST\:cy_psoc3_sync
-	PORT MAP(clock=>Net_5980,
+	PORT MAP(clock=>Net_5947,
 		sc_in=>Net_5962_7,
 		sc_out=>Net_5978_7);
-Clock_3:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"7853907e-69ea-42b6-b493-9b7626247a7d",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"41666666.6666667",
-		is_direct=>'0',
-		is_digital=>'1')
-	PORT MAP(clock_out=>Net_5980,
-		dig_domain_out=>open);
 DEBUG_2:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"09a23e5d-3c9a-4343-8a9d-a6aae5b9a76e",
 		drive_mode=>"110",

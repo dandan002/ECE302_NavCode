@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 11/04/2024 18:49:58
+-- Generated: 11/04/2024 20:28:45
 -- PSoC Creator  4.4
 
 ENTITY Design01 IS
@@ -87,9 +87,6 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     SIGNAL Net_5978_5 : bit;
     SIGNAL Net_5978_6 : bit;
     SIGNAL Net_5978_7 : bit;
-    SIGNAL Net_5980 : bit;
-    ATTRIBUTE global_signal OF Net_5980 : SIGNAL IS true;
-    SIGNAL Net_5980_local : bit;
     SIGNAL Net_5991 : bit;
     SIGNAL Net_6049 : bit;
     SIGNAL RAW_VIDEO(0)__PA : bit;
@@ -748,12 +745,10 @@ BEGIN
             dsi_glb_div => open,
             dclk_glb_0 => Net_5947,
             dclk_0 => Net_5947_local,
-            dclk_glb_1 => Net_5980,
-            dclk_1 => Net_5980_local,
-            dclk_glb_2 => Net_333,
-            dclk_2 => Net_333_local,
-            dclk_glb_3 => \UART:Net_9\,
-            dclk_3 => \UART:Net_9_local\);
+            dclk_glb_1 => Net_333,
+            dclk_1 => Net_333_local,
+            dclk_glb_2 => \UART:Net_9\,
+            dclk_2 => \UART:Net_9_local\);
 
     motor:logicalport
         GENERIC MAP(
@@ -2988,7 +2983,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => Net_5980,
+            clock => Net_5947,
             in => Net_5962_0,
             out => Net_5978_0);
 
@@ -2997,7 +2992,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => Net_5980,
+            clock => Net_5947,
             in => Net_5962_1,
             out => Net_5978_1);
 
@@ -3006,7 +3001,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => Net_5980,
+            clock => Net_5947,
             in => Net_5962_2,
             out => Net_5978_2);
 
@@ -3015,7 +3010,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => Net_5980,
+            clock => Net_5947,
             in => Net_5962_3,
             out => Net_5978_3);
 
@@ -3024,7 +3019,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => Net_5980,
+            clock => Net_5947,
             in => Net_5962_4,
             out => Net_5978_4);
 
@@ -3033,7 +3028,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => Net_5980,
+            clock => Net_5947,
             in => Net_5962_5,
             out => Net_5978_5);
 
@@ -3042,7 +3037,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => Net_5980,
+            clock => Net_5947,
             in => Net_5962_6,
             out => Net_5978_6);
 
@@ -3051,7 +3046,7 @@ BEGIN
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            clock => Net_5980,
+            clock => Net_5947,
             in => Net_5962_7,
             out => Net_5978_7);
 
