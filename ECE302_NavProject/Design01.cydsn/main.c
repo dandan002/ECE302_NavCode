@@ -7,7 +7,7 @@
 #define TARGET_SPEED 4.0          
 #define WHEEL_CIRCUMFERENCE 0.5   
 #define PULSES_PER_TURN 5         
-#define Kp_speed 500               
+#define Kp_speed 1000               
 #define Ki_speed 150
 
 #define MAX_SPEED 100000
@@ -17,7 +17,7 @@ volatile double speed = 0.0;
 uint16 old = 65535;
 uint16 new;
 uint16 elapsed;
-volatile double PWM_base = 50000;
+volatile double PWM_base = 30000;
 volatile double pwm;
 double err_speed;
 double acc_err_speed = 0;
@@ -25,9 +25,9 @@ char strbuf[42];
 
 // Line-following constants and variables       
 #define MIDDLE_LINE 670
-#define Kp_steering -20
+#define Kp_steering -1.5
 #define Ki_steering 0
-#define Kd_steering 0
+#define Kd_steering -1
 
 double error_steering = 0;
 double steeringIntegral = 0;
@@ -100,7 +100,7 @@ CY_ISR(speed_inter) {
     err_speed = TARGET_SPEED - speed;
     acc_err_speed += err_speed;
 
-    if (error_steering > 200)
+    if (error_steering > 20000)
        PWM_base = 30000; 
     
     pwm = PWM_base + Kp_speed * err_speed + Ki_speed * acc_err_speed;
