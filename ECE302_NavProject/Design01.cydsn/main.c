@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 // Speed control constants and variables
-#define TARGET_SPEED 3.6
+#define TARGET_SPEED 3.65
 #define WHEEL_CIRCUMFERENCE 0.5
 #define PULSES_PER_TURN 5
 
@@ -26,9 +26,9 @@ double acc_err = 0;
 char strbuf[32];
 
 // Line-following constants and variables       
-#define MIDDLE_LINE 670
-double Kp_steering = -1;
-double Kd_steering = -0.1;
+#define MIDDLE_LINE 675
+double Kp_steering = 1;
+double Kd_steering = -0.05;
 
 double error_steering = 0;
 double prev_steering = 0; // for kd calculation
@@ -49,12 +49,18 @@ CY_ISR(steer_inter) {
     sampledTime = 65535 - (double) VID_TIMER_ReadCapture();
     
     // Calculate steering error
-    error_steering = MIDDLE_LINE - sampledTime;
-    double delta_error = error_steering - prev_steering;
+    error_steering = sampledTime - MIDDLE_LINE;
+    double delta_error = (error_steering - prev_steering)/1400;
+    
+    // If turning, turn off kd
+    if (error_steering > 150 || error_steering < -150) {
+        Kd_steering = 0;
+    } else {
+        Kd_steering = -0.05;
+    }
     
     // Calculate the steering output using PID
-    steeringOutput = PWM_CENTER + (Kp_steering * error_steering) + (Kd_steering * (delta_error/1400));
-                     
+    steeringOutput = PWM_CENTER + (Kp_steering * error_steering) + (Kd_steering * delta_error);
     steeringPWM = (uint16)steeringOutput; // cast to uint16
     
     // Limit steering PWM within the min and max bounds
@@ -68,7 +74,6 @@ CY_ISR(steer_inter) {
     SERVO_PWM_WriteCompare(steeringPWM);
     
     // DEBUG
-    /*
     UART_PutString("\r\n NAV INTR");
     sprintf(str_buf, "\r\n time:  %f", sampledTime);
     UART_PutString(str_buf);
@@ -76,7 +81,6 @@ CY_ISR(steer_inter) {
     UART_PutString(str_buf);
     sprintf(str_buf, "\r\n steering pwm:  %f", steeringOutput);
     UART_PutString(str_buf);
-    */
 }
 
 
@@ -106,13 +110,15 @@ CY_ISR(speed_inter) {
         pwm = 5;
     if (pwm > 200)
         pwm = 200;
-    
-    // slow down at curves
-    /*
+
+    // slow down at curves 
+    /* 
     if (error_steering > 150 || error_steering < -150) {
         pwm -= 15;
     }
     */
+   
+    
         
     // Send speed data to XBee for telemetry
     // ft/s is really mili-ft/s
