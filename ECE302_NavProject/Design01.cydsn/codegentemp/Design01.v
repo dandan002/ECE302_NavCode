@@ -1,6 +1,6 @@
 // ======================================================================
 // Design01.v generated from TopDesign.cysch
-// 11/04/2024 at 17:30
+// 11/04/2024 at 18:49
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -820,11 +820,11 @@ module top ;
 
           wire  Net_5983;
           wire  Net_5980;
-          wire  Net_6039;
-          wire  Net_6038;
-          wire  Net_6037;
-          wire  Net_6036;
-          wire  Net_6053;
+          wire  Net_6062;
+          wire  Net_6061;
+          wire  Net_6060;
+          wire  Net_6059;
+          wire  Net_6063;
           wire  Net_6046;
           wire  Net_1859;
           wire [7:0] Net_1858;
@@ -875,18 +875,18 @@ module top ;
           wire  Net_2766;
           wire  Net_2781;
           wire  Net_2780;
-          wire  Net_6049;
-          wire [7:0] Net_3649;
+    electrical  Net_1594;
+    electrical  Net_1582;
           wire [7:0] Net_5978;
+          wire [7:0] Net_3649;
+          wire  Net_3791;
+          wire  Net_6049;
           wire [7:0] Net_5962;
           wire  Net_6025;
           wire  Net_5991;
-          wire  Net_3791;
           wire  Net_4080;
           wire  Net_5947;
           wire  Net_3980;
-    electrical  Net_1594;
-    electrical  Net_1582;
           wire  Net_2152;
           wire  Net_2127;
           wire  Net_16;
@@ -1639,18 +1639,18 @@ module top ;
 
     assign Net_6025 = 1'h1;
 
-    assign Net_6053 = (Net_5978[7:0] == Net_3649[7:0]);
+    assign Net_6063 = (Net_5978[7:0] == Net_3649[7:0]);
 
     assign Net_3649[7:0] = 8'h64;
 
     Timer_v2_80_6 VID_TIMER (
         .capture(Net_3980),
-        .capture_out(Net_6036),
+        .capture_out(Net_6059),
         .clock(Net_5947),
         .enable(1'b1),
         .interrupt(Net_4080),
         .reset(Net_3791),
-        .tc(Net_6038),
+        .tc(Net_6061),
         .trigger(1'b1));
     defparam VID_TIMER.CaptureCount = 2;
     defparam VID_TIMER.CaptureCounterEnabled = 0;
@@ -2139,7 +2139,7 @@ module top ;
     assign Net_6046 = ~Net_6049;
 
 
-    assign Net_3791 = ~Net_6053;
+    assign Net_3791 = ~Net_6063;
 
 
 

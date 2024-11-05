@@ -1,4 +1,4 @@
---------------- Build Started: 11/04/2024 17:30:42 Project: Design01, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 11/04/2024 18:49:52 Project: Design01, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 cydsfit.exe -.appdatapath "C:\Users\danie\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Design01.cyprj -d CY8C5868AXI-LP035 -s C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation...
@@ -28,6 +28,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\Users\danie\Documents\ECE302_NavCode\ECE302_NavProject\Design01.cydsn\CortexM3\ARM_GCC_541\Debug\Design01.elf
-Flash used: 15008 of 262144 bytes (5.7%).
+Flash used: 15016 of 262144 bytes (5.7%).
 SRAM used: 6745 of 65536 bytes (10.3%). Stack: 2048 bytes. Heap: 4096 bytes.
---------------- Build Succeeded: 11/04/2024 17:31:00 ---------------
+--------------- Build Succeeded: 11/04/2024 18:50:05 ---------------

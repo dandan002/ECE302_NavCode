@@ -21,7 +21,7 @@ double acc_err_speed = 0;
 char strbuf[42];
 
 // Line-following constants and variables       
-#define MIDDLE_LINE 120
+#define MIDDLE_LINE 700
 #define Kp_steering 10
 #define Ki_steering 0.5
 #define Kd_steering 0.5
@@ -57,7 +57,9 @@ CY_ISR(steer_inter) {
     // DEBUG
     UART_PutString("\r\n NAV INTR");
     sprintf(str_buf, "\r\n time:  %f", sampledTime);
+    UART_PutString(str_buf);
     sprintf(str_buf, "\r\n steering error:  %f", error_steering);
+    UART_PutString(str_buf);
     sprintf(str_buf, "\r\n steering pwm:  %f", steeringOutput);
     UART_PutString(str_buf);
     

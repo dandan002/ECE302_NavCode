@@ -2,7 +2,7 @@
 --	Conversion of Design01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Nov 04 17:30:49 2024
+--	Mon Nov 04 18:49:57 2024
 --
 
 USE cypress.cypress.all;
@@ -1788,7 +1788,7 @@ SIGNAL \COUNTER:MODULE_10:g2:a0:g1:z1:s0:g1:u0:c_2\ : bit;
 SIGNAL \COUNTER:MODULE_10:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
 SIGNAL \COUNTER:MODULE_10:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
 SIGNAL \COUNTER:MODULE_10:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
-SIGNAL Net_6053 : bit;
+SIGNAL Net_6063 : bit;
 SIGNAL cmp_vv_vv_MODGEN_11 : bit;
 SIGNAL Net_3649_7 : bit;
 SIGNAL Net_3649_6 : bit;
@@ -1801,7 +1801,7 @@ SIGNAL Net_3649_0 : bit;
 SIGNAL \VID_TIMER:Net_260\ : bit;
 SIGNAL Net_4080 : bit;
 SIGNAL \VID_TIMER:Net_55\ : bit;
-SIGNAL Net_6038 : bit;
+SIGNAL Net_6061 : bit;
 SIGNAL \VID_TIMER:Net_53\ : bit;
 SIGNAL \VID_TIMER:TimerUDB:ClockOutFromEnBlock\ : bit;
 SIGNAL \VID_TIMER:TimerUDB:Clk_Ctl_i\ : bit;
@@ -1835,7 +1835,7 @@ SIGNAL \VID_TIMER:TimerUDB:tc_i\ : bit;
 SIGNAL \VID_TIMER:TimerUDB:tc_reg_i\ : bit;
 SIGNAL \VID_TIMER:TimerUDB:hwEnable_reg\ : bit;
 SIGNAL \VID_TIMER:TimerUDB:capture_out_reg_i\ : bit;
-SIGNAL Net_6036 : bit;
+SIGNAL Net_6059 : bit;
 SIGNAL \VID_TIMER:TimerUDB:int_capt_count_1\ : bit;
 SIGNAL Net_3791 : bit;
 ATTRIBUTE soft of Net_3791:SIGNAL IS '1';
