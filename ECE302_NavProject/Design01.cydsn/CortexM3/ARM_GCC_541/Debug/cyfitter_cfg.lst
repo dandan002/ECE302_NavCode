@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
   29:Generated_Source\PSoC5/cyfitter_cfg.c **** 
   30:Generated_Source\PSoC5/cyfitter_cfg.c **** #if defined(__GNUC__) || defined(__ARMCC_VERSION)
   31:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 2
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 2
 
 
   32:Generated_Source\PSoC5/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
   86:Generated_Source\PSoC5/cyfitter_cfg.c **** 	(void)memcpy(dest, src, n);
   87:Generated_Source\PSoC5/cyfitter_cfg.c **** }
   88:Generated_Source\PSoC5/cyfitter_cfg.c **** CY_CFG_UNUSED
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 3
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 3
 
 
   89:Generated_Source\PSoC5/cyfitter_cfg.c **** static void CYCONFIGCPYCODE(void *dest, const void *src, size_t n);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
   41              		.thumb
   42              		.thumb_func
   43              		.type	cfg_write_bytes32, %function
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 4
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 4
 
 
   44              	cfg_write_bytes32:
@@ -205,7 +205,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  148:Generated_Source\PSoC5/cyfitter_cfg.c **** }
  149:Generated_Source\PSoC5/cyfitter_cfg.c **** #endif
  150:Generated_Source\PSoC5/cyfitter_cfg.c **** 
- 151:Generated_Source\PSoC5/cyfitter_cfg.c **** #define CY_CFG_BASE_ADDR_COUNT 36u
+ 151:Generated_Source\PSoC5/cyfitter_cfg.c **** #define CY_CFG_BASE_ADDR_COUNT 32u
  152:Generated_Source\PSoC5/cyfitter_cfg.c **** CYPACKED typedef struct
  153:Generated_Source\PSoC5/cyfitter_cfg.c **** {
  154:Generated_Source\PSoC5/cyfitter_cfg.c **** 	uint8 offset;
@@ -213,32 +213,32 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  156:Generated_Source\PSoC5/cyfitter_cfg.c **** } CYPACKED_ATTR cy_cfg_addrvalue_t;
  157:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  158:Generated_Source\PSoC5/cyfitter_cfg.c **** #define cy_cfg_addr_table ((const uint32 CYFAR *)0x48000000u)
- 159:Generated_Source\PSoC5/cyfitter_cfg.c **** #define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x48000090u)
+ 159:Generated_Source\PSoC5/cyfitter_cfg.c **** #define cy_cfg_data_table ((const cy_cfg_addrvalue_t CYFAR *)0x48000080u)
  160:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  161:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_0 Address: CYREG_PRT0_DM0 Size (bytes): 8 */
- 162:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x480009F0u)
+ 162:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x480009B0u)
  163:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  164:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_1 Address: CYREG_PRT1_DM0 Size (bytes): 8 */
- 165:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x480009F8u)
+ 165:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_1_VAL ((const uint8 CYFAR *)0x480009B8u)
  166:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  167:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_3 Address: CYREG_PRT3_DM0 Size (bytes): 8 */
- 168:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_3_VAL ((const uint8 CYFAR *)0x48000A00u)
+ 168:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_3_VAL ((const uint8 CYFAR *)0x480009C0u)
  169:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  170:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_4 Address: CYREG_PRT4_DM0 Size (bytes): 8 */
- 171:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_4_VAL ((const uint8 CYFAR *)0x48000A08u)
+ 171:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_4_VAL ((const uint8 CYFAR *)0x480009C8u)
  172:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  173:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_5 Address: CYREG_PRT5_DM0 Size (bytes): 8 */
- 174:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_5_VAL ((const uint8 CYFAR *)0x48000A10u)
+ 174:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_5_VAL ((const uint8 CYFAR *)0x480009D0u)
  175:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  176:Generated_Source\PSoC5/cyfitter_cfg.c **** /* IOPINS0_6 Address: CYREG_PRT6_DR Size (bytes): 10 */
- 177:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_6_VAL ((const uint8 CYFAR *)0x48000A18u)
+ 177:Generated_Source\PSoC5/cyfitter_cfg.c **** #define BS_IOPINS0_6_VAL ((const uint8 CYFAR *)0x480009D8u)
  178:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  179:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  180:Generated_Source\PSoC5/cyfitter_cfg.c **** /*******************************************************************************
  181:Generated_Source\PSoC5/cyfitter_cfg.c **** * Function Name: cfg_write_bytes32
  182:Generated_Source\PSoC5/cyfitter_cfg.c **** ********************************************************************************
  183:Generated_Source\PSoC5/cyfitter_cfg.c **** * Summary:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 5
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 5
 
 
  184:Generated_Source\PSoC5/cyfitter_cfg.c **** *  This function is used for setting up the chip configuration areas that
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
   79              	.L6:
  205:Generated_Source\PSoC5/cyfitter_cfg.c **** 		{
  206:Generated_Source\PSoC5/cyfitter_cfg.c **** 			CY_SET_REG8((void *)(baseAddr + data_table[j].offset), data_table[j].value);
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 6
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 6
 
 
   80              		.loc 1 206 0
@@ -329,7 +329,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  101              	.L4:
  199:Generated_Source\PSoC5/cyfitter_cfg.c **** 	{
  102              		.loc 1 199 0 is_stmt 0 discriminator 1
- 103 002c 232F     		cmp	r7, #35
+ 103 002c 1F2F     		cmp	r7, #31
  104 002e EBD9     		bls	.L7
  209:Generated_Source\PSoC5/cyfitter_cfg.c **** 		}
  210:Generated_Source\PSoC5/cyfitter_cfg.c **** 	}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  214:Generated_Source\PSoC5/cyfitter_cfg.c **** * Function Name: ClockSetup
  215:Generated_Source\PSoC5/cyfitter_cfg.c **** ********************************************************************************
  216:Generated_Source\PSoC5/cyfitter_cfg.c **** *
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 7
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 7
 
 
  217:Generated_Source\PSoC5/cyfitter_cfg.c **** * Summary:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  271:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_BCFG0), 0x00u);
  272:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_BCFG2), 0x48u);
  273:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_MSTR0), 0x00u);
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 8
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 8
 
 
  274:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_CLKDIST_LD), 0x02u);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  305:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)CYREG_DAC2_SW0, 0x10u);
  147              		.loc 1 305 0
  148 001a 1023     		movs	r3, #16
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 9
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 9
 
 
  149 001c 0749     		ldr	r1, .L10+12
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  198              	.LFE0:
  199              		.size	CYMEMZERO, .-CYMEMZERO
  200              		.section	.text.ClockSetup,"ax",%progbits
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 10
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 10
 
 
  201              		.align	2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  246 002c 4FF04023 		mov	r3, #1073758208
  247 0030 1A70     		strb	r2, [r3]
  249:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_IMO_TR1), (CY_GET_XTND_REG8((void CYFAR *)CYREG_FLSHID_CUST_
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 11
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 11
 
 
  248              		.loc 1 249 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  292              		.loc 1 263 0 is_stmt 1
  293 0072 15B9     		cbnz	r5, .L18
  265:Generated_Source\PSoC5/cyfitter_cfg.c **** 	}
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 12
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 12
 
 
  294              		.loc 1 265 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  341              	.LFE5:
  342              		.size	ClockSetup, .-ClockSetup
  343              		.section	.text.CYCONFIGCPY,"ax",%progbits
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 13
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 13
 
 
  344              		.align	2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  374              		.loc 1 330 0
  375              		.cfi_startproc
  376              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 14
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 14
 
 
  377              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  347:Generated_Source\PSoC5/cyfitter_cfg.c **** * Function Name: cyfitter_cfg
  348:Generated_Source\PSoC5/cyfitter_cfg.c **** ********************************************************************************
  349:Generated_Source\PSoC5/cyfitter_cfg.c **** * Summary:
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 15
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 15
 
 
  350:Generated_Source\PSoC5/cyfitter_cfg.c **** *  This function is called by the start-up code for the selected device. It
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  380:Generated_Source\PSoC5/cyfitter_cfg.c **** 		static const cfg_memset_t CYCODE cfg_memset_list[] = {
  381:Generated_Source\PSoC5/cyfitter_cfg.c **** 			/* address, size */
  382:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYREG_PRT2_DR), 16u},
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 16
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 16
 
 
  383:Generated_Source\PSoC5/cyfitter_cfg.c **** 			{(void CYFAR *)(CYREG_PRT12_DR), 16u},
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  402:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  403:Generated_Source\PSoC5/cyfitter_cfg.c **** 		/* Perform normal device configuration. Order is not critical for these items. */
  404:Generated_Source\PSoC5/cyfitter_cfg.c **** 		CY_SET_XTND_REG16((void CYFAR *)(CYREG_LUT0_CR), 0x0003u);
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 17
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 17
 
 
  472              		.loc 1 404 0
@@ -967,7 +967,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  475 003e 1A80     		strh	r2, [r3]	@ movhi
  405:Generated_Source\PSoC5/cyfitter_cfg.c **** 
  406:Generated_Source\PSoC5/cyfitter_cfg.c **** 		/* B0_P3_U1_CFG24 Starting address: CYDEV_UCFG_B0_P3_U1_CFG24 */
- 407:Generated_Source\PSoC5/cyfitter_cfg.c **** 		CY_SET_XTND_REG32((void CYFAR *)(CYREG_B0_P3_U1_CFG24), 0x84040004u);
+ 407:Generated_Source\PSoC5/cyfitter_cfg.c **** 		CY_SET_XTND_REG32((void CYFAR *)(CYREG_B0_P3_U1_CFG24), 0x44040404u);
  476              		.loc 1 407 0
  477 0040 2B4A     		ldr	r2, .L33+16
  478 0042 03F52E43 		add	r3, r3, #44544
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  421:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CYCONFIGCPY((void CYFAR *)(CYREG_PRT1_DM0), (const void CYFAR *)(BS_IOPINS0_1_VAL), 8u);
  510              		.loc 1 421 0
  511 0080 0822     		movs	r2, #8
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 18
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 18
 
 
  512 0082 2049     		ldr	r1, .L33+36
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  553 00c6 8123     		movs	r3, #129
  554 00c8 2B70     		strb	r3, [r5]
  435:Generated_Source\PSoC5/cyfitter_cfg.c **** 	CY_SET_XTND_REG8((void CYFAR *)(CYREG_PANTHER_WAITPIPE), 0x01u);
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 19
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 19
 
 
  555              		.loc 1 435 0
@@ -1106,22 +1106,22 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  571              	.L33:
  572 00e0 E8460040 		.word	1073759976
  573 00e4 00000000 		.word	.LANCHOR0
- 574 00e8 90000048 		.word	1207959696
+ 574 00e8 80000048 		.word	1207959680
  575 00ec 48580040 		.word	1073764424
- 576 00f0 04000484 		.word	-2080112636
+ 576 00f0 04040444 		.word	1141113860
  577 00f4 03500140 		.word	1073827843
  578 00f8 A0430040 		.word	1073759136
- 579 00fc F0090048 		.word	1207962096
+ 579 00fc B0090048 		.word	1207962032
  580 0100 02510040 		.word	1073762562
- 581 0104 F8090048 		.word	1207962104
+ 581 0104 B8090048 		.word	1207962040
  582 0108 12510040 		.word	1073762578
- 583 010c 000A0048 		.word	1207962112
+ 583 010c C0090048 		.word	1207962048
  584 0110 32510040 		.word	1073762610
- 585 0114 080A0048 		.word	1207962120
+ 585 0114 C8090048 		.word	1207962056
  586 0118 42510040 		.word	1073762626
- 587 011c 100A0048 		.word	1207962128
+ 587 011c D0090048 		.word	1207962064
  588 0120 52510040 		.word	1073762642
- 589 0124 180A0048 		.word	1207962136
+ 589 0124 D8090048 		.word	1207962072
  590 0128 60510040 		.word	1073762656
  591 012c 22430040 		.word	1073759010
  592 0130 00480040 		.word	1073760256
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  603              	cfg_memset_list.5013:
  604 0000 20510040 		.word	1073762592
  605 0004 1000     		.short	16
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 20
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 20
 
 
  606 0006 C0510040 		.4byte	1073762752
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  660 004c 04       		.uleb128 0x4
  661 004d 01       		.byte	0x1
  662 004e 06       		.byte	0x6
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 21
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 21
 
 
  663 004f FB020000 		.4byte	.LASF3
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  717 00b8 04       		.uleb128 0x4
  718 00b9 08       		.byte	0x8
  719 00ba 04       		.byte	0x4
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 22
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 22
 
 
  720 00bb 80010000 		.4byte	.LASF17
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  774 0133 0B       		.uleb128 0xb
  775 0134 0C020000 		.4byte	.LASF24
  776 0138 01       		.byte	0x1
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 23
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 23
 
 
  777 0139 7F       		.byte	0x7f
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  831 01ad 51000000 		.4byte	.LLST3
  832 01b1 00       		.byte	0
  833 01b2 00       		.byte	0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 24
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 24
 
 
  834 01b3 10       		.uleb128 0x10
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  888 022c F3       		.byte	0xf3
  889 022d 01       		.uleb128 0x1
  890 022e 50       		.byte	0x50
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 25
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 25
 
 
  891 022f 16       		.uleb128 0x16
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  945 0293 00       		.byte	0
  946 0294 00       		.byte	0
  947 0295 0C       		.uleb128 0xc
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 26
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 26
 
 
  948 0296 10030000 		.4byte	.LASF36
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1002 02f7 FB020000 		.4byte	0x2fb
  1003 02fb 19       		.uleb128 0x19
  1004 02fc 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 27
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 27
 
 
  1005 02fd 55010000 		.4byte	.LASF40
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1059 0376 06       		.uleb128 0x6
  1060 0377 49020000 		.4byte	.LASF44
  1061 037b 01       		.byte	0x1
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 28
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 28
 
 
  1062 037c 7A01     		.2byte	0x17a
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1116 03f2 31       		.byte	0x31
  1117 03f3 24       		.byte	0x24
  1118 03f4 75       		.byte	0x75
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 29
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 29
 
 
  1119 03f5 00       		.sleb128 0
@@ -1707,7 +1707,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1142 0413 51       		.byte	0x51
  1143 0414 05       		.uleb128 0x5
  1144 0415 0C       		.byte	0xc
- 1145 0416 90000048 		.4byte	0x48000090
+ 1145 0416 80000048 		.4byte	0x48000080
  1146 041a 00       		.byte	0
  1147 041b 00       		.byte	0
  1148 041c 17       		.uleb128 0x17
@@ -1725,7 +1725,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1160 0434 51       		.byte	0x51
  1161 0435 05       		.uleb128 0x5
  1162 0436 0C       		.byte	0xc
- 1163 0437 F0090048 		.4byte	0x480009f0
+ 1163 0437 B0090048 		.4byte	0x480009b0
  1164 043b 16       		.uleb128 0x16
  1165 043c 01       		.uleb128 0x1
  1166 043d 52       		.byte	0x52
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1173 044a 66040000 		.4byte	0x466
  1174 044e 16       		.uleb128 0x16
  1175 044f 01       		.uleb128 0x1
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 30
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 30
 
 
  1176 0450 50       		.byte	0x50
@@ -1750,7 +1750,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1182 0459 51       		.byte	0x51
  1183 045a 05       		.uleb128 0x5
  1184 045b 0C       		.byte	0xc
- 1185 045c F8090048 		.4byte	0x480009f8
+ 1185 045c B8090048 		.4byte	0x480009b8
  1186 0460 16       		.uleb128 0x16
  1187 0461 01       		.uleb128 0x1
  1188 0462 52       		.byte	0x52
@@ -1772,7 +1772,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1204 047e 51       		.byte	0x51
  1205 047f 05       		.uleb128 0x5
  1206 0480 0C       		.byte	0xc
- 1207 0481 000A0048 		.4byte	0x48000a00
+ 1207 0481 C0090048 		.4byte	0x480009c0
  1208 0485 16       		.uleb128 0x16
  1209 0486 01       		.uleb128 0x1
  1210 0487 52       		.byte	0x52
@@ -1794,11 +1794,11 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1226 04a3 51       		.byte	0x51
  1227 04a4 05       		.uleb128 0x5
  1228 04a5 0C       		.byte	0xc
- 1229 04a6 080A0048 		.4byte	0x48000a08
+ 1229 04a6 C8090048 		.4byte	0x480009c8
  1230 04aa 16       		.uleb128 0x16
  1231 04ab 01       		.uleb128 0x1
  1232 04ac 52       		.byte	0x52
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 31
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 31
 
 
  1233 04ad 01       		.uleb128 0x1
@@ -1819,7 +1819,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1248 04c8 51       		.byte	0x51
  1249 04c9 05       		.uleb128 0x5
  1250 04ca 0C       		.byte	0xc
- 1251 04cb 100A0048 		.4byte	0x48000a10
+ 1251 04cb D0090048 		.4byte	0x480009d0
  1252 04cf 16       		.uleb128 0x16
  1253 04d0 01       		.uleb128 0x1
  1254 04d1 52       		.byte	0x52
@@ -1841,7 +1841,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1270 04ed 51       		.byte	0x51
  1271 04ee 05       		.uleb128 0x5
  1272 04ef 0C       		.byte	0xc
- 1273 04f0 180A0048 		.4byte	0x48000a18
+ 1273 04f0 D8090048 		.4byte	0x480009d8
  1274 04f4 16       		.uleb128 0x16
  1275 04f5 01       		.uleb128 0x1
  1276 04f6 52       		.byte	0x52
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1287 050d DE000000 		.4byte	.LVL46
  1288 0511 95020000 		.4byte	0x295
  1289 0515 16       		.uleb128 0x16
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 32
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 32
 
 
  1290 0516 01       		.uleb128 0x1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1344 0016 0B       		.uleb128 0xb
  1345 0017 0B       		.uleb128 0xb
  1346 0018 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 33
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 33
 
 
  1347 0019 0B       		.uleb128 0xb
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1401 004f 00       		.byte	0
  1402 0050 00       		.byte	0
  1403 0051 08       		.uleb128 0x8
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 34
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 34
 
 
  1404 0052 13       		.uleb128 0x13
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1458 008a 00       		.byte	0
  1459 008b 03       		.uleb128 0x3
  1460 008c 0E       		.uleb128 0xe
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 35
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 35
 
 
  1461 008d 3A       		.uleb128 0x3a
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1515 00c4 06       		.uleb128 0x6
  1516 00c5 00       		.byte	0
  1517 00c6 00       		.byte	0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 36
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 36
 
 
  1518 00c7 0F       		.uleb128 0xf
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1572 00fe 13       		.uleb128 0x13
  1573 00ff 34       		.uleb128 0x34
  1574 0100 00       		.byte	0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 37
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 37
 
 
  1575 0101 03       		.uleb128 0x3
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1629 013e 00       		.byte	0
  1630 013f 00       		.byte	0
  1631 0140 18       		.uleb128 0x18
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 38
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 38
 
 
  1632 0141 05       		.uleb128 0x5
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1686 0178 13       		.uleb128 0x13
  1687 0179 02       		.uleb128 0x2
  1688 017a 18       		.uleb128 0x18
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 39
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 39
 
 
  1689 017b 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1743 01b1 00       		.byte	0
  1744 01b2 00       		.byte	0
  1745 01b3 20       		.uleb128 0x20
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 40
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 40
 
 
  1746 01b4 01       		.uleb128 0x1
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1800 01ec 25       		.uleb128 0x25
  1801 01ed 2E       		.uleb128 0x2e
  1802 01ee 00       		.byte	0
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 41
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 41
 
 
  1803 01ef 3F       		.uleb128 0x3f
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1857 0060 2C000000 		.4byte	.LVL10
  1858 0064 0100     		.2byte	0x1
  1859 0066 53       		.byte	0x53
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 42
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 42
 
 
  1860 0067 00000000 		.4byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1914 00ee 50000000 		.4byte	.LVL17
  1915 00f2 52000000 		.4byte	.LVL18
  1916 00f6 0200     		.2byte	0x2
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 43
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 43
 
 
  1917 00f8 30       		.byte	0x30
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  1971              	.LLST12:
  1972 017b 0E000000 		.4byte	.LVL31
  1973 017f 12000000 		.4byte	.LVL32
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 44
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 44
 
 
  1974 0183 0200     		.2byte	0x2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  2028 0030 00000000 		.4byte	.LFB5
  2029 0034 D0000000 		.4byte	.LFE5-.LFB5
  2030 0038 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 45
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 45
 
 
  2031 003c 08000000 		.4byte	.LFE1-.LFB1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  2071              	.LASF34:
  2072 0032 74696D65 		.ascii	"timeout\000"
  2072      6F757400 
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 46
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 46
 
 
  2073              	.LASF22:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  2096      74696F6E 
  2097              	.LASF18:
  2098 012e 72656738 		.ascii	"reg8\000"
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 47
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 47
 
 
  2098      00
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  2121 01ef 61646472 		.ascii	"addr_table\000"
  2121      5F746162 
  2121      6C6500
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 48
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 48
 
 
  2122              	.LASF14:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 1
  2147      707900
  2148              	.LASF23:
  2149 02a3 63795F63 		.ascii	"cy_cfg_addrvalue_t\000"
-ARM GAS  C:\Users\danie\AppData\Local\Temp\ccTNHzet.s 			page 49
+ARM GAS  C:\Users\danie\AppData\Local\Temp\ccJl3o1Y.s 			page 49
 
 
  2149      66675F61 

@@ -17,17 +17,17 @@ volatile double speed = 0.0;
 uint16 old = 65535;
 uint16 new;
 uint16 elapsed;
-volatile double PWM_base = 30000;
+volatile double PWM_base = 50000;
 volatile double pwm;
 double err_speed;
 double acc_err_speed = 0;
 char strbuf[42];
 
 // Line-following constants and variables       
-#define MIDDLE_LINE 300
-#define Kp_steering -5
+#define MIDDLE_LINE 670
+#define Kp_steering -20
 #define Ki_steering 0
-#define Kd_steering -1
+#define Kd_steering 0
 
 double error_steering = 0;
 double steeringIntegral = 0;
@@ -37,9 +37,9 @@ double steeringOutput = 0;
 int steeringPWM = 0;
 double sampledTime;
 
-#define PWM_MIN 1000
+#define PWM_MIN 1100
 #define PWM_CENTER 1500
-#define PWM_MAX 2000
+#define PWM_MAX 1900
 
 char str_buf [32];
 
@@ -72,7 +72,7 @@ CY_ISR(steer_inter) {
     SERVO_PWM_WriteCompare(steeringPWM);
     
     // DEBUG
-    /*
+    
     UART_PutString("\r\n NAV INTR");
     sprintf(str_buf, "\r\n time:  %f", sampledTime);
     UART_PutString(str_buf);
@@ -84,7 +84,7 @@ CY_ISR(steer_inter) {
     UART_PutString(str_buf);
     sprintf(str_buf, "\r\n steering pwm:  %f", steeringOutput);
     UART_PutString(str_buf);
-    */
+    
 
 }
 

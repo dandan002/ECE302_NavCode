@@ -2,7 +2,7 @@
 --	Conversion of Design01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Nov 04 20:28:45 2024
+--	Mon Nov 04 21:21:29 2024
 --
 
 USE cypress.cypress.all;
@@ -2521,7 +2521,7 @@ Net_5962_0D <= ((not Net_5962_0 and Net_6049));
 
 \COUNTER:MODULE_10:g2:a0:g1:z1:s0:g1:u0:b_8\ <= ((Net_5962_7 and Net_5962_6 and Net_5962_5 and Net_5962_4 and Net_5962_3 and Net_5962_2 and Net_5962_1 and Net_5962_0));
 
-\VID_TIMER:TimerUDB:capt_fifo_load\ <= ((not \VID_TIMER:TimerUDB:capture_last\ and Net_3980 and \VID_TIMER:TimerUDB:control_7\));
+\VID_TIMER:TimerUDB:capt_fifo_load\ <= ((not Net_3980 and \VID_TIMER:TimerUDB:control_7\ and \VID_TIMER:TimerUDB:capture_last\));
 
 \VID_TIMER:TimerUDB:status_tc\ <= ((\VID_TIMER:TimerUDB:control_7\ and \VID_TIMER:TimerUDB:per_zero\));
 

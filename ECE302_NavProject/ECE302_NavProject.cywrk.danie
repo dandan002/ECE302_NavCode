@@ -147,36 +147,6 @@
 <VisibleNodeIds>
 <v>ECE302_NavProject</v>
 <v>ECE302_NavProject\Design01</v>
-<v>ECE302_NavProject\Design01\CortexM3</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\COMP_PM.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CSYNC_IN.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_1.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_2.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_3.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_4.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_5.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\DEBUG_6.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\HE.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\HE_ISR.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\INT_SAMPLE.lst</v>
-<v>ECE302_NavProject\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>

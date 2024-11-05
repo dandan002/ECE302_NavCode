@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     Nov 4 2024 20:28:45
+#File Generated:     Nov 4 2024 21:21:30
 
 #Purpose:            
 
@@ -114,7 +114,7 @@ Clock: UART_IntClock        | Frequency:   1.4 MHz | Target:   0.9 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.4 (sec)
+D2088: Phase 7, elapsed time : 0.7 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	15
@@ -145,9 +145,9 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 9
-Clock: CSYNC_IN(0)_PAD      | Frequency:  77.9 MHz | Target:   0.1 MHz
+Clock: CSYNC_IN(0)_PAD      | Frequency:  85.1 MHz | Target:   0.1 MHz
 Clock: Clock_1              | Frequency:  57.1 MHz | Target:   1.0 MHz
-Clock: Clock_2              | Frequency:  43.2 MHz | Target:  24.0 MHz
+Clock: Clock_2              | Frequency:  41.9 MHz | Target:  24.0 MHz
 Clock: CyBUS_CLK            | Frequency:   1.5 MHz | Target:  24.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   3.0 MHz
@@ -164,5 +164,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.8 sec.
+I2076: Total run-time: 1.2 sec.
 

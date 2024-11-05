@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 11/04/2024 20:28:45
+-- Generated: 11/04/2024 21:21:30
 -- PSoC Creator  4.4
 
 ENTITY Design01 IS
@@ -2163,7 +2163,7 @@ BEGIN
     \VID_TIMER:TimerUDB:capt_fifo_load\:macrocell
         GENERIC MAP(
             soft => 1,
-            eqn_main => "(main_0 * main_1 * !main_2)",
+            eqn_main => "(!main_0 * main_1 * main_2)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
