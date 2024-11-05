@@ -4,42 +4,41 @@
 #include <stdio.h>
 
 // Speed control constants and variables
-#define TARGET_SPEED 4.0          
-#define WHEEL_CIRCUMFERENCE 0.5   
-#define PULSES_PER_TURN 5         
-#define Kp_speed 1000               
-#define Ki_speed 150
+#define TARGET_SPEED 3.6
+#define WHEEL_CIRCUMFERENCE 0.5
+#define PULSES_PER_TURN 5
 
-#define MAX_SPEED 100000
-#define MIN_SPEED 1000
-                
-volatile double speed = 0.0;
+#define Kp 10
+#define Ki 1.0
+#define base 120
+
+double speed = 0.0;
+double error = 0.0;
 uint16 old = 65535;
 uint16 new;
 uint16 elapsed;
-volatile double PWM_base = 30000;
-volatile double pwm;
-double err_speed;
-double acc_err_speed = 0;
-char strbuf[42];
+double PWM_base = 30;
+double pwm;
+
+double err;
+double acc_err = 0;
+
+char strbuf[32];
 
 // Line-following constants and variables       
 #define MIDDLE_LINE 670
-#define Kp_steering -1.5
-#define Ki_steering 0
-#define Kd_steering -1
+double Kp_steering = -1;
+double Kd_steering = -0.1;
 
 double error_steering = 0;
-double steeringIntegral = 0;
-double steeringDerivative = 0;
-double previousSteeringError = 0;
+double prev_steering = 0; // for kd calculation
 double steeringOutput = 0;
 int steeringPWM = 0;
 double sampledTime;
 
-#define PWM_MIN 1100
+#define PWM_MIN 1020
 #define PWM_CENTER 1500
-#define PWM_MAX 1900
+#define PWM_MAX 1980
 
 char str_buf [32];
 
@@ -51,16 +50,10 @@ CY_ISR(steer_inter) {
     
     // Calculate steering error
     error_steering = MIDDLE_LINE - sampledTime;
-    
-    // Update integral and derivative terms
-    steeringIntegral += error_steering;
-    steeringDerivative = error_steering - previousSteeringError;
-    previousSteeringError = error_steering;
+    double delta_error = error_steering - prev_steering;
     
     // Calculate the steering output using PID
-    steeringOutput = PWM_CENTER + (Kp_steering * error_steering) +
-                     (Ki_steering * steeringIntegral) + 
-                     (Kd_steering * steeringDerivative);
+    steeringOutput = PWM_CENTER + (Kp_steering * error_steering) + (Kd_steering * (delta_error/1400));
                      
     steeringPWM = (uint16)steeringOutput; // cast to uint16
     
@@ -68,52 +61,71 @@ CY_ISR(steer_inter) {
     if (steeringPWM < PWM_MIN) steeringPWM = PWM_MIN;
     if (steeringPWM > PWM_MAX) steeringPWM = PWM_MAX;
     
-    // Update servo PWM
+    // Store previous error
+    prev_steering = error_steering;
+    
+    // Update servo
     SERVO_PWM_WriteCompare(steeringPWM);
     
     // DEBUG
-    
+    /*
     UART_PutString("\r\n NAV INTR");
     sprintf(str_buf, "\r\n time:  %f", sampledTime);
     UART_PutString(str_buf);
     sprintf(str_buf, "\r\n steering error:  %f", error_steering);
     UART_PutString(str_buf);
-    sprintf(str_buf, "\r\n integral: %f", steeringIntegral);
-    UART_PutString(str_buf);
-    sprintf(str_buf, "\r\n derivative: %f", steeringDerivative);
-    UART_PutString(str_buf);
     sprintf(str_buf, "\r\n steering pwm:  %f", steeringOutput);
     UART_PutString(str_buf);
-    
-
+    */
 }
 
 
 CY_ISR(speed_inter) {
+    // Read timer capture value
     new = TIMER_ReadCapture();
-    if (new <= old)
+    
+    // Calculate elapsed time, handling timer overflow
+    if(new <= old)
         elapsed = old - new;
     else
         elapsed = 65535 - new + old;
     
+    // Calculate speed based on elapsed time
     speed = 1256.0 / (double) elapsed;
-    err_speed = TARGET_SPEED - speed;
-    acc_err_speed += err_speed;
-
-    if (error_steering > 20000)
-       PWM_base = 30000; 
     
-    pwm = PWM_base + Kp_speed * err_speed + Ki_speed * acc_err_speed;
-    if (pwm < MIN_SPEED)
-        pwm = MIN_SPEED;
-    if (pwm > MAX_SPEED)
-        pwm = MAX_SPEED;
+    // Calculate error and accumulate for integral control
+    err = TARGET_SPEED - speed;
+    acc_err += err;
     
-    // DEBUG
-    UART_PutString("\r\n SPEED INTR");
-    sprintf(str_buf, "%f ft/s,\r\n", speed);
-    UART_PutString(str_buf);
-      
+    // Calculate PWM value using PID control
+    pwm = PWM_base + Kp * err + Ki * acc_err;
+   
+    
+    // Limit PWM value to valid range
+    if (pwm < 5)
+        pwm = 5;
+    if (pwm > 200)
+        pwm = 200;
+    
+    // slow down at curves
+    /*
+    if (error_steering > 150 || error_steering < -150) {
+        pwm -= 15;
+    }
+    */
+        
+    // Send speed data to XBee for telemetry
+    // ft/s is really mili-ft/s
+    // Cast to int because XBee output only works with int
+    /*
+    UART_PutString("\r\n SPEED INTER");
+    sprintf(strbuf,"\r\n %f ft/s", speed);
+    UART_PutString(strbuf);
+    sprintf(strbuf,"\r\n pwm = %f", pwm);
+    UART_PutString(strbuf);
+    */
+    
+    // Update PWM value to control motor speed
     PWM_WriteCompare((uint16)pwm);
     TIMER_ReadStatusRegister();
     old = new;
