@@ -3,7 +3,7 @@ This repository contains our (Daniel Jung, Yiying Zhang) work for the navigation
 ## Usage
 1. Clone/Download the ENTIRE REPO onto a Windows machine.
 2. Open/Install PSOC Creator 4.4 (some parts will break when using newer versions).
-3. Open the PSOC Creator project file inside the folder.
-4. PSOC Creator will run like normal and take care of the rest.
+3. Open the PSOC Creator project file inside the ECE302_NavProject folder.
+4. PSOC Creator will open the project like normal.
 ## Documentation
 Is nonexistant. Figure it out. We left a good number of comments/explanations in main.c but we never figured out how to insert comments in a top design file. That said, we do go very in-depth in our navigation report if you ever manage to get your hands on that.
